@@ -36,7 +36,7 @@ const About = () => {
               <span className="text-primary">for Over 20 Years</span>
             </h2>
             
-<p className="text-muted-foreground mb-6 text-lg">
+            <p className="text-muted-foreground mb-6 text-lg">
               SENTINEL SECURITY & SERVICES is a company specializing in private security of property and people, established since 2002. With over 20 years of experience, we operate in all key areas of security: human surveillance (guarding), 24/7 remote monitoring, alarm interventions, fire safety (SSIAP agents), event security, as well as the sale and installation of connected alarm systems.
             </p>
             
