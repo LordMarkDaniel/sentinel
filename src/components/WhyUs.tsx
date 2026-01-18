@@ -1,16 +1,19 @@
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const reasons = [
-  "Reactive and engaged partner for your security",
-  "State-of-the-art technology combined with human expertise",
-  "24/7 availability and constant listening",
-  "Human-scale structure close to your needs",
-  "Complete traceability of all interventions",
-  "Rapid on-site response times",
+  "Partenaire réactif et engagé pour votre sécurité",
+  "Technologie de pointe combinée à l'expertise humaine",
+  "Disponibilité 24/7 et écoute constante",
+  "Structure à taille humaine proche de vos besoins",
+  "Traçabilité complète de toutes les interventions",
+  "Délais d'intervention rapides sur site",
 ];
 
 const WhyUs = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="why-us" className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -29,11 +32,11 @@ const WhyUs = () => {
                     <span className="text-4xl font-bold text-primary-foreground">24</span>
                   </div>
                   <p className="text-2xl font-display font-bold text-secondary-foreground">
-                    Hours a Day
+                    Heures par jour
                   </p>
-                  <p className="text-primary">7 Days a Week</p>
+                  <p className="text-primary">7 jours sur 7</p>
                   <p className="text-muted-foreground mt-4">
-                    We are always available to protect your assets
+                    Nous sommes toujours disponibles pour protéger vos biens
                   </p>
                 </div>
               </div>
@@ -46,12 +49,12 @@ const WhyUs = () => {
           {/* Right - Content */}
           <div>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-              A Reactive and Engaged Partner,{" "}
-              <span className="text-primary">At Your Service</span>
+              Un partenaire réactif et engagé,{" "}
+              <span className="text-primary">À votre service</span>
             </h2>
             
             <p className="text-muted-foreground mb-8 text-lg">
-              Combining cutting-edge technology and human expertise, SENTINEL SECURITY supports many businesses, communities and individuals looking for a reliable, flexible and responsive partner.
+              Alliant technologie de pointe et expertise humaine, SENTINEL SECURITY accompagne de nombreuses entreprises, collectivités et particuliers à la recherche d'un partenaire fiable, flexible et réactif.
             </p>
 
             <ul className="space-y-4 mb-8">
@@ -64,10 +67,11 @@ const WhyUs = () => {
             </ul>
 
             <Button 
+              onClick={() => navigate("/discover-services")}
               size="lg"
               className="bg-primary text-primary-foreground hover:bg-accent font-semibold group"
             >
-              Learn More
+              En savoir plus
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>

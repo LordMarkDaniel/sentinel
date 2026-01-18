@@ -1,30 +1,31 @@
-import { Shield, Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
+import mainLogo from "/mainlogo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
     services: [
-      { name: "Human Surveillance", href: "#" },
-      { name: "Event Security", href: "#" },
-      { name: "Remote Monitoring", href: "#" },
-      { name: "Fire Safety", href: "#" },
-      { name: "K-9 Security", href: "#" },
-      { name: "Alarm Installation", href: "#" },
+      { name: "Surveillance humaine", href: "/human-surveillance" },
+      { name: "Sécurité événementielle", href: "/event-security" },
+      { name: "Télésurveillance", href: "/remote-monitoring" },
+      { name: "Sécurité incendie", href: "/fire-safety" },
+      { name: "Sécurité K-9", href: "/k9-security" },
+      { name: "Installation d'alarmes", href: "/alarm-installation" },
     ],
     company: [
-      { name: "About Us", href: "#about" },
-      { name: "Our Team", href: "#" },
-      { name: "Careers", href: "#" },
-      { name: "News & Blog", href: "#news" },
-      { name: "CSR Report", href: "#" },
+      { name: "À propos", href: "/about" },
+      { name: "Notre équipe", href: "/our-team" },
+      { name: "Carrières", href: "/careers" },
+      { name: "Actualités & Blog", href: "/news" },
+      { name: "Rapport RSE", href: "/csr-report" },
     ],
     legal: [
-      { name: "Privacy Policy", href: "#" },
-      { name: "Terms of Service", href: "#" },
-      { name: "Cookie Policy", href: "#" },
-      { name: "Licenses", href: "#" },
+      { name: "Politique de confidentialité", href: "/privacy-policy" },
+      { name: "Conditions d'utilisation", href: "/legal" },
+      { name: "Politique de cookies", href: "/cookie-policy" },
+      { name: "Licences", href: "/licenses" },
     ],
   };
 
@@ -35,7 +36,7 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-2 mb-6">
-              <Shield className="h-10 w-10 text-primary" />
+              <img src="/mainlogo.png" alt="Sentinel Security Logo" className="h-10 w-10" />
               <div>
                 <h2 className="text-xl font-display font-bold text-primary">
                   SENTINEL
@@ -46,7 +47,7 @@ const Footer = () => {
               </div>
             </Link>
             <p className="text-muted-foreground mb-6 max-w-sm">
-              Your trusted partner in private security. Protecting people and property with excellence since 2002.
+              Votre partenaire de confiance en sécurité privée. Protéger les personnes et les biens avec excellence depuis 2002.
             </p>
             <div className="space-y-3">
               <a href="tel:+1234567890" className="flex items-center gap-3 text-secondary-foreground hover:text-primary transition-colors">
@@ -66,37 +67,39 @@ const Footer = () => {
 
           {/* Services Links */}
           <div>
-            <h3 className="font-display font-bold text-secondary-foreground mb-4">
-              Our Services
-            </h3>
+            <Link to="/discover-services" className="inline-block mb-4">
+              <h3 className="font-display font-bold text-secondary-foreground hover:text-primary transition-colors">
+                Nos services
+              </h3>
+            </Link>
             <ul className="space-y-3">
-              {footerLinks.services.map((link) => (
-                <li key={link.name}>
-                  <a 
-                    href={link.href}
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
+                {footerLinks.services.map((link) => (
+                  <li key={link.name}>
+                    <Link
+                      to={link.href}
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
             </ul>
           </div>
 
           {/* Company Links */}
           <div>
             <h3 className="font-display font-bold text-secondary-foreground mb-4">
-              Company
+              Entreprise
             </h3>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
-                  <a 
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -105,17 +108,17 @@ const Footer = () => {
           {/* Legal Links */}
           <div>
             <h3 className="font-display font-bold text-secondary-foreground mb-4">
-              Legal
+              Mentions légales
             </h3>
             <ul className="space-y-3">
               {footerLinks.legal.map((link) => (
                 <li key={link.name}>
-                  <a 
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -126,15 +129,15 @@ const Footer = () => {
         <div className="border-t border-border/20 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-muted-foreground text-sm">
-              © {currentYear} Sentinel Security & Services. All rights reserved Daniel Arts.
+              © {currentYear} Sentinel Security & Services. Tous droits réservés. CYBERIX Arts.
             </p>
             <div className="flex items-center gap-4">
               <span className="text-muted-foreground text-sm">
-                Licensed Security Provider
+                Prestataire de sécurité agréé
               </span>
               <span className="text-primary">|</span>
               <span className="text-muted-foreground text-sm">
-                Available 24/7
+                Disponible 24/7
               </span>
             </div>
           </div>

@@ -1,30 +1,33 @@
 import { Shield, Award, Clock, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const features = [
   {
     icon: Award,
-    title: "20+ Years Experience",
-    description: "Established since 2002, we bring decades of security expertise",
+    title: "20+ Années d'Expérience",
+    description: "Établi depuis 2002, nous apportons des décennies d'expertise en sécurité",
   },
   {
     icon: Shield,
-    title: "Licensed & Certified",
-    description: "Fully accredited by national security regulatory bodies",
+    title: "Licencié & Certifié",
+    description: "Entièrement accrédité par les organismes réglementaires nationaux de sécurité",
   },
   {
     icon: Clock,
-    title: "24/7 Availability",
-    description: "Round-the-clock protection and rapid response teams",
+    title: "Disponibilité 24/7",
+    description: "Protection 24 heures sur 24 et équipes d'intervention rapide",
   },
   {
     icon: MapPin,
-    title: "Local Expertise",
-    description: "Deep knowledge of local security needs and challenges",
+    title: "Expertise Locale",
+    description: "Connaissance approfondie des besoins et défis de sécurité locaux",
   },
 ];
 
 const About = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="about" className="py-20 bg-secondary">
       <div className="container mx-auto px-4">
@@ -32,23 +35,23 @@ const About = () => {
           {/* Left Content */}
           <div>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-secondary-foreground mb-6">
-              Expert in Private Security{" "}
-              <span className="text-primary">for Over 20 Years</span>
+              Expert en Sécurité Privée{" "}
+              <span className="text-primary">depuis plus de 20 ans</span>
             </h2>
             
             <p className="text-muted-foreground mb-6 text-lg">
-              SENTINEL SECURITY & SERVICES is a company specializing in private security of property and people, established since 2002. With over 20 years of experience, we operate in all key areas of security: human surveillance (guarding), 24/7 remote monitoring, alarm interventions, fire safety (SSIAP agents), event security, as well as the sale and installation of connected alarm systems.
+              SENTINEL SECURITY & SERVICES est une entreprise spécialisée dans la sécurité privée des biens et des personnes, établie depuis 2002. Forts de plus de 20 ans d'expérience, nous intervenons dans tous les domaines clés de la sécurité : surveillance humaine (gardiennage), télésurveillance 24/7, interventions d'alarme, sécurité incendie (agents SSIAP), sécurité événementielle, ainsi que la vente et l'installation de systèmes d'alarme connectés.
             </p>
             
             <p className="text-muted-foreground mb-8">
-              Accredited by national security councils, Sentinel Security relies on perfect knowledge of its sector and a constant ability to adapt to new security challenges.
+              Accrédité par les conseils nationaux de sécurité, Sentinel Security s'appuie sur une parfaite connaissance de son secteur et une capacité constante à s'adapter aux nouveaux défis de sécurité.
             </p>
 
             <Button 
               size="lg"
               className="bg-primary text-primary-foreground hover:bg-accent font-semibold"
             >
-              Learn More About Us
+              En savoir plus sur nous
             </Button>
           </div>
 
@@ -75,22 +78,20 @@ const About = () => {
 
         {/* CSR Banner */}
         <div className="mt-16 bg-security-dark rounded-xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-6 border border-border/20">
-          <div className="w-20 h-20 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
-            <Shield className="h-10 w-10 text-primary-foreground" />
-          </div>
+          <img src="/mainlogo.png" alt="Sentinel Security" className="h-24 w-24 object-contain flex-shrink-0" />
           <div className="flex-1 text-center md:text-left">
             <h4 className="text-xl font-display font-bold text-secondary-foreground mb-2">
-              Responsibility, Ethics, Commitments: Discover How We Act
+              Responsabilité, éthique, engagements : découvrez comment nous agissons
             </h4>
             <p className="text-muted-foreground">
-              Request our CSR report to learn more about our social and environmental commitments.
+              Demandez notre rapport RSE pour en savoir plus sur nos engagements sociaux et environnementaux.
             </p>
           </div>
           <Button 
-            variant="outline" 
-            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+            onClick={() => navigate("/our-commitments")}
+            className="bg-primary text-primary-foreground hover:bg-accent"
           >
-            Contact Us
+            Nos engagements
           </Button>
         </div>
       </div>
