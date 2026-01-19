@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Shield, ArrowRight } from "lucide-react";
+import { Shield, ArrowRight, ShieldCheck, Award, Star, Clock, CheckCircle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
@@ -42,12 +42,6 @@ const Hero = () => {
         <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,hsl(var(--primary)/0.1)_25%,hsl(var(--primary)/0.1)_50%,transparent_50%,transparent_75%,hsl(var(--primary)/0.1)_75%)] bg-[length:60px_60px]" />
       </div>
 
-      {/* Diagonal Yellow Accent */}
-      <div 
-        className="absolute top-0 right-0 w-1/2 h-full bg-primary hidden lg:block" 
-        style={{ clipPath: "polygon(30% 0, 100% 0, 100% 100%, 0 100%)" }}
-      />
-      
       <div className="container mx-auto px-4 pt-32 lg:pt-24 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -105,28 +99,34 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Content - Image Placeholder */}
-          <div className="relative hidden lg:block">
-            <div className="relative z-10 animate-slide-in-right">              <div 
-                className="w-full h-[500px] bg-gradient-to-br from-security-dark to-security-black rounded-lg shadow-2xl flex items-center justify-center border-2 border-primary/20 relative overflow-hidden"
-                style={{
-                  backgroundImage: 'url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22%3E%3Crect fill=%22%23000%22 width=%22400%22 height=%22400%22/%3E%3C/svg%3E")',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center'
-                }}
-              >
-                <img 
-                  src="/istockphoto-1470457321-612x612.jpg"
-                  alt="Security Lock"
-                  className="absolute inset-0 w-full h-full object-cover opacity-30"
-                />
-                <div className="text-center p-8 relative z-20">
-                  <img src="/mainlogo.png" alt="Sentinel Security Logo" className="h-40 w-40 mx-auto mb-4 object-contain" />
-                  <p className="text-2xl font-display font-bold text-secondary-foreground">
-                    Sécurité Professionnelle
-                  </p>
-                  <p className="text-primary mt-2">Depuis 2000</p>
-                </div>
+          {/* Right Content - Logo & Badges */}
+          <div className="relative hidden lg:flex flex-col items-center justify-center">
+            <div className="animate-slide-in-right text-center">
+              <img 
+                src="/mainlogo.png" 
+                alt="Sentinel Security Logo" 
+                className="h-48 w-48 mx-auto mb-8 object-contain drop-shadow-2xl" 
+              />
+              
+              <div className="flex justify-center gap-6 flex-wrap">
+                {[
+                  { Icon: ShieldCheck, label: "Agréé" },
+                  { Icon: Award, label: "Certifié" },
+                  { Icon: Star, label: "Expert" },
+                  { Icon: Clock, label: "24/7" },
+                  { Icon: CheckCircle, label: "Fiable" }
+                ].map(({ Icon, label }, index) => (
+                  <div 
+                    key={label} 
+                    className="flex flex-col items-center gap-2 group cursor-default animate-fade-in"
+                    style={{ animationDelay: `${index * 100 + 200}ms`, animationFillMode: 'both' }}
+                  >
+                    <div className="p-3 bg-black/20 rounded-full backdrop-blur-md border border-white/10 transition-all duration-300 group-hover:scale-110 group-hover:bg-primary group-hover:border-primary shadow-lg">
+                      <Icon className="h-6 w-6 text-white transition-colors duration-300" />
+                    </div>
+                    <span className="text-xs font-bold text-white tracking-wide drop-shadow-md">{label}</span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
