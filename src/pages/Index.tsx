@@ -2,11 +2,9 @@
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import About from "@/components/About";
+import PartnerCTA from "@/components/PartnerCTA";
 import WhyUs from "@/components/WhyUs";
-import Testimonials from "@/components/Testimonials";
-import ClientLogos from "@/components/ClientLogos";
 import News from "@/components/News";
-import Contact from "@/components/Contact";
 
 const Index = () => {
   return (
@@ -15,11 +13,9 @@ const Index = () => {
         <Hero />
         <Services />
         <About />
+        <PartnerCTA />
         <WhyUs />
-        <Testimonials />
-        <ClientLogos />
         <News />
-        <Contact />
       </main>
     </div>
   );

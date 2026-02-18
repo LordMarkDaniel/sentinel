@@ -17,7 +17,7 @@ const Footer = () => {
     company: [
       { name: "À propos", href: "/about" },
       { name: "Notre équipe", href: "/our-team" },
-      { name: "Carrières", href: "/careers" },
+      { name: "Nous rejoindre", href: "/join-us" },
       { name: "Actualités & Blog", href: "/news" },
       { name: "Rapport RSE", href: "/csr-report" },
     ],
@@ -30,7 +30,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-secondary pt-16 pb-8">
+    <footer className="bg-secondary pt-8 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           {/* Brand Column */}
@@ -73,16 +73,16 @@ const Footer = () => {
               </h3>
             </Link>
             <ul className="space-y-3">
-                {footerLinks.services.map((link) => (
-                  <li key={link.name}>
-                    <Link
-                      to={link.href}
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
+              {footerLinks.services.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    to={link.href}
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 

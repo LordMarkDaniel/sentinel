@@ -1,131 +1,113 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, Phone, Shield } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  // Links matching the reference image
   const navLinks = [
-    { name: "Nos services", href: "/discover-services" },
-    { name: "À propos", href: "/about" },
-    { name: "Pourquoi nous choisir", href: "/why-us" },
-    { name: "Actualités", href: "/news" },
+    { name: "Nos métiers", href: "/discover-services" },
+    { name: "Qui sommes-nous ?", href: "/about" },
+    { name: "Nos engagements", href: "/why-us" },
+    { name: "Nous rejoindre", href: "/join-us" },
+    { name: "Blog", href: "/news" },
     { name: "Contact", href: "/contact" },
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-secondary/95 backdrop-blur-sm">
-      {/* Top bar */}
-      <div className="border-b border-border/20 bg-secondary">
-        <div className="container mx-auto px-4 py-2 flex items-center justify-between">
-          <p className="text-sm text-primary">
-            Services de sécurité professionnels 24/7 - Nous vous protégeons !
-          </p>
-          <div className="hidden md:flex items-center gap-4">
-            <a
-              href="tel:+237XXXXXXXXX"
-              className="flex items-center gap-2 text-secondary-foreground hover:text-primary transition-colors"
-            >
-              <Phone className="h-4 w-4" />
-              <span className="font-semibold">+273 697-912-941</span>
-            </a>
-            <span className="text-primary font-bold">· 24/7</span>
-          </div>
-        </div>
-      </div>
-
-      {/* Main navigation */}
-      <nav className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
+    <header className="fixed top-0 left-0 right-0 z-50">
+      {/* 1. Top Tier (Black BG) */}
+      <div className="bg-black border-b border-white/5 shadow-2xl">
+        <div className="container mx-auto px-4 py-3 flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <img src="/mainlogo.png" alt="Sentinel Security Logo" className="h-10 w-10" />
-            <div>
-              <h1 className="text-xl font-display font-bold text-primary">
+          <Link to="/" className="flex items-center gap-2 group">
+            <img
+              src="/mainlogo.png"
+              alt="Sentinel Security Logo"
+              className="h-10 w-auto transition-transform group-hover:scale-105"
+            />
+            <div className="flex flex-col">
+              <span className="text-xl font-display font-bold text-primary tracking-tighter leading-none italic uppercase">
                 SENTINEL
-              </h1>
-              <p className="text-xs text-secondary-foreground tracking-widest">
-                SECURITY & SERVICES
-              </p>
+              </span>
+              <span className="text-[10px] text-primary tracking-[0.3em] font-light leading-none italic uppercase">
+                SECURITE
+              </span>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
-            {navLinks.map((link) =>
-              link.href.startsWith("#") ? (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="text-secondary-foreground hover:text-primary transition-colors font-medium"
-                >
-                  {link.name}
-                </a>
-              ) : (
-                <Link
-                  key={link.name}
-                  to={link.href}
-                  className="text-secondary-foreground hover:text-primary transition-colors font-medium"
-                >
-                  {link.name}
-                </Link>
-              )
-            )}
-          </div>
-
-          {/* CTA Button */}
-          <div className="hidden lg:block">
-            <Link to="/request-quote">
-              <Button className="bg-primary text-primary-foreground hover:bg-accent font-semibold">
-                Demander un devis
-              </Button>
-            </Link>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden text-secondary-foreground"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
-        </div>
-
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="lg:hidden mt-4 pb-4 border-t border-border/20">
-            <div className="flex flex-col gap-4 pt-4">
-              {navLinks.map((link) =>
-                link.href.startsWith("#") ? (
-                  <a
-                    key={link.name}
-                    href={link.href}
-                    className="text-secondary-foreground hover:text-primary transition-colors font-medium"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {link.name}
-                  </a>
-                ) : (
+          <nav className="hidden lg:flex items-center">
+            <ul className="flex items-center">
+              {navLinks.map((link, index) => (
+                <li key={link.name} className="flex items-center">
+                  {index > 0 && (
+                    <span className="text-white/20 mx-3 text-xs font-light">|</span>
+                  )}
                   <Link
-                    key={link.name}
                     to={link.href}
-                    className="text-secondary-foreground hover:text-primary transition-colors font-medium"
-                    onClick={() => setIsMenuOpen(false)}
+                    className="text-white hover:text-primary transition-colors font-bold text-[13px] uppercase tracking-wider"
                   >
                     {link.name}
                   </Link>
-                )
-              )}
-              <Link to="/request-quote" className="w-full">
-                <Button className="bg-primary text-primary-foreground hover:bg-accent font-semibold w-full mt-4">
-                  Demander un devis
-                </Button>
-              </Link>
-            </div>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="lg:hidden text-white"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X className="h-8 w-8 text-primary" /> : <Menu className="h-8 w-8" />}
+          </button>
+        </div>
+      </div>
+
+      {/* 2. Bottom Tier (Yellow BG) */}
+      <div className="bg-primary shadow-lg hidden md:block border-t border-black/5 py-2">
+        <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-2 text-black font-bold text-[13px] uppercase tracking-wide">
+          <p className="opacity-90">
+            Sécurité humaine & télésurveillance, 24/7 au Cameroun - On vous protège !
+          </p>
+          <div className="flex items-center gap-2 md:ml-4 border-l border-black/20 pl-4">
+            <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+            </svg>
+            <span>+237 697-912-941 · 24/24 et 7/7</span>
           </div>
-        )}
-      </nav>
+        </div>
+      </div>
+
+      {/* Mobile Navigation Dropdown */}
+      {isMenuOpen && (
+        <div className="lg:hidden bg-black mt-0 pb-10 pt-4 px-6 fixed inset-x-0 top-[64px] h-[calc(100vh-64px)] overflow-y-auto animate-fade-in z-40">
+          <nav className="flex flex-col space-y-6">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                to={link.href}
+                className="text-white hover:text-primary transition-all font-bold text-2xl uppercase tracking-tighter border-b border-white/5 pb-4"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {link.name}
+              </Link>
+            ))}
+            <Link
+              to="/request-quote"
+              className="mt-6"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <Button className="w-full bg-primary text-black font-bold text-xl py-8 uppercase italic rounded-none shadow-xl">
+                Demander un devis
+              </Button>
+            </Link>
+          </nav>
+        </div>
+      )}
     </header>
   );
 };

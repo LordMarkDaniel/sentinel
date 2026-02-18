@@ -31,6 +31,7 @@ import OurTeam from "@/pages/OurTeam";
 import Careers from "@/pages/Careers";
 import Contact from "@/pages/Contact";
 import CSRReport from "@/pages/CSRReport";
+import JoinUs from "@/pages/JoinUs";
 
 // Legal
 import Legal from "@/pages/Legal";
@@ -73,6 +74,7 @@ const App = () => (
             <Route path="/careers" element={<Careers />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/csr-report" element={<CSRReport />} />
+            <Route path="/join-us" element={<JoinUs />} />
 
             {/* Legal */}
             <Route path="/legal" element={<Legal />} />

@@ -1,90 +1,283 @@
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, CheckCircle } from "lucide-react";
+import { ArrowRight, ChevronRight, Instagram, Facebook, Linkedin } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 const DiscoverServices = () => {
   const navigate = useNavigate();
 
+  // Refs for scroll sections
+  const introRef = useRef(null);
+  const expertiseRef = useRef(null);
+  const innovationRef = useRef(null);
+  const contactRef = useRef(null);
+
+  // Scroll animations for intro
+  const { scrollYProgress: introProgress } = useScroll({
+    target: introRef,
+    offset: ["start start", "end start"]
+  });
+  const introY = useTransform(introProgress, [0, 1], ["0%", "20%"]);
+
+  // Scroll animations for expertise cards
+  const { scrollYProgress: expertiseProgress } = useScroll({
+    target: expertiseRef,
+    offset: ["start end", "end start"]
+  });
+  const expertiseY = useTransform(expertiseProgress, [0, 1], ["-10%", "10%"]);
+
+  // Scroll animations for innovation
+  const { scrollYProgress: innovationProgress } = useScroll({
+    target: innovationRef,
+    offset: ["start end", "end start"]
+  });
+  const innovationY = useTransform(innovationProgress, [0, 1], ["-15%", "15%"]);
+
+  // Scroll animations for contact
+  const { scrollYProgress: contactProgress } = useScroll({
+    target: contactRef,
+    offset: ["start end", "end start"]
+  });
+  const contactY = useTransform(contactProgress, [0, 1], ["-15%", "15%"]);
+
   return (
-    <div className="min-h-screen bg-background pt-32 pb-20">
-      <div className="container mx-auto px-4">
-        <button
-          onClick={() => navigate("/")}
-          className="flex items-center gap-2 text-primary hover:text-accent mb-8 font-semibold"
-        >
-          <ArrowLeft className="h-5 w-5" />
-          Retour à l'accueil
-        </button>
+    <div className="min-h-screen bg-black text-white font-sans overflow-x-hidden">
 
-        <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
-          Découvrez nos <span className="text-primary">services</span>
-        </h1>
-        
-        <p className="text-lg text-muted-foreground mb-16 max-w-2xl">
-          Des solutions de sécurité complètes adaptées à vos besoins. De la surveillance humaine à la télésurveillance 24/7, nous avons ce qu'il vous faut.
-        </p>
+      {/* 1. Intro Section with Label Style Title */}
+      <section ref={introRef} className="relative min-h-[50vh] flex items-center pt-32 overflow-hidden bg-black">
+        <div className="absolute inset-0 z-0">
+          <motion.img
+            style={{ y: introY, scale: 1.1 }}
+            src="/3A.png"
+            alt="Security Perspective"
+            className="w-full h-full object-cover opacity-80"
+          />
+          <div className="absolute inset-0 bg-black/30"></div>
+        </div>
 
-        {/* Grille de services */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-          {[
-            {
-              title: "Surveillance humaine",
-              description: "Personnel de sécurité professionnel pour la protection sur site de vos biens et personnes",
-            },
-            {
-              title: "Télésurveillance 24/7",
-              description: "Surveillance en temps réel via des systèmes de caméras avancés et centres de contrôle",
-            },
-            {
-              title: "Interventions d'alarme",
-              description: "Équipes de réponse rapide prêtes à intervenir sur toute alerte de sécurité dans vos locaux",
-            },
-            {
-              title: "Sécurité incendie (SSIAP)",
-              description: "Agents certifiés et mesures de prévention incendie pour une protection maximale",
-            },
-            {
-              title: "Sécurité d'événements",
-              description: "Gestion professionnelle de la sécurité pour conférences, concerts et événements corporatifs",
-            },
-            {
-              title: "Systèmes d'alarme",
-              description: "Vente et installation de systèmes d'alarme connectés dernier cri et équipements associés",
-            },
-          ].map((service, index) => (
-            <div
-              key={index}
-              className="bg-secondary p-6 rounded-lg border border-border/20 group hover:border-primary/50 hover:bg-primary transition-colors duration-300 hover:shadow-lg"
-            >
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-white transition-colors duration-300">
-                <CheckCircle className="h-6 w-6 text-primary" />
-              </div>
-              <h3 className="text-xl font-display font-bold text-white mb-3">
-                {service.title}
-              </h3>
-              <p className="text-muted-foreground">
-                {service.description}
-              </p>
+        <div className="container mx-auto px-4 z-10 relative">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="max-w-4xl"
+          >
+            <div className="space-y-1">
+              <span className="inline-block bg-white text-black text-lg md:text-2xl lg:text-3xl font-display font-bold px-6 py-1 uppercase tracking-tight">
+                Nos métiers : une sécurité
+              </span><br />
+              <span className="inline-block bg-white text-black text-lg md:text-2xl lg:text-3xl font-display font-bold px-6 py-1 uppercase tracking-tight">
+                globale, sur le terrain
+              </span><br />
+              <span className="inline-block bg-white text-black text-lg md:text-2xl lg:text-3xl font-display font-bold px-6 py-1 uppercase tracking-tight">
+                et à distance
+              </span>
             </div>
+          </motion.div>
+        </div>
+
+        {/* Side Dots (Navigation Indicators from reference) */}
+        <div className="absolute right-10 bottom-10 flex flex-col gap-3 z-20">
+          <div className="w-2 h-2 rounded-full bg-white"></div>
+          <div className="w-2 h-2 rounded-full bg-white/40"></div>
+          <div className="w-2 h-2 rounded-full bg-white/40"></div>
+        </div>
+      </section>
+
+      {/* 2. Structured Offer Description */}
+      <section ref={expertiseRef} className="bg-black py-20 relative px-4 overflow-hidden">
+        <div className="container mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mb-20"
+          >
+            <p className="text-lg md:text-xl font-bold leading-relaxed mb-8">
+              Parce que chaque besoin en sécurité est unique, SENTINEL SECURITY vous propose une offre structurée autour de deux expertises complémentaires : la présence humaine qualifiée sur le terrain et la télésurveillance à distance 24h/24.
+            </p>
+            <p className="text-gray-400 text-lg">
+              À Douala et partout dans la région du Littoral, nous protégeons vos sites, vos biens et vos équipes avec rigueur, réactivité et engagement.
+            </p>
+          </motion.div>
+
+          {/* Core Pillars Grid */}
+          <div className="grid md:grid-cols-2 gap-8 mb-20">
+            {/* Human & Fire Security */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="relative group overflow-hidden bg-gray-900 aspect-[4/3] md:aspect-square"
+            >
+              <motion.img
+                style={{ y: expertiseY, scale: 1.1 }}
+                src="/5A.png"
+                alt="Human Security"
+                className="w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+              <div className="absolute bottom-10 left-0 right-0 px-8 flex justify-center">
+                <Button
+                  onClick={() => navigate("/request-quote")}
+                  className="bg-primary text-black hover:bg-white font-bold rounded-full px-8 py-6 md:py-7 text-xs md:text-sm flex items-center gap-3 transition-all duration-300 w-full max-w-[400px]"
+                >
+                  Surveillance humaine et sécurité incendie
+                  <ArrowRight className="h-5 w-5" />
+                </Button>
+              </div>
+            </motion.div>
+
+            {/* Telesurveillance & Alarms */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="relative group overflow-hidden bg-gray-900 aspect-[4/3] md:aspect-square"
+            >
+              <motion.img
+                style={{ y: expertiseY, scale: 1.1 }}
+                src="/6A.png"
+                alt="Telesurveillance"
+                className="w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+              <div className="absolute bottom-10 left-0 right-0 px-8 flex justify-center">
+                <Button
+                  onClick={() => navigate("/request-quote")}
+                  className="bg-primary text-black hover:bg-white font-bold rounded-full px-8 py-6 md:py-7 text-xs md:text-sm flex items-center gap-3 transition-all duration-300 w-full max-w-[400px]"
+                >
+                  Télésurveillance & Alarme
+                  <ArrowRight className="h-5 w-5" />
+                </Button>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+
+        {/* Floating Social Icons (Reference Style) */}
+        <div className="hidden lg:flex flex-col fixed right-10 top-1/2 -translate-y-1/2 z-40 space-y-4">
+          {[
+            { id: 'instagram', Icon: Instagram },
+            { id: 'facebook', Icon: Facebook },
+            { id: 'linkedin', Icon: Linkedin }
+          ].map(({ id, Icon }) => (
+            <a key={id} href="#" className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary transition-colors hover:border-primary group bg-black/20 backdrop-blur-sm">
+              <span className="sr-only">{id}</span>
+              <Icon className="w-4 h-4 text-white group-hover:text-black transition-colors" />
+            </a>
           ))}
         </div>
+      </section>
 
-        {/* Section CTA */}
-        <div className="bg-security-dark rounded-xl p-8 md:p-12 border border-border/20 text-center">
-          <h2 className="text-3xl font-display font-bold text-white mb-4">
-            Prêt à commencer ?
-          </h2>
-          <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-            Contactez nos experts en sécurité dès aujourd'hui pour discuter des services adaptés à votre organisation.
-          </p>
-          <Button
-            onClick={() => navigate("/request-quote")}
-            className="bg-primary text-primary-foreground hover:bg-white hover:border-primary hover:text-black hover:border font-semibold px-6 py-6 text-lg"
-          >
-            Demander un devis
-          </Button>
+      {/* 3. Innovation Section with Yellow Highlights */}
+      <section ref={innovationRef} className="relative py-32 bg-black overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <motion.img
+            style={{ y: innovationY, scale: 1.1 }}
+            src="/4A.png"
+            alt="Innovative Security"
+            className="w-full h-full object-cover opacity-60"
+          />
+          <div className="absolute inset-0 bg-black/40"></div>
         </div>
-      </div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="mb-12"
+            >
+              <h2 className="text-2xl md:text-4xl font-display font-bold leading-relaxed text-white">
+                <span className="bg-white text-black px-3 py-1 block w-fit mb-1">Une offre de sécurité globale,</span>
+                <span className="bg-white text-black px-3 py-1 block w-fit">augmentée et innovante</span>
+              </h2>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="space-y-6 text-gray-300 text-lg leading-relaxed max-w-2xl mb-12"
+            >
+              <p>
+                Au-delà de la surveillance humaine et de la télésurveillance, <strong>SENTINEL SECURITY</strong> propose une approche globale et innovante de la sécurité privée. Grâce à des solutions connectées, des dispositifs d'alarme intelligents, et une coordination fluide entre nos équipes terrain et notre centre de contrôle.
+              </p>
+              <p>
+                Nous offrons à nos clients un service de <strong>sécurité augmenté</strong>. Cette synergie entre technologie et présence humaine garantit une réactivité optimale, une traçabilité complète des interventions, et une protection adaptée aux enjeux de chaque site.
+              </p>
+            </motion.div>
+
+            <Button
+              className="bg-primary text-black hover:bg-white font-bold rounded-full px-8 py-6 text-base flex items-center gap-3 transition-all duration-300 group shadow-lg"
+              onClick={() => navigate("/why-us")}
+            >
+              Nos engagements
+              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+            </Button>
+          </div>
+        </div>
+
+        {/* Side Dots (Navigation Indicators from reference) */}
+        <div className="absolute right-10 top-1/2 -translate-y-1/2 flex flex-col gap-3 z-20">
+          <div className="w-2 h-2 rounded-full bg-white/40"></div>
+          <div className="w-2 h-2 rounded-full bg-white"></div>
+          <div className="w-2 h-2 rounded-full bg-white/40"></div>
+        </div>
+      </section>
+
+      {/* 4. Bottom Quote CTA Section */}
+      <section ref={contactRef} className="relative py-24 flex items-center justify-center bg-black overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <motion.img
+            style={{ y: contactY, scale: 1.1 }}
+            src="/5lock.jpg"
+            alt="Contact Background"
+            className="w-full h-full object-cover grayscale opacity-50"
+          />
+          <div className="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        <div className="container mx-auto px-4 z-10 relative">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="bg-white text-black p-8 md:p-12 lg:p-16 max-w-3xl mx-auto text-center shadow-2xl rounded-sm"
+          >
+            <h2 className="text-xl md:text-3xl font-display font-bold mb-4">
+              Besoin d'un devis ou d'un conseil en sécurité ?
+            </h2>
+            <p className="text-lg md:text-xl font-light mb-10 text-gray-600">
+              Parlons-en
+            </p>
+            <Button
+              onClick={() => navigate("/request-quote")}
+              className="bg-primary text-black hover:bg-black hover:text-white font-bold rounded-full px-8 py-4 text-base flex items-center gap-3 transition-all duration-300 group mx-auto shadow-lg"
+            >
+              Contacter un expert sécurité
+              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+            </Button>
+          </motion.div>
+        </div>
+
+        {/* Side Dots (Navigation Indicators from reference) */}
+        <div className="absolute right-10 top-1/2 -translate-y-1/2 flex flex-col gap-3 z-20">
+          <div className="w-2 h-2 rounded-full bg-white/40"></div>
+          <div className="w-2 h-2 rounded-full bg-white/40"></div>
+          <div className="w-2 h-2 rounded-full bg-white"></div>
+        </div>
+      </section>
+
     </div>
   );
 };

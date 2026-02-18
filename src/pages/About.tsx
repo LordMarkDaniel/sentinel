@@ -1,124 +1,358 @@
+import { Button } from "@/components/ui/button";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { Shield, Target, Award, Users, Zap, History, CheckCircle2 } from "lucide-react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 const About = () => {
   const navigate = useNavigate();
 
-  const values = [
-    {
-      icon: Shield,
-      title: "Intégrité",
-      summary: "Le fondement de notre confiance.",
-      details: "Nous agissons avec honnêteté et transparence dans toutes nos interactions, garantissant une relation de confiance durable avec nos clients."
-    },
-    {
-      icon: Target,
-      title: "Excellence",
-      summary: "Des standards élevés.",
-      details: "Nous visons la perfection opérationnelle grâce à une formation continue et des protocoles rigoureux."
-    },
-    {
-      icon: Users,
-      title: "Engagement",
-      summary: "Dévoués à votre sécurité.",
-      details: "Notre équipe est totalement investie dans la protection de vos intérêts, disponible et réactive à tout moment."
-    },
-    {
-      icon: Zap,
-      title: "Innovation",
-      summary: "Technologie de pointe.",
-      details: "Nous intégrons les dernières technologies de surveillance et de détection pour garder une longueur d'avance sur les menaces."
-    }
-  ];
+  // Refs for scroll sections
+  const heroRef = useRef(null);
+  const expertiseRef = useRef(null);
+  const servicesRef = useRef(null);
+  const innovationRef = useRef(null);
+  const contactRef = useRef(null);
+
+  // Parallax animations
+  const { scrollYProgress: heroProgress } = useScroll({
+    target: heroRef,
+    offset: ["start start", "end start"]
+  });
+  const heroY = useTransform(heroProgress, [0, 1], ["10%", "30%"]);
+
+  const { scrollYProgress: expertiseProgress } = useScroll({
+    target: expertiseRef,
+    offset: ["start end", "end start"]
+  });
+  const expertiseImgY = useTransform(expertiseProgress, [0, 1], ["-10%", "10%"]);
+
+  const { scrollYProgress: innovationProgress } = useScroll({
+    target: innovationRef,
+    offset: ["start end", "end start"]
+  });
+  const innovationScale = useTransform(innovationProgress, [0, 1], [1, 1.25]);
+
+  const { scrollYProgress: contactProgress } = useScroll({
+    target: contactRef,
+    offset: ["start end", "end start"]
+  });
+  const contactY = useTransform(contactProgress, [0, 1], ["-15%", "15%"]);
 
   return (
-    <div className="min-h-screen bg-background pt-32 pb-20">
-      <div className="container mx-auto px-4">
-        <button onClick={() => navigate(-1)} className="text-primary font-semibold mb-6">← Retour</button>
+    <div className="min-h-screen bg-black text-white font-sans overflow-x-hidden">
 
-        <header className="mb-12 text-center">
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">À propos de <span className="text-primary">Nous</span></h1>
-          <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
-            Sentinel Security & Services fournit des solutions de sécurité de confiance depuis 2002. Nous allions expertise humaine et innovation technologique.
-          </p>
-        </header>
+      {/* 1. Hero Section */}
+      <section ref={heroRef} className="relative min-h-[60vh] flex items-center pt-32 overflow-hidden bg-black border-b border-white/10">
+        <div className="absolute inset-0 z-0">
+          <motion.img
+            style={{ y: heroY, scale: 1.1 }}
+            src="/1A.png"
+            alt="SENTINEL SECURITY Team"
+            className="w-full h-full object-cover opacity-80"
+          />
+          <div className="absolute inset-0 bg-black/30"></div>
+        </div>
 
-        {/* Flip Cards Section - Nos Valeurs */}
-        <div className="mb-20">
-          <h2 className="text-3xl font-display font-bold text-foreground mb-8 text-center">Nos Valeurs Fondamentales</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.map((val, index) => (
-              <div key={index} className="group h-80 w-full [perspective:1000px]">
-                <div className="relative h-full w-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                  {/* Front Face */}
-                  <div className="absolute inset-0 h-full w-full rounded-xl bg-secondary p-6 border border-border/20 flex flex-col items-center justify-center text-center [backface-visibility:hidden] shadow-lg">
-                    <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                      <val.icon className="h-8 w-8 text-primary" />
-                    </div>
-                    <h3 className="text-xl font-display font-bold text-white mb-2">{val.title}</h3>
-                    <p className="text-muted-foreground text-sm">{val.summary}</p>
-                    <p className="mt-4 text-xs text-primary font-semibold opacity-0 group-hover:opacity-100 transition-opacity delay-100">En savoir plus</p>
-                  </div>
+        <div className="container mx-auto px-4 z-10 relative">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="max-w-5xl"
+          >
+            <div className="space-y-1">
+              <span className="inline-block bg-white text-black text-lg md:text-2xl lg:text-3xl font-display font-bold px-4 py-1 uppercase tracking-tight">
+                SENTINEL SECURITY, votre entreprise
+              </span><br />
+              <span className="inline-block bg-white text-black text-lg md:text-2xl lg:text-3xl font-display font-bold px-4 py-1 uppercase tracking-tight">
+                de sécurité privée à Douala, engagée
+              </span><br />
+              <span className="inline-block bg-white text-black text-lg md:text-2xl lg:text-3xl font-display font-bold px-4 py-1 uppercase tracking-tight">
+                à vos côtés depuis plus de 20 ans
+              </span>
+            </div>
+          </motion.div>
+        </div>
+      </section>
 
-                  {/* Back Face */}
-                  <div className="absolute inset-0 h-full w-full rounded-xl bg-primary p-6 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)] [backface-visibility:hidden] shadow-xl">
-                    <h3 className="text-xl font-display font-bold text-primary-foreground mb-4">{val.title}</h3>
-                    <p className="text-primary-foreground/90 text-sm leading-relaxed">{val.details}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
+      {/* 2. Intro Description Section */}
+      <section className="bg-black py-20 px-4">
+        <div className="container mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="max-w-4xl"
+          >
+            <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-8">
+              Basée à Douala, <strong>SENTINEL SECURITY</strong> est une entreprise de sécurité privée reconnue dans toute la région du Littoral. Depuis 2002, nous protégeons les biens, les personnes et les sites sensibles avec professionnalisme, réactivité et rigueur.
+            </p>
+            <p className="text-white text-lg md:text-xl font-bold font-display">
+              Notre mission : proposer des solutions de sécurité humaine et électronique sur mesure, pour les particuliers, les professionnels et les collectivités.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* 3. Expertise Split Sections */}
+      <section ref={expertiseRef} className="bg-white text-black overflow-hidden px-4">
+        {/* Row 1: Text Left, Image Right */}
+        <div className="grid md:grid-cols-2 min-h-[400px]">
+          <div className="flex items-center py-12 md:pr-12 md:pl-0 container mx-auto">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="max-w-xl"
+            >
+              <h2 className="text-xl md:text-2xl font-display font-bold mb-6">
+                Une expertise complète en<br />sécurité privée
+              </h2>
+              <p className="text-sm text-gray-600 mb-4 italic">Notre offre couvre l'ensemble des métiers de la sécurité :</p>
+              <ul className="space-y-2 text-sm text-gray-700 font-medium mb-6">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1.5">•</span>
+                  <span>Surveillance humaine et gardiennage</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1.5">•</span>
+                  <span>Sécurité incendie (agents SSIAP 1, 2 et 3)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1.5">•</span>
+                  <span>Sûreté cynophile (maîtres-chiens)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1.5">•</span>
+                  <span>Télésurveillance 24h/24 – 7j/7</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1.5">•</span>
+                  <span>Systèmes d’alarme connectés</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1.5">•</span>
+                  <span>Sécurité événementielle</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1.5">•</span>
+                  <span>Intervention sur alarme</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1.5">•</span>
+                  <span>Vente, location et installation de systèmes de sécurité</span>
+                </li>
+              </ul>
+              <p className="text-gray-600 leading-relaxed">
+                Notre centre de télésurveillance basé à Douala renforce l'efficacité de notre présence sur le terrain, en assurant une veille permanente et une levée de doute vidéo en temps réel.
+              </p>
+            </motion.div>
+          </div>
+          <div className="relative min-h-[400px] overflow-hidden">
+            <motion.img
+              style={{ y: expertiseImgY, scale: 1.15 }}
+              src="/2A.png"
+              alt="Security Expertise"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
           </div>
         </div>
 
-        {/* History & Mission Section */}
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
-           <div className="relative">
-              <div className="aspect-square rounded-xl overflow-hidden bg-secondary border border-border/20 relative group hover:border-primary/50 transition-colors">
-                 <img 
-                    src="/lock.jpg" 
-                    alt="Security History" 
-                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
-                 />
+        {/* Row 2: Image Left, Text Right */}
+        <div className="grid md:grid-cols-2 min-h-[400px] bg-gray-50">
+          <div className="relative min-h-[300px] overflow-hidden order-2 md:order-1">
+            <motion.img
+              style={{ y: expertiseImgY, scale: 1.15 }}
+              src="/5A.png"
+              alt="Team Security"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
+          <div className="flex items-center py-12 md:pl-12 order-1 md:order-2 container mx-auto">
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="max-w-xl"
+            >
+              <h2 className="text-xl md:text-2xl font-display font-bold mb-6 uppercase">
+                Une entreprise à taille humaine,<br />proche de ses clients
+              </h2>
+              <div className="space-y-4 text-sm text-gray-600 leading-relaxed">
+                <p>
+                  SENTINEL SECURITY est une structure indépendante, de taille intermédiaire, qui privilégie la proximité et la qualité de service. Nos équipes sont disponibles, nos responsables opérationnels restent en lien direct avec les clients, et chaque mission fait l'objet d'un suivi rigoureux.
+                </p>
+                <p className="font-bold text-black">
+                  Grâce à cette organisation agile et réactive, nous sommes capables d'intervenir rapidement sur tout le territoire régional : Douala, Edéa, Kribi, et au-delà selon les besoins.
+                </p>
               </div>
-           </div>
-           <div>
-              <h2 className="text-3xl font-display font-bold text-foreground mb-6">Notre Histoire & Mission</h2>
-              <div className="space-y-6 text-muted-foreground text-lg">
-                <p>
-                  Fondée par des experts de la sécurité, Sentinel Security s'est donnée pour mission de redéfinir les standards de la protection privée. Ce qui a commencé comme une petite agence de gardiennage est devenu un leader régional en solutions de sécurité intégrées.
-                </p>
-                <p>
-                  Notre mission est simple : <strong className="text-primary">Protéger ce qui compte le plus pour vous.</strong> Que ce soit votre famille, votre entreprise ou vos biens, nous déployons des stratégies sur mesure pour garantir votre tranquillité d'esprit.
-                </p>
-                <ul className="space-y-2 mt-4">
-                    {["Certification ISO 9001", "Agrément CNAPS", "Personnel 100% qualifié"].map((item, i) => (
-                        <li key={i} className="flex items-center gap-2 text-sm font-medium text-foreground">
-                            <CheckCircle2 className="h-4 w-4 text-primary" /> {item}
-                        </li>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. Service Blocks Grid (Black BG) */}
+      <section ref={servicesRef} className="bg-black py-32 px-4">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-xl md:text-2xl font-display font-medium text-white italic">
+              Surveillance, sécurité incendie, télésurveillance ... <span className="text-primary not-italic font-bold">Découvrez l'ensemble de nos prestations</span>
+            </h2>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              {
+                lines: ["Surveillance humaine", "et gardiennage"],
+                desc: "Des agents de sécurité qualifiés pour veiller sur vos sites, prévenir les risques et garantir la tranquillité des lieux, de jour comme de nuit.",
+                img: "/4i.jpg"
+              },
+              {
+                lines: ["Sécurité incendie SSIAP", "1, 2 et 3"],
+                desc: "Des agents SSIAP formés pour prévenir les incendies, sécuriser les lieux et intervenir en cas d'urgence.",
+                img: "/istockphoto-1211936303-612x612.jpg"
+              },
+              {
+                lines: ["Dispositif de sécurité", "événementielle"],
+                desc: "Une sécurité discrète et efficace pour vos événements : contrôle d'accès, gestion des flux et protection des publics en toute sérénité.",
+                img: "/2i.jpg"
+              },
+              {
+                lines: ["Sûreté cynophile et", "cynotechniques"],
+                desc: "Des équipes maître-chien pour dissuader, détecter les intrusions et renforcer la sécurité de vos sites sensibles.",
+                img: "/1lock.jpg"
+              }
+            ].map((service, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                viewport={{ once: true }}
+                className="relative group h-[450px] overflow-hidden bg-gray-900 border border-white/5"
+              >
+                <img
+                  src={service.img}
+                  alt={service.lines.join(" ")}
+                  className="absolute inset-0 w-full h-full object-cover opacity-50 transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                <div className="absolute inset-0 p-8 flex flex-col justify-start">
+                  <div className="flex flex-col gap-1 mb-6">
+                    {service.lines.map((line, linIdx) => (
+                      <span key={linIdx} className="bg-primary text-black font-bold px-3 py-1 text-xs md:text-sm self-start uppercase">
+                        {line}
+                      </span>
                     ))}
-                </ul>
-              </div>
-           </div>
+                  </div>
+                  <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    {service.desc}
+                  </p>
+                  <Button
+                    className="bg-primary text-black font-bold rounded-full py-4 px-6 text-sm flex items-center gap-2 hover:bg-white transition-colors duration-300 w-fit"
+                    onClick={() => navigate("/discover-services")}
+                  >
+                    En savoir plus
+                    <ArrowRight className="h-4 w-4" />
+                  </Button>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 5. Innovation Section (Standardized) */}
+      <section ref={innovationRef} className="relative py-32 bg-black overflow-hidden border-t border-white/10">
+        <div className="absolute inset-0 z-0">
+          <motion.img
+            style={{ scale: innovationScale }}
+            src="/4A.png"
+            alt="Innovative Security"
+            className="w-full h-full object-cover opacity-60"
+          />
+          <div className="absolute inset-0 bg-black/50"></div>
         </div>
 
-        {/* Stats Section */}
-        <div className="bg-secondary rounded-xl p-8 border border-border/20">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                {[
-                    { label: "Clients Satisfaits", value: "500+" },
-                    { label: "Agents Qualifiés", value: "150+" },
-                    { label: "Sites Sécurisés", value: "300+" },
-                    { label: "Interventions / an", value: "2000+" }
-                ].map((stat, idx) => (
-                    <div key={idx} className="p-4 hover:bg-white/5 rounded-lg transition-colors">
-                        <div className="text-3xl md:text-4xl font-bold text-primary mb-2">{stat.value}</div>
-                        <div className="text-sm text-muted-foreground font-medium uppercase tracking-wider">{stat.label}</div>
-                    </div>
-                ))}
-            </div>
+        <div className="container mx-auto px-4 relative z-10 text-center md:text-left">
+          <div className="max-w-4xl">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="mb-12"
+            >
+              <h2 className="text-2xl md:text-4xl font-display font-bold leading-relaxed text-white">
+                <span className="bg-white text-black px-3 py-1 block w-fit mb-1">Une offre de sécurité globale,</span>
+                <span className="bg-white text-black px-3 py-1 block w-fit">augmentée et innovante</span>
+              </h2>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="space-y-6 text-gray-300 text-lg leading-relaxed max-w-2xl mb-12 mx-auto md:mx-0"
+            >
+              <p>
+                Au-delà de la surveillance humaine et de la télésurveillance, <strong>SENTINEL SECURITY</strong> propose une approche globale et innovante de la sécurité privée.
+              </p>
+            </motion.div>
+
+            <Button
+              className="bg-primary text-black hover:bg-white font-bold rounded-full px-8 py-6 text-base flex items-center gap-3 transition-all duration-300 group shadow-lg mx-auto md:mx-0"
+              onClick={() => navigate("/why-us")}
+            >
+              Nos engagements
+              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+            </Button>
+          </div>
         </div>
-      </div>
+      </section>
+
+      {/* 6. Bottom Quote CTA (Standardized) */}
+      <section ref={contactRef} className="relative py-24 flex items-center justify-center bg-black overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <motion.img
+            style={{ y: contactY, scale: 1.1 }}
+            src="/2lock.jpg"
+            alt="Contact Grayscale"
+            className="w-full h-full object-cover grayscale opacity-40"
+          />
+          <div className="absolute inset-0 bg-black/60"></div>
+        </div>
+
+        <div className="container mx-auto px-4 z-10 relative">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="bg-white text-black p-8 md:p-12 lg:p-16 max-w-3xl mx-auto text-center shadow-2xl rounded-sm"
+          >
+            <h2 className="text-xl md:text-3xl font-display font-bold mb-4">
+              Besoin d'un devis ou d'un conseil en sécurité ?
+            </h2>
+            <p className="text-lg md:text-xl font-light mb-10 text-gray-600">
+              Parlons-en
+            </p>
+            <Button
+              onClick={() => navigate("/request-quote")}
+              className="bg-primary text-black hover:bg-black hover:text-white font-bold rounded-full px-8 py-4 text-base flex items-center gap-3 transition-all duration-300 group mx-auto shadow-lg"
+            >
+              Contacter un expert sécurité
+              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+            </Button>
+          </motion.div>
+        </div>
+      </section>
+
     </div>
   );
 };

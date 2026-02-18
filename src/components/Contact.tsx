@@ -60,27 +60,6 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        {/* CTA Banner */}
-        <div className="bg-secondary rounded-xl p-8 md:p-12 mb-16 text-center relative overflow-hidden">
-          <div className="absolute inset-0 opacity-5">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,hsl(var(--primary))_0%,transparent_70%)]" />
-          </div>
-          
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-secondary-foreground mb-4 relative z-10">
-            Besoin d'un devis ou de conseils en sécurité ?{" "}
-            <span className="text-primary">Parlons-en</span>
-          </h2>
-          <p className="text-muted-foreground mb-8 max-w-2xl mx-auto relative z-10">
-            Nos experts en sécurité sont prêts à analyser vos besoins et à vous fournir des solutions sur mesure.
-          </p>
-          <Button 
-            onClick={() => navigate("/contact-expert")}
-            size="lg"
-            className="bg-primary text-primary-foreground hover:bg-accent font-semibold relative z-10"
-          >
-            Contacter un expert en sécurité
-          </Button>
-        </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}
@@ -94,7 +73,7 @@ const Contact = () => {
 
             <div className="grid sm:grid-cols-2 gap-6">
               {contactInfo.map((info, index) => (
-                <div 
+                <div
                   key={index}
                   className="bg-muted p-5 rounded-lg border border-border/20 group hover:border-primary/50 hover:bg-primary transition-colors duration-300 hover:shadow-lg"
                 >
@@ -133,7 +112,7 @@ const Contact = () => {
             <h3 className="text-2xl font-display font-bold text-secondary-foreground mb-6">
               Demandez un devis gratuit
             </h3>
-            
+
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid sm:grid-cols-2 gap-5">
                 <div>
@@ -164,7 +143,7 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              
+
               <div className="grid sm:grid-cols-2 gap-5">
                 <div>
                   <label className="text-sm text-muted-foreground mb-2 block">
@@ -206,7 +185,7 @@ const Contact = () => {
                 />
               </div>
 
-              <Button 
+              <Button
                 type="submit"
                 size="lg"
                 className="w-full bg-primary text-primary-foreground hover:bg-accent font-semibold"
