@@ -22,10 +22,10 @@ const About = () => {
         <div className="bg-white text-black p-12 md:p-20 flex flex-col justify-center min-h-[400px]">
           <div className="max-w-lg">
             <p className="text-gray-700 mb-6 leading-relaxed">
-              <strong>SENTINEL CYBER & SERVICES</strong> est un cabinet spécialisé en cybersécurité, basé au Cameroun depuis 2014. Forts de plus de <strong>10 ans d'expérience</strong>, nous intervenons dans tous les domaines clés de la sécurité numérique : tests d'intrusion (pentest), audits de sécurité informatique, gestion des vulnérabilités, SOC & surveillance des menaces 24/7, Red Team, conformité ISO 27001 et protection des données (RGPD).
+              <strong>SENTINEL SECURITY & SERVICES</strong> est un cabinet spécialisé en cybersécurité, basé au Cameroun depuis 2014. Forts de plus de <strong>10 ans d'expérience</strong>, nous intervenons dans tous les domaines clés de la sécurité numérique : tests d'intrusion (pentest), audits de sécurité informatique, gestion des vulnérabilités, SOC & surveillance des menaces 24/7, Red Team, conformité ISO 27001 et protection des données (RGPD).
             </p>
             <p className="text-gray-700 mb-10 leading-relaxed font-bold">
-              Certifié par les autorités compétentes, Sentinel Cyber s'appuie sur une parfaite maîtrise des techniques offensives et défensives, et sur une capacité constante d'adaptation aux nouvelles menaces numériques.
+              Certifié par les autorités compétentes, Sentinel Security s'appuie sur une parfaite maîtrise des techniques offensives et défensives, et sur une capacité constante d'adaptation aux nouvelles menaces numériques.
             </p>
             <Button
               onClick={() => navigate("/about")}

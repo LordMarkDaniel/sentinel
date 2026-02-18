@@ -33,7 +33,7 @@ const Header = () => {
                 SENTINEL
               </span>
               <span className="text-[10px] text-primary tracking-[0.3em] font-light leading-none italic uppercase">
-                CYBER
+                SECURITY
               </span>
             </div>
           </Link>

@@ -96,7 +96,7 @@ const DiscoverServices = () => {
             className="max-w-4xl mb-20"
           >
             <p className="text-lg md:text-xl font-bold leading-relaxed mb-8">
-              Parce que chaque besoin en cybersécurité est unique, SENTINEL CYBER vous propose une offre structurée autour de deux expertises complémentaires : la sécurité offensive (pentest, Red Team) et la sécurité défensive (SOC, audits, conformité).
+              Parce que chaque besoin en cybersécurité est unique, SENTINEL SECURITY vous propose une offre structurée autour de deux expertises complémentaires : la sécurité offensive (pentest, Red Team) et la sécurité défensive (SOC, audits, conformité).
             </p>
             <p className="text-gray-400 text-lg">
               Au Cameroun et partout en Afrique Centrale, nous protégeons vos systèmes, vos données et vos équipes avec rigueur, réactivité et engagement.
@@ -209,7 +209,7 @@ const DiscoverServices = () => {
               className="space-y-6 text-gray-300 text-lg leading-relaxed max-w-2xl mb-12"
             >
               <p>
-                Au-delà du pentest et de la surveillance des menaces, <strong>SENTINEL CYBER</strong> propose une approche globale et innovante de la cybersécurité. Grâce à des solutions de détection avancée, des plateformes d'analyse des menaces intelligentes, et une coordination fluide entre nos équipes offensives et défensives.
+                Au-delà du pentest et de la surveillance des menaces, <strong>SENTINEL SECURITY</strong> propose une approche globale et innovante de la cybersécurité. Grâce à des solutions de détection avancée, des plateformes d'analyse des menaces intelligentes, et une coordination fluide entre nos équipes offensives et défensives.
               </p>
               <p>
                 Nous offrons à nos clients une <strong>protection numérique augmentée</strong>. Cette synergie entre technologie et expertise humaine garantit une réactivité optimale, une traçabilité complète des incidents, et une sécurité adaptée aux enjeux de chaque organisation.

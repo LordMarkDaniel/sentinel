@@ -54,7 +54,7 @@ const WhyUs = () => {
             </h2>
 
             <p className="text-muted-foreground mb-8 text-lg">
-              Alliant technologie de pointe et expertise technique, SENTINEL CYBER accompagne de nombreuses entreprises, institutions et organisations à la recherche d'un partenaire fiable, discret et réactif en matière de cybersécurité.
+              Alliant technologie de pointe et expertise technique, SENTINEL SECURITY accompagne de nombreuses entreprises, institutions et organisations à la recherche d'un partenaire fiable, discret et réactif en matière de cybersécurité.
             </p>
 
             <ul className="space-y-4 mb-8">

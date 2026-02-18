@@ -31,7 +31,7 @@ const RequestQuote = () => {
 
               <div className="space-y-6 text-gray-700 leading-relaxed text-sm md:text-base mb-12">
                 <p>
-                  Que vous soyez une PME souhaitant sécuriser votre système d'information, une institution à la recherche d'un audit de sécurité, ou une organisation ayant besoin d'un test d'intrusion, <strong>SENTINEL CYBER</strong> vous accompagne avec expertise.
+                  Que vous soyez une PME souhaitant sécuriser votre système d'information, une institution à la recherche d'un audit de sécurité, ou une organisation ayant besoin d'un test d'intrusion, <strong>SENTINEL SECURITY</strong> vous accompagne avec expertise.
                 </p>
                 <p>
                   Notre équipe est à votre écoute pour vous conseiller et vous proposer une prestation personnalisée en matière de :
@@ -49,7 +49,7 @@ const RequestQuote = () => {
 
               {/* Company Details */}
               <div className="mt-auto space-y-2 pt-10 border-t border-gray-100">
-                <h3 className="text-xl font-display font-bold text-black">SENTINEL CYBER</h3>
+                <h3 className="text-xl font-display font-bold text-black">SENTINEL SECURITY</h3>
                 <p className="inline-block bg-primary px-2 py-0.5 text-sm font-bold text-black uppercase tracking-wider mb-2">
                   CABINET DE CYBERSÉCURITÉ
                 </p>

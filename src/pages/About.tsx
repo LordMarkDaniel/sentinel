@@ -63,7 +63,7 @@ const About = () => {
           >
             <div className="space-y-1">
               <span className="inline-block bg-white text-black text-lg md:text-2xl lg:text-3xl font-display font-bold px-4 py-1 uppercase tracking-tight">
-                SENTINEL CYBER, votre cabinet
+                SENTINEL SECURITY, votre cabinet
               </span><br />
               <span className="inline-block bg-white text-black text-lg md:text-2xl lg:text-3xl font-display font-bold px-4 py-1 uppercase tracking-tight">
                 de cybersécurité au Cameroun, engagé
@@ -87,7 +87,7 @@ const About = () => {
             className="max-w-4xl"
           >
             <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-8">
-              Basé au Cameroun, <strong>SENTINEL CYBER</strong> est un cabinet de cybersécurité reconnu en Afrique Centrale. Depuis 2014, nous protégeons les systèmes d'information, les données sensibles et les infrastructures numériques avec professionnalisme, réactivité et rigueur.
+              Basé au Cameroun, <strong>SENTINEL SECURITY</strong> est un cabinet de cybersécurité reconnu en Afrique Centrale. Depuis 2014, nous protégeons les systèmes d'information, les données sensibles et les infrastructures numériques avec professionnalisme, réactivité et rigueur.
             </p>
             <p className="text-white text-lg md:text-xl font-bold font-display">
               Notre mission : proposer des solutions de cybersécurité offensives et défensives sur mesure, pour les entreprises, les institutions et les organisations.
@@ -184,7 +184,7 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-sm text-gray-600 leading-relaxed">
                 <p>
-                  SENTINEL CYBER est une structure indépendante, agile, qui privilégie la proximité et la qualité de service. Nos experts sont disponibles, nos responsables techniques restent en lien direct avec les clients, et chaque mission fait l'objet d'un suivi rigoureux.
+                  SENTINEL SECURITY est une structure indépendante, agile, qui privilégie la proximité et la qualité de service. Nos experts sont disponibles, nos responsables techniques restent en lien direct avec les clients, et chaque mission fait l'objet d'un suivi rigoureux.
                 </p>
                 <p className="font-bold text-black">
                   Grâce à cette organisation réactive, nous sommes capables d'intervenir rapidement pour toute organisation au Cameroun et en Afrique Centrale, selon les besoins.
@@ -301,7 +301,7 @@ const About = () => {
               className="space-y-6 text-gray-300 text-lg leading-relaxed max-w-2xl mb-12 mx-auto md:mx-0"
             >
               <p>
-                Au-delà du pentest et de la surveillance des menaces, <strong>SENTINEL CYBER</strong> propose une approche globale et innovante de la cybersécurité.
+                Au-delà du pentest et de la surveillance des menaces, <strong>SENTINEL SECURITY</strong> propose une approche globale et innovante de la cybersécurité.
               </p>
             </motion.div>
 

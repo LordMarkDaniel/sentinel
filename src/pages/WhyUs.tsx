@@ -57,7 +57,7 @@ const WhyUs = () => {
           >
             <div className="space-y-1">
               <span className="inline-block bg-white text-black text-lg md:text-2xl lg:text-3xl font-display font-bold px-4 py-1 uppercase tracking-tight">
-                SENTINEL CYBER : Un cabinet de
+                SENTINEL SECURITY : Un cabinet de
               </span><br />
               <span className="inline-block bg-white text-black text-lg md:text-2xl lg:text-3xl font-display font-bold px-4 py-1 uppercase tracking-tight">
                 cybersécurité éthique, réactif
@@ -80,7 +80,7 @@ const WhyUs = () => {
             className="max-w-4xl mx-auto text-center"
           >
             <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-6 font-light">
-              Chez <strong>SENTINEL CYBER</strong>, notre mission ne s'arrête pas à la protection des systèmes et des données.
+              Chez <strong>SENTINEL SECURITY</strong>, notre mission ne s'arrête pas à la protection des systèmes et des données.
               Nous nous engageons chaque jour pour une cybersécurité plus éthique, plus transparente et plus exigeante,
               au Cameroun et partout en Afrique Centrale.
             </p>
@@ -99,7 +99,7 @@ const WhyUs = () => {
           </div>
 
           <p className="text-gray-300 text-center max-w-4xl mx-auto mb-16 text-base md:text-lg leading-relaxed font-light">
-            Chez <strong>SENTINEL CYBER</strong>, nous considérons que la cybersécurité ne peut être efficace sans éthique,
+            Chez <strong>SENTINEL SECURITY</strong>, nous considérons que la cybersécurité ne peut être efficace sans éthique,
             ni durable sans responsabilité. Nous agissons chaque jour avec la conviction qu'un cabinet de
             cybersécurité peut allier performance technique et impact positif sur ses clients et son territoire.
           </p>
@@ -137,7 +137,7 @@ const WhyUs = () => {
                 <span className="inline-block bg-primary text-black font-bold px-3 py-1 text-lg uppercase">proche de ses clients</span>
               </div>
               <div className="space-y-6 text-gray-700 leading-relaxed">
-                <p><strong>Chez SENTINEL CYBER, l'humain est au cœur de notre stratégie.</strong></p>
+                <p><strong>Chez SENTINEL SECURITY, l'humain est au cœur de notre stratégie.</strong></p>
                 <p>Nous agissons pour que chaque expert soit respecté, reconnu et valorisé dans son parcours. Cela passe par :</p>
                 <ul className="space-y-3 list-disc pl-5">
                   <li>Respect des engagements contractuels</li>

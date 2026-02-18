@@ -42,7 +42,7 @@ const Footer = () => {
                   SENTINEL
                 </h2>
                 <p className="text-xs text-secondary-foreground tracking-widest">
-                  CYBER & SERVICES
+                  SECURITY & SERVICES
                 </p>
               </div>
             </Link>
@@ -129,7 +129,7 @@ const Footer = () => {
         <div className="border-t border-border/20 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-muted-foreground text-sm">
-              © {currentYear} Sentinel Cyber & Services. Tous droits réservés. CYBERIX Arts.
+              © {currentYear} Sentinel Security & Services. Tous droits réservés. CYBERIX Arts.
             </p>
             <div className="flex items-center gap-4">
               <span className="text-muted-foreground text-sm">

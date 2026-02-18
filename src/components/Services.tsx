@@ -21,7 +21,7 @@ const Services = () => {
       <MotionSection className="py-12 container mx-auto px-4 text-center md:text-left">
         <div className="max-w-4xl mx-auto md:mx-0">
           <p className="text-base md:text-lg leading-relaxed mb-6 text-gray-300">
-            Basée au <strong className="text-white">Cameroun et en Afrique Centrale</strong>, Sentinel Cyber accompagne les entreprises,
+            Basée au <strong className="text-white">Cameroun et en Afrique Centrale</strong>, Sentinel Security accompagne les entreprises,
             institutions et organisations dans la protection de leurs systèmes d'information, données sensibles et infrastructures numériques.
           </p>
           <p className="text-base md:text-lg leading-relaxed mb-8 text-gray-300">
@@ -30,7 +30,7 @@ const Services = () => {
             notre cabinet propose des solutions sur mesure, adaptées aux enjeux de chaque organisation.
           </p>
           <p className="text-base md:text-lg leading-relaxed mb-8 text-gray-300">
-            Grâce à une expertise technique pointue, des équipes certifiées et une réactivité optimale, Sentinel Cyber intervient rapidement pour
+            Grâce à une expertise technique pointue, des équipes certifiées et une réactivité optimale, Sentinel Security intervient rapidement pour
             sécuriser vos systèmes, applications, réseaux et environnements cloud.
           </p>
 
@@ -51,7 +51,7 @@ const Services = () => {
         </h2>
 
         <p className="text-gray-300 max-w-4xl mb-12 text-base md:text-lg">
-          Sentinel Cyber met à votre disposition des solutions de cybersécurité complètes. Nos experts assurent
+          Sentinel Security met à votre disposition des solutions de cybersécurité complètes. Nos experts assurent
           <strong className="text-white"> les tests d'intrusion de vos systèmes et applications</strong>, ainsi qu'un service de
           <strong className="text-white"> surveillance des menaces 24h/24</strong>. Grâce à des analystes certifiés et à une technologie de pointe,
           nous garantissons une protection fiable de vos actifs numériques.
@@ -193,7 +193,7 @@ const Services = () => {
 
               <div className="mt-8 md:pl-4">
                 <p className="text-white mb-8 text-lg leading-relaxed shadow-black drop-shadow-md">
-                  Au-delà de la surveillance humaine et de la télésurveillance, Sentinel Security propose une approche globale et innovante de la sécurité privée. Grâce à des solutions connectées, des dispositifs d’alarme intelligents, et une coordination fluide entre nos équipes terrain et notre centre de contrôle, nous offrons à nos clients un service de sécurité augmenté. Cette synergie entre technologie et présence humaine garantit une réactivité optimale, une traçabilité complète des interventions, et une protection adaptée aux enjeux de chaque site.
+                  Au-delà du pentest et de la surveillance des menaces, Sentinel Security propose une approche globale et innovante de la cybersécurité. Grâce à des solutions de détection avancée, des plateformes d'analyse des menaces intelligentes, et une coordination fluide entre nos équipes offensives et défensives, nous offrons à nos clients une protection augmentée. Cette synergie entre technologie et expertise humaine garantit une réactivité optimale, une traçabilité complète des incidents, et une sécurité adaptée aux enjeux de chaque organisation.
                 </p>
                 <div>
                   <Button

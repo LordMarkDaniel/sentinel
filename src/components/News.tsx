@@ -24,7 +24,7 @@ const newsArticles = [
   {
     id: 4,
     title: "Sentinel Cyber inaugure son centre SOC : un service de surveillance des menaces 24/7 à la pointe de la réactivité",
-    excerpt: "C'est officiel : le centre opérationnel de sécurité (SOC) SENTINEL CYBER est désormais pleinement opérationnel. Une avancée majeure dans la protection numérique de nos clients, offrant une réactivité...",
+    excerpt: "C'est officiel : le centre opérationnel de sécurité (SOC) SENTINEL SECURITY est désormais pleinement opérationnel. Une avancée majeure dans la protection numérique de nos clients, offrant une réactivité...",
     image: "/4i.jpg",
   },
 ];

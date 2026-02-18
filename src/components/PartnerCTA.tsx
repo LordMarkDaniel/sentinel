@@ -23,10 +23,10 @@ const PartnerCTA = () => {
                 <div className="bg-white text-black p-12 md:p-20 flex flex-col justify-center min-h-[400px]">
                     <div className="max-w-lg">
                         <p className="text-gray-700 mb-6 leading-relaxed">
-                            Alliant technologie de pointe et expertise technique, <strong>SENTINEL CYBER</strong> accompagne au quotidien de nombreuses entreprises, institutions et organisations à la recherche d'un partenaire fiable, discret et réactif en matière de cybersécurité. Sa structure agile lui permet de rester au plus proche des besoins de chaque client, avec une disponibilité 24h/24 et une écoute permanente.
+                            Alliant technologie de pointe et expertise technique, <strong>SENTINEL SECURITY</strong> accompagne au quotidien de nombreuses entreprises, institutions et organisations à la recherche d'un partenaire fiable, discret et réactif en matière de cybersécurité. Sa structure agile lui permet de rester au plus proche des besoins de chaque client, avec une disponibilité 24h/24 et une écoute permanente.
                         </p>
                         <p className="text-gray-700 mb-10 leading-relaxed font-bold">
-                            Basé au Cameroun, SENTINEL CYBER intervient pour les acteurs économiques locaux comme pour les organisations à forts enjeux numériques, avec une approche adaptée au contexte africain et aux standards internationaux.
+                            Basé au Cameroun, SENTINEL SECURITY intervient pour les acteurs économiques locaux comme pour les organisations à forts enjeux numériques, avec une approche adaptée au contexte africain et aux standards internationaux.
                         </p>
                         <Button
                             onClick={() => navigate("/about")}
