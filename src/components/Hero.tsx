@@ -19,10 +19,10 @@ const Hero = () => {
         <div className="container mx-auto max-w-4xl">
           {/* Main Heading */}
           <h1 className="font-display font-bold text-black leading-tight mb-8" style={{ fontSize: '2rem' }}>
-            <span className="block">Entreprise de sécurité privée à Douala</span>
-            <span className="block">et dans le Littoral : gardiennage,</span>
-            <span className="block">surveillance humaine, sécurité incendie</span>
-            <span className="block">SSIAP, alarmes et télésurveillance</span>
+            <span className="block">Cabinet de cybersécurité au Cameroun :</span>
+            <span className="block">tests d'intrusion, audits de sécurité,</span>
+            <span className="block">gestion des vulnérabilités, conformité</span>
+            <span className="block">ISO 27001 & protection des données</span>
           </h1>
 
           {/* CTA Button */}
@@ -32,7 +32,7 @@ const Hero = () => {
                 size="lg"
                 className="bg-black text-primary hover:bg-black/90 font-bold text-lg px-10 py-7 rounded-full shadow-lg border-2 border-transparent hover:border-primary transition-all duration-300 transform hover:scale-105"
               >
-                Demander un devis
+                Demander un audit gratuit
               </Button>
             </Link>
           </div>

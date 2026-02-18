@@ -12,7 +12,7 @@ const About = () => {
         <div className="bg-black text-white p-12 md:p-20 flex flex-col justify-center min-h-[400px]">
           <div className="max-w-md">
             <h2 className="text-4xl md:text-5xl font-display font-bold leading-tight mb-8">
-              Expert en sécurité privée à Douala depuis plus de 20 ans
+              Expert en cybersécurité au Cameroun depuis plus de 10 ans
             </h2>
             <div className="w-12 h-1 bg-white mb-4"></div>
           </div>
@@ -22,10 +22,10 @@ const About = () => {
         <div className="bg-white text-black p-12 md:p-20 flex flex-col justify-center min-h-[400px]">
           <div className="max-w-lg">
             <p className="text-gray-700 mb-6 leading-relaxed">
-              <strong>SENTINEL SECURITY & SERVICES</strong> est une entreprise spécialisée dans la sécurité privée des biens et des personnes, implantée à Douala depuis 2002. Forts de plus de <strong>20 ans d'expérience</strong>, elle intervient dans tous les domaines clés de la sécurité : surveillance humaine (gardiennage), télésurveillance 24h/24, interventions sur alarme, sécurité incendie (agents SSIAP), sécurité événementielle, ainsi que la vente et l'installation de systèmes d'alarme connectés.
+              <strong>SENTINEL CYBER & SERVICES</strong> est un cabinet spécialisé en cybersécurité, basé au Cameroun depuis 2014. Forts de plus de <strong>10 ans d'expérience</strong>, nous intervenons dans tous les domaines clés de la sécurité numérique : tests d'intrusion (pentest), audits de sécurité informatique, gestion des vulnérabilités, SOC & surveillance des menaces 24/7, Red Team, conformité ISO 27001 et protection des données (RGPD).
             </p>
             <p className="text-gray-700 mb-10 leading-relaxed font-bold">
-              Agréée par les autorités compétentes, Sentinel Security s'appuie sur une parfaite connaissance de son secteur et sur une capacité constante d'adaptation aux nouveaux enjeux de sûreté.
+              Certifié par les autorités compétentes, Sentinel Cyber s'appuie sur une parfaite maîtrise des techniques offensives et défensives, et sur une capacité constante d'adaptation aux nouvelles menaces numériques.
             </p>
             <Button
               onClick={() => navigate("/about")}
@@ -56,14 +56,14 @@ const About = () => {
 
           <div className="max-w-md text-center md:text-left flex flex-col items-center md:items-end w-full">
             <h3 className="text-3xl md:text-4xl font-display font-bold mb-10 leading-tight md:text-right">
-              Responsabilité, éthique, engagements : découvrez comment nous agissons.
+              Éthique, conformité, engagements : découvrez comment nous agissons.
             </h3>
 
             <Button
               onClick={() => navigate("/our-commitments")}
               className="bg-white text-black hover:bg-primary hover:text-black font-bold rounded-full px-8 py-4 w-full md:w-fit transition-all duration-300"
             >
-              Contactez-nous pour obtenir notre rapport RSE
+              Contactez-nous pour notre rapport de transparence
             </Button>
           </div>
         </div>

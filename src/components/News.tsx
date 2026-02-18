@@ -5,26 +5,26 @@ import MotionSection from "@/components/MotionSection";
 const newsArticles = [
   {
     id: 1,
-    title: "Installation alarme et télésurveillance à Douala : sécuriser durablement son domicile ou ses locaux professionnels",
-    excerpt: "Installation alarme et télésurveillance à Douala : cette recherche est aujourd'hui au cœur des préoccupations des entreprises comme des particuliers. Face à la multiplication des risques d'intrusion, de cambriolage ou de dégradation, sécuriser efficacement son...",
+    title: "Pentest au Cameroun : pourquoi tester la sécurité de votre système d'information est devenu indispensable",
+    excerpt: "Les cyberattaques se multiplient en Afrique Centrale. Face à la montée des ransomwares, des attaques par phishing et des intrusions ciblées, les entreprises camerounaises doivent impérativement évaluer la robustesse de leurs systèmes d'information...",
     image: "/1i.jpg",
   },
   {
     id: 2,
-    title: "Comment bien sécuriser sa maison au Cameroun ? Alarme, télésurveillance et conseils locaux",
-    excerpt: "Vous habitez à Douala, Yaoundé, Edéa ou dans une autre ville et vous vous interrogez sur la meilleure manière de protéger votre domicile contre les intrusions ? Face à la montée des risques (cambriolages, dégradations, vols...), sécuriser son...",
+    title: "Comment protéger les données de votre entreprise au Cameroun ? RGPD, chiffrement et bonnes pratiques",
+    excerpt: "La protection des données personnelles est un enjeu majeur pour toutes les organisations. Que vous soyez une PME à Douala, une institution à Yaoundé ou une multinationale, la mise en conformité RGPD et la sécurisation de vos données sont essentielles...",
     image: "/2i.jpg",
   },
   {
     id: 3,
-    title: "Télésurveillance en entreprise : 5 conseils pour protéger efficacement vos locaux 24h/24 avec Escort Sécurité",
-    excerpt: "La sécurité des locaux professionnels est un enjeu stratégique pour toutes les entreprises. Cambriolages, intrusions, dégradations, actes malveillants ou risques techniques : les menaces sont nombreuses et ne préviennent pas...",
+    title: "SOC en entreprise : 5 raisons d'établir un centre opérationnel de sécurité pour surveiller vos systèmes 24h/24",
+    excerpt: "La sécurité des systèmes d'information est un enjeu stratégique pour toutes les organisations. Ransomwares, intrusions, exfiltration de données, attaques zero-day : les menaces sont nombreuses et ne préviennent pas...",
     image: "/3i.jpg",
   },
   {
     id: 4,
-    title: "Escort Sécurité inaugure son centre de télésurveillance : un service de protection 24/7 à la pointe de la réactivité",
-    excerpt: "C'est officiel : le centre de télésurveillance ESCORT SÉCURITÉ GLOBAL TECHNOLOGIES est désormais pleinement opérationnel. Une avancée majeure dans la protection de nos clients, offrant une réactivité...",
+    title: "Sentinel Cyber inaugure son centre SOC : un service de surveillance des menaces 24/7 à la pointe de la réactivité",
+    excerpt: "C'est officiel : le centre opérationnel de sécurité (SOC) SENTINEL CYBER est désormais pleinement opérationnel. Une avancée majeure dans la protection numérique de nos clients, offrant une réactivité...",
     image: "/4i.jpg",
   },
 ];
@@ -38,7 +38,7 @@ const News = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-3xl font-display font-bold text-black uppercase tracking-wider">
-            Nos actualités et conseils en sécurité privée
+            Nos actualités et conseils en cybersécurité
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto mt-4"></div>
         </div>
@@ -85,7 +85,7 @@ const News = () => {
             onClick={() => navigate("/news")}
             className="inline-flex items-center gap-3 text-black font-bold hover:text-primary transition-all uppercase tracking-[0.2em] text-xs py-3 px-8 border border-black/10 hover:border-primary rounded-full group bg-white shadow-sm"
           >
-            Voir tous nos conseils
+            Voir tous nos articles
             <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
           </button>
         </div>

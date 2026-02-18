@@ -3,24 +3,24 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 
 const testimonials = [
   {
-    quote: "Sentinel Security a transformé notre approche de la sécurité. Leur expertise est inégalée.",
-    author: "John Doe, PDG de TechCorp"
+    quote: "Sentinel Cyber a transformé notre approche de la sécurité informatique. Leur pentest a révélé des vulnérabilités critiques que nous ignorions.",
+    author: "Jean-Marc Essono, DSI de TechAfrique"
   },
   {
-    quote: "Fiables, professionnels et toujours à l'heure. Je recommande vivement leurs services.",
-    author: "Jane Smith, Responsable des Opérations"
+    quote: "Professionnels, discrets et extrêmement compétents. Leur audit ISO 27001 nous a permis d'obtenir notre certification en un temps record.",
+    author: "Marie Nguema, Responsable Sécurité SI"
   },
   {
-    quote: "Le dévouement de l'équipe envers la sûreté et la sécurité est évident dans tout ce qu'ils font.",
-    author: "Mike Johnson, Directeur des Installations"
+    quote: "Le SOC de Sentinel Cyber a détecté une tentative d'intrusion en temps réel. Leur réactivité a évité une catastrophe pour notre entreprise.",
+    author: "Paul Kamga, Directeur des Systèmes d'Information"
   },
   {
-    quote: "Un service exceptionnel qui a dépassé nos attentes. De vrais professionnels.",
-    author: "Sarah Wilson, Directrice RH"
+    quote: "Un service exceptionnel qui a dépassé nos attentes. Leur rapport de pentest était détaillé, clair et actionnable immédiatement.",
+    author: "Aline Biyong, Directrice des Opérations"
   },
   {
-    quote: "Sentinel Security offre une tranquillité d'esprit grâce à ses solutions complètes.",
-    author: "David Brown, Propriétaire"
+    quote: "Sentinel Cyber offre une tranquillité d'esprit incomparable grâce à sa surveillance continue et ses expertises en cybersécurité.",
+    author: "David Mbarga, PDG d'une fintech camerounaise"
   }
 ];
 
@@ -31,7 +31,7 @@ const Testimonials = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-display font-bold text-foreground mb-4">Ce que disent nos clients</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Découvrez les témoignages de nos clients satisfaits de leur expérience avec Sentinel Security.
+            Découvrez les témoignages de nos clients satisfaits de nos prestations en cybersécurité, pentest et audits.
           </p>
         </div>
 

@@ -8,10 +8,10 @@ const Header = () => {
 
   // Links matching the reference image
   const navLinks = [
-    { name: "Nos métiers", href: "/discover-services" },
+    { name: "Nos services", href: "/discover-services" },
     { name: "Qui sommes-nous ?", href: "/about" },
-    { name: "Nos engagements", href: "/why-us" },
-    { name: "Nous rejoindre", href: "/join-us" },
+    { name: "Notre approche", href: "/why-us" },
+    { name: "Rejoindre l'équipe", href: "/join-us" },
     { name: "Blog", href: "/news" },
     { name: "Contact", href: "/contact" },
   ];
@@ -33,7 +33,7 @@ const Header = () => {
                 SENTINEL
               </span>
               <span className="text-[10px] text-primary tracking-[0.3em] font-light leading-none italic uppercase">
-                SECURITE
+                CYBER
               </span>
             </div>
           </Link>
@@ -71,7 +71,7 @@ const Header = () => {
       <div className="bg-primary shadow-lg hidden md:block border-t border-black/5 py-2">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-2 text-black font-bold text-[13px] uppercase tracking-wide">
           <p className="opacity-90">
-            Sécurité humaine & télésurveillance, 24/7 au Cameroun - On vous protège !
+            Protection numérique 24/7 — Pentest, Audits & Conformité au Cameroun
           </p>
           <div className="flex items-center gap-2 md:ml-4 border-l border-black/20 pl-4">
             <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg">
@@ -102,7 +102,7 @@ const Header = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               <Button className="w-full bg-primary text-black font-bold text-xl py-8 uppercase italic rounded-none shadow-xl">
-                Demander un devis
+                Demander un audit
               </Button>
             </Link>
           </nav>

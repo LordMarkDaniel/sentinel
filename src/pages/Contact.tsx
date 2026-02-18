@@ -12,7 +12,7 @@ const RequestQuote = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl">
             <h1 className="text-3xl md:text-5xl font-display font-bold leading-tight">
-              Besoin d'un devis, d'un conseil en sécurité ou d'une intervention rapide à Douala et ses environs ?
+              Besoin d'un audit, d'un pentest ou d'un conseil en cybersécurité au Cameroun ?
             </h1>
           </div>
         </div>
@@ -26,32 +26,32 @@ const RequestQuote = () => {
             {/* Left Column: Context & Info */}
             <div className="flex flex-col">
               <h2 className="text-xl md:text-2xl font-display font-medium text-black mb-10 leading-relaxed">
-                Vous recherchez une entreprise de sécurité privée à Douala fiable, réactive et proche de vos enjeux ?
+                Vous recherchez un cabinet de cybersécurité au Cameroun fiable, réactif et proche de vos enjeux numériques ?
               </h2>
 
               <div className="space-y-6 text-gray-700 leading-relaxed text-sm md:text-base mb-12">
                 <p>
-                  Que vous soyez un particulier souhaitant sécuriser votre domicile, un professionnel à la recherche d'un service de gardiennage, ou une collectivité ayant besoin d'un dispositif de sécurité ponctuel ou permanent, <strong>SENTINEL SECURITY</strong> vous accompagne avec expertise.
+                  Que vous soyez une PME souhaitant sécuriser votre système d'information, une institution à la recherche d'un audit de sécurité, ou une organisation ayant besoin d'un test d'intrusion, <strong>SENTINEL CYBER</strong> vous accompagne avec expertise.
                 </p>
                 <p>
-                  Notre équipe est à votre écoute pour vous conseiller et vous proposer un devis personnalisé en matière de :
+                  Notre équipe est à votre écoute pour vous conseiller et vous proposer une prestation personnalisée en matière de :
                 </p>
 
                 <ul className="space-y-3 pl-2 border-l-2 border-gray-100 italic">
-                  <li>• Surveillance humaine et gardiennage</li>
-                  <li>• Télésurveillance et alarmes connectées</li>
-                  <li>• Sécurité incendie (agents SSIAP)</li>
-                  <li>• Sûreté cynophile (maitres-chiens)</li>
-                  <li>• Sécurité événementielle</li>
-                  <li>• Interventions sur alarme</li>
+                  <li>• Tests d'intrusion (Pentest web, réseau, mobile)</li>
+                  <li>• Audits de sécurité informatique</li>
+                  <li>• Red Team & simulation d'attaques</li>
+                  <li>• SOC & Surveillance des menaces 24/7</li>
+                  <li>• Gestion des vulnérabilités</li>
+                  <li>• Conformité ISO 27001 & RGPD</li>
                 </ul>
               </div>
 
               {/* Company Details */}
               <div className="mt-auto space-y-2 pt-10 border-t border-gray-100">
-                <h3 className="text-xl font-display font-bold text-black">SENTINEL SECURITY</h3>
+                <h3 className="text-xl font-display font-bold text-black">SENTINEL CYBER</h3>
                 <p className="inline-block bg-primary px-2 py-0.5 text-sm font-bold text-black uppercase tracking-wider mb-2">
-                  SOCIÉTÉ DE SÉCURITÉ PRIVÉE
+                  CABINET DE CYBERSÉCURITÉ
                 </p>
                 <p className="text-gray-600">31 avenue des Droits de l'Homme</p>
                 <p className="text-gray-600">Douala, Cameroun</p>
@@ -118,12 +118,13 @@ const RequestQuote = () => {
                   <div className="relative">
                     <select className="w-full border-2 border-black p-3 outline-none appearance-none bg-white focus:bg-gray-50 transition-colors">
                       <option>Veuillez choisir une option</option>
-                      <option>Surveillance humaine</option>
-                      <option>Télésurveillance</option>
-                      <option>Sécurité Incendie</option>
-                      <option>Maîtres-chiens</option>
-                      <option>Événementiel</option>
-                      <option>Intervention</option>
+                      <option>Tests d'intrusion (Pentest)</option>
+                      <option>Audit de sécurité informatique</option>
+                      <option>Red Team & simulation d'attaques</option>
+                      <option>SOC & Surveillance des menaces</option>
+                      <option>Gestion des vulnérabilités</option>
+                      <option>Conformité ISO 27001 / RGPD</option>
+                      <option>Conseil & Formation</option>
                     </select>
                     <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 h-5 w-5 pointer-events-none" />
                   </div>

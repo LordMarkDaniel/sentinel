@@ -21,24 +21,24 @@ const Services = () => {
       <MotionSection className="py-12 container mx-auto px-4 text-center md:text-left">
         <div className="max-w-4xl mx-auto md:mx-0">
           <p className="text-base md:text-lg leading-relaxed mb-6 text-gray-300">
-            Implantée à <strong className="text-white">Douala et Yaoundé</strong>, Sentinel Security accompagne les entreprises,
-            collectivités et particuliers dans la protection des biens et des personnes sur l'ensemble du territoire national.
+            Basée au <strong className="text-white">Cameroun et en Afrique Centrale</strong>, Sentinel Cyber accompagne les entreprises,
+            institutions et organisations dans la protection de leurs systèmes d'information, données sensibles et infrastructures numériques.
           </p>
           <p className="text-base md:text-lg leading-relaxed mb-8 text-gray-300">
-            Spécialisée en <strong className="text-white">surveillance humaine (gardiennage)</strong>, en sécurité incendie,
-            télésurveillance et installation de systèmes de <strong className="text-white">sécurité</strong> (alarmes, vidéoprotection, contrôle d'accès),
-            notre entreprise propose des solutions sur mesure, adaptées aux enjeux de chaque site et conformes aux exigences réglementaires.
+            Spécialisée en <strong className="text-white">tests d'intrusion (pentest)</strong>, en audits de sécurité informatique,
+            surveillance des menaces et conformité réglementaire <strong className="text-white">(ISO 27001, RGPD)</strong>,
+            notre cabinet propose des solutions sur mesure, adaptées aux enjeux de chaque organisation.
           </p>
           <p className="text-base md:text-lg leading-relaxed mb-8 text-gray-300">
-            Grâce à une présence locale, des équipes qualifiées et une réactivité terrain, Sentinel Security intervient rapidement pour
-            sécuriser vos locaux, chantiers, événements ou habitations.
+            Grâce à une expertise technique pointue, des équipes certifiées et une réactivité optimale, Sentinel Cyber intervient rapidement pour
+            sécuriser vos systèmes, applications, réseaux et environnements cloud.
           </p>
 
           <Button
             onClick={() => navigate("/discover-services")}
             className="bg-primary text-black hover:bg-primary/90 font-bold rounded-full px-8 py-4 text-base group"
           >
-            Découvrez nos métiers
+            Découvrez nos services
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>
@@ -47,24 +47,24 @@ const Services = () => {
       {/* 2. Highlights Section */}
       <section className="py-10 container mx-auto px-4">
         <h2 className="text-2xl md:text-4xl font-display font-bold mb-10 inline-block bg-white text-black px-4 py-2 transform -skew-x-6">
-          Surveillance humaine et télésurveillance 24h/24
+          Pentest & Audits de Sécurité Informatique
         </h2>
 
         <p className="text-gray-300 max-w-4xl mb-12 text-base md:text-lg">
-          Sentinel Security met à votre disposition des solutions de sécurité privée complètes. Nos équipes assurent
-          <strong className="text-white"> la surveillance humaine de vos sites professionnels</strong>, ainsi qu'un service de
-          <strong className="text-white"> télésurveillance 24h/24</strong>. Grâce à des agents formés et à une technologie de pointe,
-          nous garantissons une protection fiable.
+          Sentinel Cyber met à votre disposition des solutions de cybersécurité complètes. Nos experts assurent
+          <strong className="text-white"> les tests d'intrusion de vos systèmes et applications</strong>, ainsi qu'un service de
+          <strong className="text-white"> surveillance des menaces 24h/24</strong>. Grâce à des analystes certifiés et à une technologie de pointe,
+          nous garantissons une protection fiable de vos actifs numériques.
         </p>
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Highlight 1 */}
           <div className="relative group overflow-hidden h-[320px] rounded-lg cursor-pointer" onClick={() => navigate('/human-surveillance')}>
-            <img src="/1i.jpg" alt="Surveillance Humaine" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            <img src="/1i.jpg" alt="Tests d'intrusion" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
             <div className="absolute bottom-8 left-8 right-8">
               <Button className="w-full justify-between bg-primary text-black hover:bg-white hover:text-black font-bold text-sm py-4 rounded-full group-hover:px-8 transition-all duration-300">
-                Surveillance humaine et sécurité incendie
+                Tests d'intrusion & Audits de sécurité
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
@@ -72,11 +72,11 @@ const Services = () => {
 
           {/* Highlight 2 */}
           <div className="relative group overflow-hidden h-[320px] rounded-lg cursor-pointer" onClick={() => navigate('/remote-monitoring')}>
-            <img src="/4lock.jpg" alt="Télésurveillance" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            <img src="/4lock.jpg" alt="SOC & Surveillance" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
             <div className="absolute bottom-8 left-8 right-8">
               <Button className="w-full justify-between bg-primary text-black hover:bg-white hover:text-black font-bold text-sm py-4 rounded-full group-hover:px-8 transition-all duration-300">
-                Télésurveillance & Alarme
+                SOC & Surveillance des menaces 24/7
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
@@ -90,50 +90,50 @@ const Services = () => {
       {/* 4. Service Grid Section */}
       <section className="pt-16 pb-8 container mx-auto px-4">
         <h2 className="text-xl md:text-2xl font-display font-bold mb-12 text-white">
-          Surveillance, sécurité incendie, télésurveillance ... <span className="font-normal">Découvrez l'ensemble de nos prestations</span>
+          Pentest, audits, SOC, conformité ... <span className="font-normal">Découvrez l'ensemble de nos prestations cyber</span>
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8">
           {[
             {
-              line1: "Surveillance humaine",
-              line2: "et gardiennage",
-              desc: "Des agents qualifiés pour veiller sur vos sites et garantir la tranquillité.",
+              line1: "Tests d'intrusion",
+              line2: "(Pentest)",
+              desc: "Des experts certifiés pour tester la résistance de vos systèmes et identifier les vulnérabilités avant les attaquants.",
               img: "/1i.jpg",
               link: "/human-surveillance"
             },
             {
-              line1: "Sécurité incendie",
-              line2: "SSIAP 1, 2 et 3",
-              desc: "Des agents SSIAP formés pour prévenir les incendies et intervenir.",
+              line1: "Audits de sécurité",
+              line2: "informatique",
+              desc: "Des audits complets pour évaluer la maturité de votre système d'information et identifier les risques critiques.",
               img: "/3i.jpg",
               link: "/fire-safety"
             },
             {
-              line1: "Dispositif de sécurité",
-              line2: "événementielle",
-              desc: "Une sécurité discrète et efficace pour vos événements.",
+              line1: "Évaluation des menaces",
+              line2: "& Red Team",
+              desc: "Des simulations d'attaques réalistes pour tester vos défenses et la réactivité de vos équipes sécurité.",
               img: "/1A.png",
               link: "/event-security"
             },
             {
-              line1: "Sûreté cynophile",
-              line2: "et cynotechniques",
-              desc: "Des équipes maître-chien pour dissuader et détecter les intrusions.",
+              line1: "Gestion des",
+              line2: "vulnérabilités",
+              desc: "Un programme structuré pour détecter, prioriser et corriger les vulnérabilités de vos systèmes en continu.",
               img: "/4i.jpg",
               link: "/k9-security"
             },
             {
-              line1: "Télésurveillance",
-              line2: "24h/24 et 7j/7",
-              desc: "Des systèmes d'alarme connectés à notre centre de télésurveillance pour une protection 24h/24 et des interventions rapides.",
+              line1: "SOC & Surveillance",
+              line2: "des menaces 24/7",
+              desc: "Un centre opérationnel de sécurité connecté à vos systèmes pour une détection et une réponse aux incidents en temps réel.",
               img: "/4lock.jpg",
               link: "/remote-monitoring"
             },
             {
-              line1: "Installation de",
-              line2: "systèmes d'alarme",
-              desc: "De la vente et location d'alarmes à l'installation, nous vous offrons des solutions complètes pour sécuriser vos biens pour les professionnels et les particuliers.",
+              line1: "Conformité &",
+              line2: "Conseil (ISO 27001, RGPD)",
+              desc: "Accompagnement dans la mise en conformité réglementaire et l'obtention de certifications de sécurité reconnues.",
               img: "/5lock.jpg",
               link: "/alarm-systems"
             }
@@ -184,10 +184,10 @@ const Services = () => {
             <div className="transform skew-x-3">
               <div className="flex flex-col items-start gap-4 mb-6">
                 <h2 className="text-xl md:text-2xl font-display font-bold text-black leading-tight bg-white px-4 py-2 inline-block transform -skew-x-6">
-                  Une offre de sécurité globale,
+                  Une cybersécurité globale,
                 </h2>
                 <h2 className="text-xl md:text-2xl font-display font-bold text-black leading-tight bg-white px-4 py-2 inline-block transform -skew-x-6">
-                  augmentée et innovante
+                  offensive, défensive et innovante
                 </h2>
               </div>
 
@@ -201,7 +201,7 @@ const Services = () => {
                     variant="outline"
                     className="border-2 border-white text-white hover:bg-white hover:text-black font-bold rounded-full px-8 py-5 text-base group bg-transparent"
                   >
-                    Nos engagements
+                    Notre approche
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </div>

@@ -63,13 +63,13 @@ const About = () => {
           >
             <div className="space-y-1">
               <span className="inline-block bg-white text-black text-lg md:text-2xl lg:text-3xl font-display font-bold px-4 py-1 uppercase tracking-tight">
-                SENTINEL SECURITY, votre entreprise
+                SENTINEL CYBER, votre cabinet
               </span><br />
               <span className="inline-block bg-white text-black text-lg md:text-2xl lg:text-3xl font-display font-bold px-4 py-1 uppercase tracking-tight">
-                de sécurité privée à Douala, engagée
+                de cybersécurité au Cameroun, engagé
               </span><br />
               <span className="inline-block bg-white text-black text-lg md:text-2xl lg:text-3xl font-display font-bold px-4 py-1 uppercase tracking-tight">
-                à vos côtés depuis plus de 20 ans
+                à vos côtés depuis plus de 10 ans
               </span>
             </div>
           </motion.div>
@@ -87,10 +87,10 @@ const About = () => {
             className="max-w-4xl"
           >
             <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-8">
-              Basée à Douala, <strong>SENTINEL SECURITY</strong> est une entreprise de sécurité privée reconnue dans toute la région du Littoral. Depuis 2002, nous protégeons les biens, les personnes et les sites sensibles avec professionnalisme, réactivité et rigueur.
+              Basé au Cameroun, <strong>SENTINEL CYBER</strong> est un cabinet de cybersécurité reconnu en Afrique Centrale. Depuis 2014, nous protégeons les systèmes d'information, les données sensibles et les infrastructures numériques avec professionnalisme, réactivité et rigueur.
             </p>
             <p className="text-white text-lg md:text-xl font-bold font-display">
-              Notre mission : proposer des solutions de sécurité humaine et électronique sur mesure, pour les particuliers, les professionnels et les collectivités.
+              Notre mission : proposer des solutions de cybersécurité offensives et défensives sur mesure, pour les entreprises, les institutions et les organisations.
             </p>
           </motion.div>
         </div>
@@ -109,45 +109,45 @@ const About = () => {
               className="max-w-xl"
             >
               <h2 className="text-xl md:text-2xl font-display font-bold mb-6">
-                Une expertise complète en<br />sécurité privée
+                Une expertise complète en<br />cybersécurité
               </h2>
-              <p className="text-sm text-gray-600 mb-4 italic">Notre offre couvre l'ensemble des métiers de la sécurité :</p>
+              <p className="text-sm text-gray-600 mb-4 italic">Notre offre couvre l'ensemble des domaines de la sécurité numérique :</p>
               <ul className="space-y-2 text-sm text-gray-700 font-medium mb-6">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1.5">•</span>
-                  <span>Surveillance humaine et gardiennage</span>
+                  <span>Tests d'intrusion (Pentest web, réseau, mobile)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1.5">•</span>
-                  <span>Sécurité incendie (agents SSIAP 1, 2 et 3)</span>
+                  <span>Audits de sécurité informatique</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1.5">•</span>
-                  <span>Sûreté cynophile (maîtres-chiens)</span>
+                  <span>Red Team & simulation d'attaques</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1.5">•</span>
-                  <span>Télésurveillance 24h/24 – 7j/7</span>
+                  <span>SOC & Surveillance des menaces 24/7</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1.5">•</span>
-                  <span>Systèmes d’alarme connectés</span>
+                  <span>Gestion des vulnérabilités</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1.5">•</span>
-                  <span>Sécurité événementielle</span>
+                  <span>Conformité ISO 27001 & RGPD</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1.5">•</span>
-                  <span>Intervention sur alarme</span>
+                  <span>Réponse aux incidents de sécurité</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1.5">•</span>
-                  <span>Vente, location et installation de systèmes de sécurité</span>
+                  <span>Conseil & formation en cybersécurité</span>
                 </li>
               </ul>
               <p className="text-gray-600 leading-relaxed">
-                Notre centre de télésurveillance basé à Douala renforce l'efficacité de notre présence sur le terrain, en assurant une veille permanente et une levée de doute vidéo en temps réel.
+                Notre SOC basé au Cameroun renforce l'efficacité de notre présence, en assurant une veille permanente et une détection des menaces en temps réel.
               </p>
             </motion.div>
           </div>
@@ -180,14 +180,14 @@ const About = () => {
               className="max-w-xl"
             >
               <h2 className="text-xl md:text-2xl font-display font-bold mb-6 uppercase">
-                Une entreprise à taille humaine,<br />proche de ses clients
+                Un cabinet agile,<br />proche de ses clients
               </h2>
               <div className="space-y-4 text-sm text-gray-600 leading-relaxed">
                 <p>
-                  SENTINEL SECURITY est une structure indépendante, de taille intermédiaire, qui privilégie la proximité et la qualité de service. Nos équipes sont disponibles, nos responsables opérationnels restent en lien direct avec les clients, et chaque mission fait l'objet d'un suivi rigoureux.
+                  SENTINEL CYBER est une structure indépendante, agile, qui privilégie la proximité et la qualité de service. Nos experts sont disponibles, nos responsables techniques restent en lien direct avec les clients, et chaque mission fait l'objet d'un suivi rigoureux.
                 </p>
                 <p className="font-bold text-black">
-                  Grâce à cette organisation agile et réactive, nous sommes capables d'intervenir rapidement sur tout le territoire régional : Douala, Edéa, Kribi, et au-delà selon les besoins.
+                  Grâce à cette organisation réactive, nous sommes capables d'intervenir rapidement pour toute organisation au Cameroun et en Afrique Centrale, selon les besoins.
                 </p>
               </div>
             </motion.div>
@@ -200,30 +200,30 @@ const About = () => {
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-xl md:text-2xl font-display font-medium text-white italic">
-              Surveillance, sécurité incendie, télésurveillance ... <span className="text-primary not-italic font-bold">Découvrez l'ensemble de nos prestations</span>
+              Pentest, audits, SOC, conformité ... <span className="text-primary not-italic font-bold">Découvrez l'ensemble de nos services cyber</span>
             </h2>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               {
-                lines: ["Surveillance humaine", "et gardiennage"],
-                desc: "Des agents de sécurité qualifiés pour veiller sur vos sites, prévenir les risques et garantir la tranquillité des lieux, de jour comme de nuit.",
+                lines: ["Tests d'intrusion", "(Pentest)"],
+                desc: "Des experts certifiés pour tester la résistance de vos systèmes et identifier les vulnérabilités avant les attaquants.",
                 img: "/4i.jpg"
               },
               {
-                lines: ["Sécurité incendie SSIAP", "1, 2 et 3"],
-                desc: "Des agents SSIAP formés pour prévenir les incendies, sécuriser les lieux et intervenir en cas d'urgence.",
+                lines: ["Audits de sécurité", "informatique"],
+                desc: "Des audits complets pour évaluer la maturité de votre SI et identifier les risques critiques.",
                 img: "/istockphoto-1211936303-612x612.jpg"
               },
               {
-                lines: ["Dispositif de sécurité", "événementielle"],
-                desc: "Une sécurité discrète et efficace pour vos événements : contrôle d'accès, gestion des flux et protection des publics en toute sérénité.",
+                lines: ["Évaluation des menaces", "& Red Team"],
+                desc: "Des simulations d'attaques réalistes pour tester vos défenses et la réactivité de vos équipes sécurité.",
                 img: "/2i.jpg"
               },
               {
-                lines: ["Sûreté cynophile et", "cynotechniques"],
-                desc: "Des équipes maître-chien pour dissuader, détecter les intrusions et renforcer la sécurité de vos sites sensibles.",
+                lines: ["SOC & Surveillance", "des menaces 24/7"],
+                desc: "Un centre opérationnel de sécurité pour une détection et une réponse aux incidents en temps réel.",
                 img: "/1lock.jpg"
               }
             ].map((service, i) => (
@@ -288,8 +288,8 @@ const About = () => {
               className="mb-12"
             >
               <h2 className="text-2xl md:text-4xl font-display font-bold leading-relaxed text-white">
-                <span className="bg-white text-black px-3 py-1 block w-fit mb-1">Une offre de sécurité globale,</span>
-                <span className="bg-white text-black px-3 py-1 block w-fit">augmentée et innovante</span>
+                <span className="bg-white text-black px-3 py-1 block w-fit mb-1">Une cybersécurité globale,</span>
+                <span className="bg-white text-black px-3 py-1 block w-fit">offensive, défensive et innovante</span>
               </h2>
             </motion.div>
 
@@ -301,7 +301,7 @@ const About = () => {
               className="space-y-6 text-gray-300 text-lg leading-relaxed max-w-2xl mb-12 mx-auto md:mx-0"
             >
               <p>
-                Au-delà de la surveillance humaine et de la télésurveillance, <strong>SENTINEL SECURITY</strong> propose une approche globale et innovante de la sécurité privée.
+                Au-delà du pentest et de la surveillance des menaces, <strong>SENTINEL CYBER</strong> propose une approche globale et innovante de la cybersécurité.
               </p>
             </motion.div>
 
@@ -309,7 +309,7 @@ const About = () => {
               className="bg-primary text-black hover:bg-white font-bold rounded-full px-8 py-6 text-base flex items-center gap-3 transition-all duration-300 group shadow-lg mx-auto md:mx-0"
               onClick={() => navigate("/why-us")}
             >
-              Nos engagements
+              Notre approche
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
           </div>
@@ -337,7 +337,7 @@ const About = () => {
             className="bg-white text-black p-8 md:p-12 lg:p-16 max-w-3xl mx-auto text-center shadow-2xl rounded-sm"
           >
             <h2 className="text-xl md:text-3xl font-display font-bold mb-4">
-              Besoin d'un devis ou d'un conseil en sécurité ?
+              Besoin d'un audit ou d'un conseil en cybersécurité ?
             </h2>
             <p className="text-lg md:text-xl font-light mb-10 text-gray-600">
               Parlons-en
@@ -346,7 +346,7 @@ const About = () => {
               onClick={() => navigate("/request-quote")}
               className="bg-primary text-black hover:bg-black hover:text-white font-bold rounded-full px-8 py-4 text-base flex items-center gap-3 transition-all duration-300 group mx-auto shadow-lg"
             >
-              Contacter un expert sécurité
+              Contacter un expert cyber
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
           </motion.div>

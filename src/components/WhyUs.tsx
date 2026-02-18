@@ -3,12 +3,12 @@ import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 
 const reasons = [
-  "Partenaire réactif et engagé pour votre sécurité",
+  "Experts certifiés en cybersécurité (OSCP, CEH, ISO 27001)",
   "Technologie de pointe combinée à l'expertise humaine",
-  "Disponibilité 24/7 et écoute constante",
-  "Structure à taille humaine proche de vos besoins",
-  "Traçabilité complète de toutes les interventions",
-  "Délais d'intervention rapides sur site",
+  "Surveillance des menaces 24/7 et réponse aux incidents",
+  "Approche sur mesure adaptée à chaque organisation",
+  "Traçabilité complète et rapports détaillés",
+  "Délais d'intervention rapides et confidentialité garantie",
 ];
 
 const WhyUs = () => {
@@ -21,7 +21,7 @@ const WhyUs = () => {
           {/* Left - Image/Visual */}
           <div className="relative">
             <div className="aspect-[4/3] bg-secondary rounded-xl overflow-hidden relative">
-              <img 
+              <img
                 src="/hacking-2964100.jpg"
                 alt="Security Background"
                 className="absolute inset-0 w-full h-full object-cover"
@@ -36,7 +36,7 @@ const WhyUs = () => {
                   </p>
                   <p className="text-primary">7 jours sur 7</p>
                   <p className="text-muted-foreground mt-4">
-                    Nous sommes toujours disponibles pour protéger vos biens
+                    Nos experts surveillent et protègent vos systèmes
                   </p>
                 </div>
               </div>
@@ -49,12 +49,12 @@ const WhyUs = () => {
           {/* Right - Content */}
           <div>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-              Un partenaire réactif et engagé,{" "}
+              Un partenaire expert et certifié,{" "}
               <span className="text-primary">À votre service</span>
             </h2>
-            
+
             <p className="text-muted-foreground mb-8 text-lg">
-              Alliant technologie de pointe et expertise humaine, SENTINEL SECURITY accompagne de nombreuses entreprises, collectivités et particuliers à la recherche d'un partenaire fiable, flexible et réactif.
+              Alliant technologie de pointe et expertise technique, SENTINEL CYBER accompagne de nombreuses entreprises, institutions et organisations à la recherche d'un partenaire fiable, discret et réactif en matière de cybersécurité.
             </p>
 
             <ul className="space-y-4 mb-8">
@@ -66,7 +66,7 @@ const WhyUs = () => {
               ))}
             </ul>
 
-            <Button 
+            <Button
               onClick={() => navigate("/discover-services")}
               size="lg"
               className="bg-primary text-primary-foreground hover:bg-accent font-semibold group"

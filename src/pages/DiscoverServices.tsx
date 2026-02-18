@@ -65,13 +65,13 @@ const DiscoverServices = () => {
           >
             <div className="space-y-1">
               <span className="inline-block bg-white text-black text-lg md:text-2xl lg:text-3xl font-display font-bold px-6 py-1 uppercase tracking-tight">
-                Nos métiers : une sécurité
+                Nos services : une cybersécurité
               </span><br />
               <span className="inline-block bg-white text-black text-lg md:text-2xl lg:text-3xl font-display font-bold px-6 py-1 uppercase tracking-tight">
-                globale, sur le terrain
+                globale, offensive
               </span><br />
               <span className="inline-block bg-white text-black text-lg md:text-2xl lg:text-3xl font-display font-bold px-6 py-1 uppercase tracking-tight">
-                et à distance
+                et défensive
               </span>
             </div>
           </motion.div>
@@ -96,10 +96,10 @@ const DiscoverServices = () => {
             className="max-w-4xl mb-20"
           >
             <p className="text-lg md:text-xl font-bold leading-relaxed mb-8">
-              Parce que chaque besoin en sécurité est unique, SENTINEL SECURITY vous propose une offre structurée autour de deux expertises complémentaires : la présence humaine qualifiée sur le terrain et la télésurveillance à distance 24h/24.
+              Parce que chaque besoin en cybersécurité est unique, SENTINEL CYBER vous propose une offre structurée autour de deux expertises complémentaires : la sécurité offensive (pentest, Red Team) et la sécurité défensive (SOC, audits, conformité).
             </p>
             <p className="text-gray-400 text-lg">
-              À Douala et partout dans la région du Littoral, nous protégeons vos sites, vos biens et vos équipes avec rigueur, réactivité et engagement.
+              Au Cameroun et partout en Afrique Centrale, nous protégeons vos systèmes, vos données et vos équipes avec rigueur, réactivité et engagement.
             </p>
           </motion.div>
 
@@ -125,7 +125,7 @@ const DiscoverServices = () => {
                   onClick={() => navigate("/request-quote")}
                   className="bg-primary text-black hover:bg-white font-bold rounded-full px-8 py-6 md:py-7 text-xs md:text-sm flex items-center gap-3 transition-all duration-300 w-full max-w-[400px]"
                 >
-                  Surveillance humaine et sécurité incendie
+                  Tests d'intrusion & Audits de sécurité
                   <ArrowRight className="h-5 w-5" />
                 </Button>
               </div>
@@ -151,7 +151,7 @@ const DiscoverServices = () => {
                   onClick={() => navigate("/request-quote")}
                   className="bg-primary text-black hover:bg-white font-bold rounded-full px-8 py-6 md:py-7 text-xs md:text-sm flex items-center gap-3 transition-all duration-300 w-full max-w-[400px]"
                 >
-                  Télésurveillance & Alarme
+                  SOC & Surveillance des menaces 24/7
                   <ArrowRight className="h-5 w-5" />
                 </Button>
               </div>
@@ -196,8 +196,8 @@ const DiscoverServices = () => {
               className="mb-12"
             >
               <h2 className="text-2xl md:text-4xl font-display font-bold leading-relaxed text-white">
-                <span className="bg-white text-black px-3 py-1 block w-fit mb-1">Une offre de sécurité globale,</span>
-                <span className="bg-white text-black px-3 py-1 block w-fit">augmentée et innovante</span>
+                <span className="bg-white text-black px-3 py-1 block w-fit mb-1">Une cybersécurité globale,</span>
+                <span className="bg-white text-black px-3 py-1 block w-fit">offensive, défensive et innovante</span>
               </h2>
             </motion.div>
 
@@ -209,10 +209,10 @@ const DiscoverServices = () => {
               className="space-y-6 text-gray-300 text-lg leading-relaxed max-w-2xl mb-12"
             >
               <p>
-                Au-delà de la surveillance humaine et de la télésurveillance, <strong>SENTINEL SECURITY</strong> propose une approche globale et innovante de la sécurité privée. Grâce à des solutions connectées, des dispositifs d'alarme intelligents, et une coordination fluide entre nos équipes terrain et notre centre de contrôle.
+                Au-delà du pentest et de la surveillance des menaces, <strong>SENTINEL CYBER</strong> propose une approche globale et innovante de la cybersécurité. Grâce à des solutions de détection avancée, des plateformes d'analyse des menaces intelligentes, et une coordination fluide entre nos équipes offensives et défensives.
               </p>
               <p>
-                Nous offrons à nos clients un service de <strong>sécurité augmenté</strong>. Cette synergie entre technologie et présence humaine garantit une réactivité optimale, une traçabilité complète des interventions, et une protection adaptée aux enjeux de chaque site.
+                Nous offrons à nos clients une <strong>protection numérique augmentée</strong>. Cette synergie entre technologie et expertise humaine garantit une réactivité optimale, une traçabilité complète des incidents, et une sécurité adaptée aux enjeux de chaque organisation.
               </p>
             </motion.div>
 
@@ -220,7 +220,7 @@ const DiscoverServices = () => {
               className="bg-primary text-black hover:bg-white font-bold rounded-full px-8 py-6 text-base flex items-center gap-3 transition-all duration-300 group shadow-lg"
               onClick={() => navigate("/why-us")}
             >
-              Nos engagements
+              Notre approche
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
           </div>
@@ -255,7 +255,7 @@ const DiscoverServices = () => {
             className="bg-white text-black p-8 md:p-12 lg:p-16 max-w-3xl mx-auto text-center shadow-2xl rounded-sm"
           >
             <h2 className="text-xl md:text-3xl font-display font-bold mb-4">
-              Besoin d'un devis ou d'un conseil en sécurité ?
+              Besoin d'un audit ou d'un conseil en cybersécurité ?
             </h2>
             <p className="text-lg md:text-xl font-light mb-10 text-gray-600">
               Parlons-en
@@ -264,7 +264,7 @@ const DiscoverServices = () => {
               onClick={() => navigate("/request-quote")}
               className="bg-primary text-black hover:bg-black hover:text-white font-bold rounded-full px-8 py-4 text-base flex items-center gap-3 transition-all duration-300 group mx-auto shadow-lg"
             >
-              Contacter un expert sécurité
+              Contacter un expert cyber
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
           </motion.div>

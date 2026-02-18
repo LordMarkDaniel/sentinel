@@ -7,19 +7,19 @@ const Footer = () => {
 
   const footerLinks = {
     services: [
-      { name: "Surveillance humaine", href: "/human-surveillance" },
-      { name: "Sécurité événementielle", href: "/event-security" },
-      { name: "Télésurveillance", href: "/remote-monitoring" },
-      { name: "Sécurité incendie", href: "/fire-safety" },
-      { name: "Sécurité K-9", href: "/k9-security" },
-      { name: "Installation d'alarmes", href: "/alarm-installation" },
+      { name: "Tests d'intrusion (Pentest)", href: "/human-surveillance" },
+      { name: "Red Team & Menaces", href: "/event-security" },
+      { name: "SOC & Surveillance 24/7", href: "/remote-monitoring" },
+      { name: "Audits de sécurité", href: "/fire-safety" },
+      { name: "Gestion des vulnérabilités", href: "/k9-security" },
+      { name: "Conformité ISO 27001 / RGPD", href: "/alarm-installation" },
     ],
     company: [
       { name: "À propos", href: "/about" },
       { name: "Notre équipe", href: "/our-team" },
-      { name: "Nous rejoindre", href: "/join-us" },
+      { name: "Rejoindre l'équipe", href: "/join-us" },
       { name: "Actualités & Blog", href: "/news" },
-      { name: "Rapport RSE", href: "/csr-report" },
+      { name: "Rapport de transparence", href: "/csr-report" },
     ],
     legal: [
       { name: "Politique de confidentialité", href: "/privacy-policy" },
@@ -42,21 +42,21 @@ const Footer = () => {
                   SENTINEL
                 </h2>
                 <p className="text-xs text-secondary-foreground tracking-widest">
-                  SECURITY & SERVICES
+                  CYBER & SERVICES
                 </p>
               </div>
             </Link>
             <p className="text-muted-foreground mb-6 max-w-sm">
-              Votre partenaire de confiance en sécurité privée. Protéger les personnes et les biens avec excellence depuis 2002.
+              Votre partenaire de confiance en cybersécurité. Protéger vos systèmes, données et infrastructures numériques avec excellence depuis 2014.
             </p>
             <div className="space-y-3">
               <a href="tel:+1234567890" className="flex items-center gap-3 text-secondary-foreground hover:text-primary transition-colors">
                 <Phone className="h-5 w-5 text-primary" />
                 <span>+273 697-912-941</span>
               </a>
-              <a href="mailto:contact@sentinel-security.com" className="flex items-center gap-3 text-secondary-foreground hover:text-primary transition-colors">
+              <a href="mailto:contact@sentinel-cyber.com" className="flex items-center gap-3 text-secondary-foreground hover:text-primary transition-colors">
                 <Mail className="h-5 w-5 text-primary" />
-                <span>contact@sentinel-security.com</span>
+                <span>contact@sentinel-cyber.com</span>
               </a>
               <div className="flex items-start gap-3 text-secondary-foreground">
                 <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
@@ -69,7 +69,7 @@ const Footer = () => {
           <div>
             <Link to="/discover-services" className="inline-block mb-4">
               <h3 className="font-display font-bold text-secondary-foreground hover:text-primary transition-colors">
-                Nos services
+                Nos services cyber
               </h3>
             </Link>
             <ul className="space-y-3">
@@ -129,11 +129,11 @@ const Footer = () => {
         <div className="border-t border-border/20 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-muted-foreground text-sm">
-              © {currentYear} Sentinel Security & Services. Tous droits réservés. CYBERIX Arts.
+              © {currentYear} Sentinel Cyber & Services. Tous droits réservés. CYBERIX Arts.
             </p>
             <div className="flex items-center gap-4">
               <span className="text-muted-foreground text-sm">
-                Prestataire de sécurité agréé
+                Expert en cybersécurité certifié
               </span>
               <span className="text-primary">|</span>
               <span className="text-muted-foreground text-sm">
