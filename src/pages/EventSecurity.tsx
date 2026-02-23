@@ -1,4 +1,4 @@
-import { Users, Ticket, ShieldCheck, Radio, Music, Mic2, PartyPopper, Trophy, Crown, AlertTriangle } from "lucide-react";
+import { Shield, Target, Crosshair, Zap, Bug, Search, AlertOctagon, Terminal, Ghost, Server, Fingerprint } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -7,63 +7,63 @@ const EventSecurity = () => {
 
   const services = [
     {
-      icon: Ticket,
-      title: "Contrôle d'Accès",
-      summary: "Filtrage rigoureux.",
-      details: "Vérification des billets, invitations et accréditations. Palpation de sécurité et inspection visuelle des sacs."
+      icon: Ghost,
+      title: "Red Team Operations",
+      summary: "Simulation d'attaque réelle.",
+      details: "Infiltration multi-vectorielle (web, réseau, physique) pour tester la capacité de détection et de réponse de vos équipes de sécurité."
     },
     {
-      icon: Users,
-      title: "Gestion de Foule",
-      summary: "Flux maîtrisés.",
-      details: "Canalisation des spectateurs, prévention des mouvements de panique et gestion des files d'attente."
+      icon: Target,
+      title: "Ingénierie Sociale",
+      summary: "Tester le facteur humain.",
+      details: "Campagnes de phishing, vishing et smishing pour évaluer la vigilance de vos collaborateurs face aux tentatives de manipulation."
     },
     {
-      icon: Crown,
-      title: "Protection VIP",
-      summary: "Sécurité rapprochée.",
-      details: "Escorte et protection des artistes, personnalités politiques et invités de marque dans les zones réservées."
+      icon: Crosshair,
+      title: "Pentest Physique",
+      summary: "Infiltration sur site.",
+      details: "Évaluation de la sécurité de vos locaux : contournement de badgeuses, crochetage et accès aux zones sensibles ou salles serveurs."
     },
     {
-      icon: AlertTriangle,
-      title: "Sécurité Incendie",
-      summary: "Agents SSIAP.",
-      details: "Présence d'agents qualifiés pour la prévention des risques incendie et l'assistance aux personnes."
+      icon: Search,
+      title: "Analyse de Surface",
+      summary: "Cartographie de l'ombre.",
+      details: "Identification de tous vos actifs exposés sur internet et analyse des vecteurs d'entrée potentiels pour un attaquant (OSINT)."
     },
     {
-      icon: ShieldCheck,
-      title: "Sécurisation de Zone",
-      summary: "Périmètre étanche.",
-      details: "Surveillance des barrières, des issues de secours et des zones techniques (backstage, loges)."
+      icon: Zap,
+      title: "Purple Team",
+      summary: "Synergie offensive/défensive.",
+      details: "Exercices conjoints pour améliorer vos capacités de détection en temps réel et affiner vos règles de corrélation SIEM."
     },
     {
-      icon: Radio,
-      title: "Coordination PC",
-      summary: "Pilotage centralisé.",
-      details: "Gestion des communications radio et vidéo depuis un poste de commandement pour une réactivité optimale."
+      icon: AlertOctagon,
+      title: "Gestion de Crise",
+      summary: "Préparer l'imprévisible.",
+      details: "Simulation de crise cyber (Ransomware, Fuite de données) pour tester vos protocoles de communication et de décision."
     }
   ];
 
-  const eventTypes = [
+  const expertiseTypes = [
     {
-      icon: Music,
-      title: "Concerts & Festivals",
-      desc: "Gestion de grandes jauges en extérieur ou en salle."
+      icon: Server,
+      title: "Infrastructures Critiques",
+      desc: "Protection des systèmes industriels et des réseaux d'énergie."
     },
     {
-      icon: Trophy,
-      title: "Événements Sportifs",
-      desc: "Sécurité des stades, des athlètes et des supporters."
+      icon: Fingerprint,
+      title: "Secteur Bancaire",
+      desc: "Audit de conformité et résistance aux fraudes complexes."
     },
     {
-      icon: Mic2,
-      title: "Conférences & Séminaires",
-      desc: "Accueil professionnel et discret pour le corporate."
+      icon: Terminal,
+      title: "Éditeurs de Logiciels",
+      desc: "Sécurisation du cycle de développement et de la supply chain."
     },
     {
-      icon: PartyPopper,
-      title: "Soirées Privées & Galas",
-      desc: "Prestations haut de gamme pour événements exclusifs."
+      icon: Shield,
+      title: "Fintechs & Startups",
+      desc: "Accompagnement agile pour une sécurité dès la conception."
     }
   ];
 
@@ -73,9 +73,9 @@ const EventSecurity = () => {
         <button onClick={() => navigate(-1)} className="text-primary font-semibold mb-6">← Retour</button>
 
         <header className="mb-12 text-center">
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">Sécurité <span className="text-primary">Événementielle</span></h1>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">Évaluation des menaces & <span className="text-primary">Red Team</span></h1>
           <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
-            Une sécurité complète pour les événements de toutes tailles. De la planification stratégique à l'intervention sur le terrain.
+            Anticiper, Simuler, Renforcer. Une immersion totale dans l'esprit d'un attaquant pour éprouver vos défenses les plus critiques.
           </p>
         </header>
 
@@ -106,34 +106,34 @@ const EventSecurity = () => {
 
         {/* Event Types Section */}
         <div className="mb-20">
-            <h2 className="text-3xl font-display font-bold text-foreground mb-12 text-center">Types d'Événements Couverts</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {eventTypes.map((type, idx) => (
-                    <div key={idx} className="bg-secondary p-6 rounded-xl border border-border/20 hover:border-primary/50 transition-all hover:-translate-y-1">
-                        <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                            <type.icon className="h-6 w-6 text-primary" />
-                        </div>
-                        <h3 className="text-xl font-bold text-white mb-2">{type.title}</h3>
-                        <p className="text-muted-foreground text-sm">{type.desc}</p>
-                    </div>
-                ))}
-            </div>
+          <h2 className="text-3xl font-display font-bold text-foreground mb-12 text-center">Expertises Sectorielles</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {expertiseTypes.map((type, idx) => (
+              <div key={idx} className="bg-secondary p-6 rounded-xl border border-border/20 hover:border-primary/50 transition-all hover:-translate-y-1">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <type.icon className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2">{type.title}</h3>
+                <p className="text-muted-foreground text-sm">{type.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* CTA Section */}
         <div className="bg-secondary rounded-xl p-8 md:p-12 border border-border/20 text-center">
           <h2 className="text-3xl font-display font-bold text-white mb-4">
-            Vous organisez un événement ?
+            Êtes-vous prêt pour une attaque réelle ?
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-            La réussite de votre événement passe par la sécurité de vos invités. Confiez-nous la gestion des risques.
+            La résilience de votre organisation se mesure face à l'inconnu. Lancez un exercice Red Team pour tester vos limites.
           </p>
-          <Button 
+          <Button
             onClick={() => navigate("/request-quote")}
             size="lg"
             className="bg-primary text-primary-foreground hover:bg-accent font-semibold px-8"
           >
-            Obtenir un devis événementiel
+            Lancer une simulation Red Team
           </Button>
         </div>
       </div>

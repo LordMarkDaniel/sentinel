@@ -5,35 +5,35 @@ import { useNavigate } from "react-router-dom";
 const newsArticles = [
   {
     id: 1,
-    title: "Comment sécuriser correctement votre maison : alarmes, télésurveillance et conseils locaux",
+    title: "Comment sécuriser votre infrastructure cloud : Pentests et meilleures pratiques au Cameroun",
     date: "12 janvier 2026",
-    category: "Sécurité domestique",
+    category: "Tests d'intrusion",
     image: "/1i.jpg",
-    excerpt: "Vous vous demandez quelle est la meilleure façon de protéger votre domicile contre les intrusions ? Face à l'augmentation des risques (cambriolages, dégradations, vols), sécuriser votre maison est devenu une priorité.",
+    excerpt: "L'adoption du cloud s'accélère, mais la sécurité reste un défi. Découvrez comment nos tests d'intrusion cloud identifient les failles de configuration avant qu'elles ne soient exploitées.",
   },
   {
     id: 2,
-    title: "Télésurveillance pour entreprises : 5 conseils pour protéger efficacement vos locaux 24/7",
+    title: "Souveraineté numérique : Pourquoi un SOC local est indispensable pour les banques camerounaises",
     date: "11 janvier 2026",
-    category: "Sécurité des entreprises",
+    category: "SOC & Surveillance",
     image: "/2i.jpg",
-    excerpt: "La sécurité des locaux professionnels est un enjeu stratégique pour toutes les entreprises. Cambriolages, intrusions, dégradations, actes malveillants ou risques techniques : les menaces sont nombreuses et imprévisibles.",
+    excerpt: "Face à la montée des cyberattaques sophistiquées, la gestion déléguée de la surveillance devient stratégique. Analyse d'un enjeu majeur pour le secteur financier en Afrique Centrale.",
   },
   {
     id: 3,
-    title: "Sentinel Security inaugure son centre de surveillance : service de protection 24/7",
+    title: "SENTINEL SECURITY renforce ses capacités offensives avec une équipe Red Team dédiée",
     date: "10 janvier 2026",
-    category: "Actualités de l'entreprise",
+    category: "Actualités",
     image: "/3i.jpg",
-    excerpt: "C'est officiel : le centre de surveillance SENTINEL SECURITY est désormais pleinement opérationnel. Une avancée dans la protection de pointe pour nos clients.",
+    excerpt: "Nous annonçons le lancement de nos opérations Red Team, simulations d'attaques réelles visant à tester la résilience globale des organisations face aux menaces avancées.",
   },
   {
     id: 4,
-    title: "Sentinel Security soutient la diversité : pour une industrie de la sécurité privée plus inclusive",
+    title: "Certification ISO 27001 : Un investissement stratégique pour la pérennité de votre entreprise",
     date: "9 janvier 2026",
-    category: "RSE",
+    category: "Conformité",
     image: "/4i.jpg",
-    excerpt: "Chez Sentinel Security, nous sommes convaincus que les métiers de la sécurité privée doivent refléter la diversité de notre société et offrir des chances égales.",
+    excerpt: "Plus qu'une contrainte réglementaire, la conformité est un levier de confiance client. On vous explique comment structurer votre SMSI pour obtenir la certification.",
   },
 ];
 
@@ -53,10 +53,10 @@ const AllArticles = () => {
 
         <div className="mb-16">
           <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
-            Tous les <span className="text-primary">Articles</span>
+            Actualités <span className="text-primary">Cyber</span>
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl">
-            Restez informé des dernières tendances en matière de sécurité, des conseils et des actualités de l'entreprise
+            Restez informé des dernières cybermenaces, des conseils d'experts et des innovations technologiques en Afrique Centrale.
           </p>
         </div>
 
@@ -141,10 +141,10 @@ const AllArticles = () => {
         <div className="relative z-10 container mx-auto px-4 flex justify-center">
           <div className="bg-white p-10 md:p-14 shadow-[0_20px_50px_rgba(0,0,0,0.2)] text-center max-w-2xl w-full transform hover:scale-[1.01] transition-transform duration-500">
             <h2 className="text-2xl md:text-3xl font-display font-bold text-black mb-4 leading-tight">
-              Besoin d'un devis ou d'un conseil en sécurité ?
+              Besoin d'un audit, d'un pentest ou d'un conseil cyber ?
             </h2>
             <h3 className="text-xl md:text-3xl font-display font-light text-gray-800 mb-10 tracking-tight">
-              Parlons-en
+              Anticipons la menace ensemble
             </h3>
 
             <Button

@@ -6,44 +6,44 @@ const Licenses = () => {
 
   const licenses = [
     {
-      id: "LIC-SEC-001",
-      type: "Licence de Sécurité",
-      issuingAuthority: "Département de la Sécurité Publique",
-      expiryDate: "2025-12-31",
+      id: "CERT-ISO-27001",
+      type: "Auditeur ISO 27001",
+      issuingAuthority: "Organisme de Certification Agréé",
+      expiryDate: "2026-12-31",
       icon: Shield,
-      description: "Autorisation d'opérer des services de sécurité privée et de gardiennage."
+      description: "Certification de management de la sécurité de l'information (SMSI) pour nos processus internes."
     },
     {
-      id: "LIC-ARM-002",
-      type: "Licence de Sécurité Armée",
-      issuingAuthority: "Bureau d'Investigation de l'État",
-      expiryDate: "2025-06-15",
+      id: "CERT-OSCP-001",
+      type: "Expert Pentest (OSCP)",
+      issuingAuthority: "OffSec Services",
+      expiryDate: "2027-06-15",
       icon: Award,
-      description: "Permis spécial pour le port d'arme dans le cadre de missions de protection rapprochée."
+      description: "Accréditation internationale pour la réalisation de tests d'intrusion avancés."
     },
     {
-      id: "LIC-FIRE-003",
-      type: "Licence de Sécurité Incendie",
-      issuingAuthority: "Bureau du Maréchal des Pompiers",
-      expiryDate: "2024-09-20",
+      id: "CERT-ANTIC-003",
+      type: "Agrément Audit ANTIC",
+      issuingAuthority: "Agence Nationale des TIC (ANTIC)",
+      expiryDate: "2025-09-20",
       icon: FileCheck,
-      description: "Certification pour l'audit, l'installation et la maintenance de systèmes incendie."
+      description: "Autorisation officielle pour mener des audits de sécurité informatique au Cameroun."
     },
     {
-      id: "LIC-K9-004",
-      type: "Licence de Maître-Chien",
-      issuingAuthority: "Association Nationale Cynophile",
+      id: "CERT-SOC-27035",
+      type: "Gestion des Incidents",
+      issuingAuthority: "ISO/IEC 27035",
       expiryDate: "2025-03-10",
       icon: CheckCircle2,
-      description: "Agrément pour l'utilisation d'unités cynophiles en patrouille et détection."
+      description: "Conformité aux standards internationaux de réponse aux incidents de cybersécurité."
     },
     {
-      id: "LIC-EVENT-005",
-      type: "Licence de Sécurité Événementielle",
-      issuingAuthority: "Municipalité Locale",
-      expiryDate: "2024-11-30",
+      id: "CERT-GDPR-ADV",
+      type: "Expertise RGPD / Loi 2010",
+      issuingAuthority: "Commission de Protection des Données",
+      expiryDate: "2026-11-30",
       icon: Building2,
-      description: "Autorisation pour la gestion de foule et la sécurité lors de grands rassemblements."
+      description: "Certification de conformité pour la gestion et la protection des données à caractère personnel."
     }
   ];
 
@@ -74,7 +74,7 @@ const Licenses = () => {
           {licenses.map((license, index) => {
             const status = getStatus(license.expiryDate);
             const StatusIcon = status.icon;
-            
+
             return (
               <div key={index} className="group h-80 w-full [perspective:1000px]">
                 <div className="relative h-full w-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
@@ -96,7 +96,7 @@ const Licenses = () => {
                   <div className="absolute inset-0 h-full w-full rounded-xl bg-primary p-8 flex flex-col items-center justify-center text-center [transform:rotateY(180deg)] [backface-visibility:hidden] shadow-xl">
                     <h3 className="text-xl font-display font-bold text-primary-foreground mb-4">{license.type}</h3>
                     <p className="text-primary-foreground/90 text-sm mb-6">{license.description}</p>
-                    
+
                     <div className="w-full space-y-3 text-left bg-black/10 p-4 rounded-lg">
                       <div>
                         <p className="text-xs text-primary-foreground/70 uppercase tracking-wider">Autorité</p>
@@ -118,41 +118,41 @@ const Licenses = () => {
         </div>
 
         <section className="grid md:grid-cols-2 gap-8 mb-16">
-            <div className="bg-secondary p-8 rounded-xl border border-border/20 hover:border-primary/50 transition-colors">
-                <div className="flex items-center gap-4 mb-4">
-                    <div className="p-3 bg-primary/10 rounded-lg">
-                        <FileText className="h-6 w-6 text-primary" />
-                    </div>
-                    <h2 className="text-2xl font-display font-bold text-white">Documentation Légale</h2>
-                </div>
-                <p className="text-muted-foreground mb-6">
-                    Nous maintenons une documentation complète de toutes nos opérations pour assurer une conformité totale avec les réglementations locales et internationales.
-                </p>
-                <button className="text-primary hover:underline font-semibold flex items-center gap-2">
-                    Demander un audit de conformité <Shield className="h-4 w-4" />
-                </button>
+          <div className="bg-secondary p-8 rounded-xl border border-border/20 hover:border-primary/50 transition-colors">
+            <div className="flex items-center gap-4 mb-4">
+              <div className="p-3 bg-primary/10 rounded-lg">
+                <FileText className="h-6 w-6 text-primary" />
+              </div>
+              <h2 className="text-2xl font-display font-bold text-white">Documentation Légale</h2>
             </div>
+            <p className="text-muted-foreground mb-6">
+              Nous maintenons une documentation complète de toutes nos opérations pour assurer une conformité totale avec les réglementations locales et internationales.
+            </p>
+            <button className="text-primary hover:underline font-semibold flex items-center gap-2">
+              Demander un audit de conformité <Shield className="h-4 w-4" />
+            </button>
+          </div>
 
-            <div className="bg-secondary p-8 rounded-xl border border-border/20 hover:border-primary/50 transition-colors">
-                <div className="flex items-center gap-4 mb-4">
-                    <div className="p-3 bg-primary/10 rounded-lg">
-                        <Lock className="h-6 w-6 text-primary" />
-                    </div>
-                    <h2 className="text-2xl font-display font-bold text-white">Assurances & Garanties</h2>
-                </div>
-                <p className="text-muted-foreground mb-6">
-                    Sentinel Security est entièrement assurée pour la responsabilité civile professionnelle, garantissant la protection de nos clients et de nos employés en toutes circonstances.
-                </p>
-                <button className="text-primary hover:underline font-semibold flex items-center gap-2">
-                    Voir les certificats d'assurance <Shield className="h-4 w-4" />
-                </button>
+          <div className="bg-secondary p-8 rounded-xl border border-border/20 hover:border-primary/50 transition-colors">
+            <div className="flex items-center gap-4 mb-4">
+              <div className="p-3 bg-primary/10 rounded-lg">
+                <Lock className="h-6 w-6 text-primary" />
+              </div>
+              <h2 className="text-2xl font-display font-bold text-white">Assurances & Garanties</h2>
             </div>
+            <p className="text-muted-foreground mb-6">
+              Sentinel Security est entièrement assurée pour la responsabilité civile professionnelle, garantissant la protection de nos clients et de nos employés en toutes circonstances.
+            </p>
+            <button className="text-primary hover:underline font-semibold flex items-center gap-2">
+              Voir les certificats d'assurance <Shield className="h-4 w-4" />
+            </button>
+          </div>
         </section>
 
         <section className="bg-secondary p-8 rounded-xl border border-border/20 group hover:border-primary/50 transition-all hover:shadow-lg">
           <div className="flex items-center gap-4 mb-4">
             <div className="p-3 bg-primary/10 rounded-lg">
-                <Code className="h-6 w-6 text-primary" />
+              <Code className="h-6 w-6 text-primary" />
             </div>
             <h2 className="text-2xl font-display font-bold text-white">Open Source</h2>
           </div>

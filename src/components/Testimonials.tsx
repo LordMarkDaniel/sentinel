@@ -3,7 +3,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 
 const testimonials = [
   {
-    quote: "Sentinel Cyber a transformé notre approche de la sécurité informatique. Leur pentest a révélé des vulnérabilités critiques que nous ignorions.",
+    quote: "SENTINEL SECURITY a transformé notre approche de la sécurité informatique. Leur pentest a révélé des vulnérabilités critiques que nous ignorions.",
     author: "Jean-Marc Essono, DSI de TechAfrique"
   },
   {
@@ -11,7 +11,7 @@ const testimonials = [
     author: "Marie Nguema, Responsable Sécurité SI"
   },
   {
-    quote: "Le SOC de Sentinel Cyber a détecté une tentative d'intrusion en temps réel. Leur réactivité a évité une catastrophe pour notre entreprise.",
+    quote: "Le SOC de SENTINEL SECURITY a détecté une tentative d'intrusion en temps réel. Leur réactivité a évité une catastrophe pour notre entreprise.",
     author: "Paul Kamga, Directeur des Systèmes d'Information"
   },
   {
@@ -19,7 +19,7 @@ const testimonials = [
     author: "Aline Biyong, Directrice des Opérations"
   },
   {
-    quote: "Sentinel Cyber offre une tranquillité d'esprit incomparable grâce à sa surveillance continue et ses expertises en cybersécurité.",
+    quote: "SENTINEL SECURITY offre une tranquillité d'esprit incomparable grâce à sa surveillance continue et ses expertises en cybersécurité.",
     author: "David Mbarga, PDG d'une fintech camerounaise"
   }
 ];

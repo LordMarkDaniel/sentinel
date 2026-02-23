@@ -56,10 +56,10 @@ const HumanSurveillance = () => {
           >
             <div className="space-y-1">
               <span className="inline-block bg-white text-black text-lg md:text-2xl lg:text-3xl font-display font-bold px-6 py-1 uppercase tracking-tight">
-                Surveillance humaine et sécurité incendie :
+                Tests d'intrusion et Pentesting :
               </span><br />
               <span className="inline-block bg-white text-black text-lg md:text-2xl lg:text-3xl font-display font-bold px-6 py-1 uppercase tracking-tight">
-                Des agents qualifiés pour protéger vos sites et vos équipes
+                Évaluer vos vulnérabilités pour mieux vous protéger
               </span>
             </div>
           </motion.div>
@@ -91,11 +91,11 @@ const HumanSurveillance = () => {
             className="space-y-6"
           >
             <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-              La sécurité des biens et des personnes exige présence, réactivité et rigueur.<br />
-              Chez <strong>SENTINEL SECURITY</strong>, nous mettons à votre disposition des agents qualifiés, formés aux exigences réglementaires, capables d'assurer une surveillance efficace et une prévention des risques adaptée à chaque environnement.
+              La sécurité de vos actifs numériques exige expertise, rigueur et anticipation.<br />
+              Chez <strong>SENTINEL SECURITY</strong>, nous mettons à votre disposition des experts certifiés, formés aux dernières techniques d'attaque, capables d'identifier vos failles avant qu'elles ne soient exploitées par des acteurs malveillants.
             </p>
             <p className="text-white text-base md:text-lg font-bold leading-relaxed">
-              Que vous soyez une entreprise, une collectivité ou un gestionnaire de site sensible, nos équipes vous accompagnent avec des solutions humaines de sécurité sur mesure : surveillance générale, sécurité incendie, agents cynophiles ou sécurité événementielle.
+              Que vous soyez une entreprise, une institution financière ou un acteur critique, nos équipes vous accompagnent avec des solutions d'audit offensives sur mesure : tests d'intrusion externes, internes, applications web ou infrastructures mobiles.
             </p>
           </motion.div>
         </div>
@@ -111,9 +111,9 @@ const HumanSurveillance = () => {
             viewport={{ once: true }}
             className="text-3xl md:text-5xl font-display font-bold leading-tight uppercase"
           >
-            Notre savoir-<br />faire : <span className="bg-primary text-black px-2">l'humain</span><br />
-            <span className="bg-primary text-black px-2">au cœur de la</span><br />
-            <span className="bg-primary text-black px-2">sécurité</span>
+            Notre savoir-<br />faire : <span className="bg-primary text-black px-2">l'expertise</span><br />
+            <span className="bg-primary text-black px-2">offensive au</span><br />
+            <span className="bg-primary text-black px-2">service du defensif</span>
           </motion.h2>
         </div>
 
@@ -126,13 +126,13 @@ const HumanSurveillance = () => {
             className="space-y-6 text-sm md:text-base text-gray-700 leading-relaxed"
           >
             <p>
-              <strong>Depuis plus de 20 ans, SENTINEL SECURITY mobilise une expertise reconnue dans la protection des sites, des biens et des personnes, en s'appuyant sur une sélection rigoureuse de ses agents, une organisation agile et une culture du résultat.</strong>
+              <strong>Depuis plus de 10 ans, SENTINEL SECURITY mobilise une expertise de pointe dans l'évaluation de la sécurité des systèmes d'information, en s'appuyant sur des méthodologies reconnues (OWASP, NIST) et une culture de la transparence.</strong>
             </p>
             <p>
-              Nos équipes sont formées, encadrées et évaluées en continu, pour garantir un haut niveau de fiabilité et d'exigence. Chaque mission fait l'objet d'une étude préalable, d'une mise en place personnalisée et d'un suivi rigoureux, en lien avec nos référents de site et notre direction opérationnelle.
+              Nos auditeurs sont certifiés (OSCP, CEH, CISSP) et formés en continu aux nouvelles vulnérabilités (0-days). Chaque mission fait l'objet d'un cadrage précis, d'une exécution rigoureuse et d'un rapport détaillé incluant des recommandations actionnables et un plan de remédiation priorisé.
             </p>
             <p className="font-bold text-black border-l-4 border-primary pl-6 py-2">
-              Nous intervenons dans des environnements variés et sensibles : établissements recevant du public, sièges sociaux, zones industrielles, plateformes logistiques, collectivités locales ou encore événements ponctuels.
+              Nous intervenons sur des écosystèmes complexes : infrastructures cloud (AWS, Azure, GCP), environnements on-premise, applications métier critiques, terminaux IoT ou encore plateformes de gestion de données.
             </p>
           </motion.div>
         </div>
@@ -148,20 +148,20 @@ const HumanSurveillance = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
             {[
               {
-                quote: "Une équipe fiable, toujours à l'écoute. Leur réactivité a vraiment fait la différence lors d'un incident sur notre site. Nous savons que nous pouvons compter sur eux.",
-                author: "Responsable d'exploitation, parc logistique"
+                quote: "Le rapport fourni après le pentest était d'une clarté exemplaire. Les vulnérabilités identifiées et les conseils de remédiation nous ont permis de sécuriser notre infrastructure critique avant notre lancement.",
+                author: "CISO, Institution Financière"
               },
               {
-                quote: "Les agents SSIAP de SENTINEL SECURITY sont professionnels, discrets et parfaitement formés. Nous leur faisons confiance pour la sécurité de nos bâtiments ERP.",
-                author: "Directrice d'établissement médico-social"
+                quote: "Les experts de SENTINEL SECURITY sont intervenus avec une discrétion et un professionnalisme remarquables. Leur vision offensive nous a ouvert les yeux sur des vecteurs d'attaque insoupçonnés.",
+                author: "Responsable Informatique, Secteur Médical"
               },
               {
-                quote: "Nous avons fait appel à SENTINEL SECURITY pour la sécurisation de notre événement. Tout a été fluide, professionnel et maîtrisé, du briefing à la fermeture.",
-                author: "Organisateur d'événements culturels"
+                quote: "Nous collaborons avec SENTINEL SECURITY pour l'audit de nos nouvelles applications mobiles. Leur réactivité et la précision de leurs analyses sont devenues indispensables à notre cycle de développement.",
+                author: "Lead Developer, Fintech Africaine"
               },
               {
-                quote: "Au-delà du service de sécurité, c'est l'accompagnement humain et la disponibilité des responsables qui font la différence. Une vraie relation de confiance.",
-                author: "Gérant d'une chaîne de commerces de centre-ville"
+                quote: "Au-delà de la technique, c'est l'approche conseil et la pédagogie des auditeurs qui font la différence. On ne se contente pas de lister des failles, on comprend comment les résoudre durablement.",
+                author: "Directeur Technique, E-commerce"
               }
             ].map((t, i) => (
               <motion.div
@@ -190,32 +190,32 @@ const HumanSurveillance = () => {
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl lg:text-5xl font-display font-bold text-white mb-6 tracking-tight uppercase">
-              Des <span className="text-white italic font-normal">solutions</span> de sécurité <span className="bg-white text-black px-4 italic font-normal">adaptées</span> à chaque besoin
+              Des <span className="text-white italic font-normal">audits</span> offensifs <span className="bg-white text-black px-4 italic font-normal">adaptés</span> à vos infrastructures numérique
             </h2>
             <div className="w-16 h-1 bg-primary mx-auto mb-8"></div>
             <p className="text-gray-400 max-w-3xl mx-auto text-base md:text-lg font-light leading-relaxed">
-              Découvrez nos expertises pour une protection fiable, humaine et adaptée à votre environnement.
+              Découvrez nos expertises en test d'intrusion pour identifier et corriger les failles exploitables sur vos systèmes.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {[
               {
-                title: "Surveillance humaine et gardiennage",
-                subtitle: "Protéger, dissuader, alerter.",
-                desc: "Nos agents assurent la sécurité de vos sites en journée, de nuit ou 24h/24, avec un contrôle permanent des accès, des rondes dissuasives et une vigilance constante.",
+                title: "Tests d'Intrusion Web & API",
+                subtitle: "Sécuriser vos applications critiques.",
+                desc: "Audit complet de vos applications web et APIs selon le référentiel OWASP. Identification des injections, brèches d'authentification et défauts de configuration logicielle.",
                 img: "/4i.jpg"
               },
               {
-                title: "Sécurité incendie SSIAP",
-                subtitle: "Prévenir les risques, agir en cas d'urgence.",
-                desc: "Nos agents SSIAP veillent au respect des règles de sécurité incendie dans les ERP, IGH et sites industriels. Présents, formés, réactifs.",
+                title: "Pentest Infrastructure",
+                subtitle: "Identifier les failles de votre réseau.",
+                desc: "Simulation d'attaques sur vos réseaux internes et périmètres externes. Évaluation de la robustesse de vos serveurs, pare-feux et infrastructures Active Directory.",
                 img: "/5i.jpg"
               },
               {
-                title: "Dispositif de sécurité événementiel",
-                subtitle: "Des dispositifs adaptés à chaque type d'événement.",
-                desc: "Accueil du public, contrôle d'accès, surveillance des installations : nos agents assurent une sécurité fluide, discrète et efficace.",
+                title: "Sécurité des Mobiles & Apps",
+                subtitle: "Protéger les données de vos utilisateurs.",
+                desc: "Analyse approfondie des applications iOS et Android. Vérification du stockage local, des flux réseau et des interactions avec le système d'exploitation.",
                 img: "/2i.jpg"
               }
             ].map((service, i) => (
@@ -273,7 +273,7 @@ const HumanSurveillance = () => {
             className="bg-white text-black p-8 md:p-12 lg:p-16 max-w-4xl mx-auto text-center shadow-2xl rounded-sm"
           >
             <h2 className="text-2xl md:text-4xl font-display font-bold mb-4 tracking-tight leading-tight">
-              Besoin d'un devis ou d'un conseil en sécurité ?
+              Besoin d'un audit ou d'un conseil en cybersécurité ?
             </h2>
             <p className="text-lg md:text-2xl font-light mb-10 text-gray-800">
               Parlons-en
@@ -282,7 +282,7 @@ const HumanSurveillance = () => {
               onClick={() => navigate("/request-quote")}
               className="bg-primary text-black hover:bg-black hover:text-white font-bold rounded-full px-10 py-6 text-lg flex items-center gap-4 transition-all duration-300 group mx-auto shadow-xl"
             >
-              Contacter un expert sécurité
+              Contacter un expert cyber
               <ArrowRight className="h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
             </Button>
           </motion.div>

@@ -1,44 +1,44 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, CheckCircle, Heart, Leaf, Users } from "lucide-react";
+import { ArrowLeft, CheckCircle, Heart, Shield, Users, Lock, Eye, Globe, Zap } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import MotionSection from "@/components/MotionSection";
 
 const commitments = [
   {
-    icon: Users,
-    title: "L'Humain d'Abord",
+    icon: Shield,
+    title: "Éthique & Responsabilité",
     description:
-      "Nous priorisons la sécurité et le bien-être des personnes dans chaque décision que nous prenons.",
+      "Nous pratiquons une cybersécurité éthique, incluant la divulgation responsable et le respect strict du secret professionnel.",
     points: [
-      "Personnel qualifié",
-      "Réponse centrée sur le client",
-      "Engagement communautaire",
-      "Soutien aux entreprises locales",
+      "Divulgation responsable (VDP)",
+      "Secret professionnel absolu",
+      "Éthique de hacking (Hacker Éthique)",
+      "Expertise locale certifiée",
     ],
   },
   {
-    icon: Leaf,
-    title: "Durabilité Environnementale",
+    icon: Lock,
+    title: "Protection des Données",
     description:
-      "Nous nous efforçons de minimiser notre empreinte environnementale grâce à des pratiques écologiques et des opérations durables.",
+      "La vie privée est un droit fondamental. Nous appliquons les standards les plus stricts pour sécuriser les données de nos clients.",
     points: [
-      "Technologies économes en énergie",
-      "Réduction des émissions de carbone",
-      "Pratiques de bureau durables",
-      "Initiatives d'équipement vert",
+      "Conformité RGPD & Lois locales",
+      "Chiffrement de bout en bout",
+      "Souveraineté des données",
+      "Audit de confidentialité continu",
     ],
   },
   {
-    icon: Users,
-    title: "Pratiques Commerciales Éthiques",
+    icon: Eye,
+    title: "Transparence Totale",
     description:
-      "La transparence, l'honnêteté et l'intégrité guident toutes nos décisions commerciales et interactions avec les clients et les parties prenantes.",
+      "Nous communiquons avec clarté sur les risques identifiés et les mesures prises, sans jargon inutile ni coûts cachés.",
     points: [
-      "Tarification et contrats transparents",
-      "Protection de la confidentialité des clients",
-      "Politiques anti-corruption",
-      "Pratiques de concurrence loyale",
+      "Rapports détaillés et exploitables",
+      "Communication en temps de crise",
+      "Indépendance technologique",
+      "Tarification claire et fixe",
     ],
   },
 ];
@@ -59,11 +59,11 @@ export default function OurCommitments() {
 
         <div className="mb-16">
           <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
-            Nos <span className="text-primary">engagements</span>
+            Nos <span className="text-primary">engagements cyber</span>
           </h1>
 
           <p className="text-lg text-muted-foreground max-w-3xl">
-            Chez Sentinel Security & Services, nous sommes convaincus que des pratiques commerciales responsables et éthiques sont la base de la confiance. Nos engagements vont au-delà des services de sécurité pour englober la responsabilité sociale, la durabilité environnementale et l'excellence éthique.
+            Chez Sentinel Security, nous sommes convaincus que la cybersécurité est avant tout une question de confiance. Nos engagements reposent sur une éthique rigoureuse, la protection absolue de la vie privée et une transparence totale vis-à-vis de nos partenaires.
           </p>
         </div>
 
@@ -102,25 +102,25 @@ export default function OurCommitments() {
         <div className="bg-security-dark rounded-xl p-8 md:p-12 border border-border/20">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-                <h2 className="text-3xl font-display font-bold text-white mb-4">
-                Responsabilité, éthique, engagements
+              <h2 className="text-3xl font-display font-bold text-white mb-4">
+                Transparence, éthique, sécurité
               </h2>
               <p className="text-muted-foreground mb-6">
-                En savoir plus sur notre façon d'agir avec intégrité et conscience sociale. Notre rapport RSE détaillé présente nos efforts en matière de protection de l'environnement, de développement communautaire et de pratiques commerciales éthiques.
+                Découvrez comment nous protégeons vos actifs avec intégrité. Notre rapport de transparence détaille nos méthodologies, nos certifications et notre engagement pour une cybersécurité souveraine.
               </p>
               <p className="text-muted-foreground mb-8">
-                Nous estimons qu'être un excellent prestataire de sécurité signifie être un citoyen d'entreprise responsable, engagé à faire une différence positive dans la société.
+                Pour nous, être un expert cyber signifie être un partenaire de confiance, engagé à bâtir un écosystème numérique plus sûr pour tous.
               </p>
               <Button
                 onClick={() => navigate("/contact")}
                 className="bg-primary text-primary-foreground hover:bg-accent font-semibold px-8 py-6"
               >
-                Demander notre rapport RSE
+                Explorer nos engagements éthiques
               </Button>
             </div>
             <div className="hidden md:block">
               <div className="relative h-64 rounded-lg overflow-hidden group">
-                <div 
+                <div
                   className="absolute inset-0 w-full h-full bg-cover bg-center bg-fixed"
                   style={{ backgroundImage: 'url("/2lock.jpg")' }}
                   role="img"
@@ -144,10 +144,10 @@ export default function OurCommitments() {
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { value: "Intégrité", desc: "Honnêteté et transparence dans toutes les relations" },
-              { value: "Excellence", desc: "Les normes les plus élevées en matière de services de sécurité" },
-              { value: "Respect", desc: "Valoriser les personnes et les communautés que nous servons" },
-              { value: "Innovation", desc: "Amélioration continue et adoption de technologies" },
+              { value: "Intégrité", desc: "Honnêteté et rigueur dans chaque diagnostic de sécurité" },
+              { value: "Confidentialité", desc: "Protection absolue des données et des secrets d'affaires" },
+              { value: "Résilience", desc: "Capacité à anticiper et à surmonter les crises cyber" },
+              { value: "Excellence", desc: "Expertise technique de pointe et formation continue" },
             ].map((item, index) => (
               <div key={index} className="bg-secondary p-6 rounded-lg border border-border/20 text-center group hover:border-primary/50 transition-all hover:shadow-lg">
                 <p className="text-xl font-display font-bold text-primary mb-2">{item.value}</p>

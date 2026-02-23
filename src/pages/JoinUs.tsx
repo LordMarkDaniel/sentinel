@@ -9,35 +9,35 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 const jobRoles = [
-    "Agent de Sécurité",
-    "Opérateur de télésurveillance",
-    "Agent de Sécurité Rondier Intervenant",
-    "Agent de Surveillance Magasin",
-    "Agent de Sécurité Conducteur de Chien",
-    "Agent de Sécurité Incendie Degré 1",
-    "Agent de Sécurité Incendie Degré 2",
-    "Agent de Sécurité Chef de Poste",
-    "Coordinateur Qualité / Contrôleur",
-    "Assistant Administratif",
-    "Responsable d'Exploitation"
+    "Pentester Web / Réseau",
+    "Analyste SOC (N1/N2)",
+    "Consultant GRC (ISO 27001)",
+    "Expert Cloud Security",
+    "Analyste Forensique / DFIR",
+    "Auditeur de Code Source",
+    "Chef de Projet Cybersécurité",
+    "Ingénieur Sécurité Réseau",
+    "DPO (Data Protection Officer)",
+    "Assistant Administratif (Cyber)",
+    "Responsable de Centre SOC"
 ];
 
 const testimonials = [
     {
-        quote: "Ici, on ne m'a pas demandé ce que je savais faire, mais ce que je voulais devenir.",
-        author: "Rabah B., agent de sécurité"
+        quote: "On ne m'a pas seulement demandé mes diplômes, mais ma passion pour le hacking éthique.",
+        author: "Rabah B., Analyste SOC"
     },
     {
-        quote: "J'ai commencé comme agent, je suis aujourd'hui cheffe de site. SENTINEL SECURITY m'a fait confiance et m'a donné les moyens d'avancer.",
-        author: "Rachel Z., cheffe de site"
+        quote: "J'ai commencé comme pentester junior, je dirige aujourd'hui les exercices Red Team. SENTINEL SECURITY investit vraiment dans nos talents.",
+        author: "Rachel Z., Lead Pentester"
     },
     {
-        quote: "Ce que j'aime dans mon poste, c'est de pouvoir transmettre ce qu'on m'a transmis : la rigueur, la solidarité, la confiance.",
-        author: "Mariane C., cheffe de l'unité mobile"
+        quote: "Ce que j'aime ici, c'est la complexité des infrastructures que nous protégeons. Chaque jour est un nouveau défi technique.",
+        author: "Mariane C., Consultante GRC"
     },
     {
-        quote: "Ce que j'aime ici, c'est la variété des sites et la confiance qu'on nous accorde. On se sent utile.",
-        author: "Souleymane M., agent mobile"
+        quote: "La cohésion entre les équipes offensives et défensives est unique. On apprend énormément au contact des experts du cabinet.",
+        author: "Souleymane M., Analyste DFIR"
     }
 ];
 
@@ -78,10 +78,10 @@ const JoinUs = () => {
                     >
                         <div className="space-y-1 mb-10">
                             <span className="inline-block bg-white text-black text-lg md:text-2xl lg:text-3xl font-display font-bold px-4 py-1 uppercase tracking-tight">
-                                Rejoindre SENTINEL SECURITY, c'est exercer
+                                Rejoindre SENTINEL SECURITY, c'est protéger
                             </span><br />
                             <span className="inline-block bg-white text-black text-lg md:text-2xl lg:text-3xl font-display font-bold px-4 py-1 uppercase tracking-tight">
-                                un métier qui a du sens, au sein d'une entreprise engagée
+                                la souveraineté numérique du pays avec passion
                             </span>
                         </div>
 
@@ -106,10 +106,10 @@ const JoinUs = () => {
                         className="max-w-5xl mx-auto"
                     >
                         <p className="text-gray-300 text-base md:text-lg leading-relaxed mb-8">
-                            Chez <strong>SENTINEL SECURITY</strong>, nous croyons que l'engagement de nos collaborateurs fait la qualité de nos prestations.
+                            Chez <strong>SENTINEL SECURITY</strong>, nous croyons que l'expertise de nos collaborateurs est le rempart le plus solide face aux cybermenaces.
                         </p>
                         <p className="text-white text-base md:text-lg font-bold leading-relaxed">
-                            Rejoindre nos équipes, c'est intégrer une entreprise de sécurité privée à taille humaine, basée à Douala, active dans toute la région du Littoral, où le respect, la progression et la confiance sont des valeurs concrètes.
+                            Rejoindre nos équipes, c'est intégrer un cabinet de cybersécurité à taille humaine, basé à Douala et Yaoundé, où l'innovation technique, la formation continue et l'éthique sont au cœur de notre ADN.
                         </p>
                     </motion.div>
                 </div>
@@ -136,27 +136,27 @@ const JoinUs = () => {
                     >
                         <li className="flex gap-4">
                             <span className="text-primary font-bold text-xl">•</span>
-                            <div><strong>CONTRATS STABLES</strong> : Nous privilégions les relations à long terme.</div>
+                            <div><strong>CHALLENGES TECHNIQUES</strong> : Travaillez sur des infrastructures complexes et critiques.</div>
                         </li>
                         <li className="flex gap-4">
                             <span className="text-primary font-bold text-xl">•</span>
-                            <div>Des <strong>plannings stables et adaptés</strong> à la vie personnelle.</div>
+                            <div><strong>FORMATION CONTINUE</strong> : Financement de vos certifications (OSCP, CISSP, CEH...).</div>
                         </li>
                         <li className="flex gap-4">
                             <span className="text-primary font-bold text-xl">•</span>
-                            <div>Des <strong>primes valorisantes</strong> (excellence, cooptation, disponibilité ...).</div>
+                            <div><strong>LAB DE RECHERCHE</strong> : Temps dédié pour vos propres recherches et participations aux CTF.</div>
                         </li>
                         <li className="flex gap-4">
                             <span className="text-primary font-bold text-xl">•</span>
-                            <div>Une <strong>écoute réelle</strong> et un management de proximité.</div>
+                            <div><strong>TRAVAIL HYBRIDE</strong> : Un équilibre vie pro/vie perso respecté avec du télétravail.</div>
                         </li>
                         <li className="flex gap-4">
                             <span className="text-primary font-bold text-xl">•</span>
-                            <div>Des <strong>opportunités d'évolution</strong> (agents promus, encadrants formés en interne).</div>
+                            <div><strong>PRIMES D'EXPERTISE</strong> : Valorisation financière de vos montées en compétences.</div>
                         </li>
                         <li className="flex gap-4">
                             <span className="text-primary font-bold text-xl">•</span>
-                            <div>Des <strong>missions variées</strong> : surveillance humaine, incendie, cynophilie, événementiel, télésurveillance...</div>
+                            <div><strong>MISSIONS VARIÉES</strong> : Du pentest web au SOC, en passant par la GRC ou l'investigation.</div>
                         </li>
                     </motion.ul>
                 </div>

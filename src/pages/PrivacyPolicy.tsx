@@ -51,7 +51,7 @@ const PrivacyPolicy = () => {
         <header className="mb-12 text-center">
           <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">Politique de <span className="text-primary">Confidentialité</span></h1>
           <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
-            Chez Sentinel Security & Services, la protection de votre vie privée est au cœur de nos priorités. Découvrez comment nous traitons vos données.
+            Chez SENTINEL SECURITY, la protection de votre vie privée et de vos données numériques est au cœur de nos priorités. Découvrez comment nous traitons vos informations.
           </p>
         </header>
 

@@ -27,9 +27,9 @@ const Legal = () => {
     },
     {
       icon: FileText,
-      title: "Conformité Réglementaire",
-      summary: "Nos certifications et adhésions aux normes de l'industrie.",
-      details: "Sentinel Security opère en stricte conformité avec les réglementations locales et nationales de sécurité privée, assurant un service légal et éthique."
+      title: "Conformité Cyber",
+      summary: "Nos certifications et respect des normes ANTIC.",
+      details: "SENTINEL SECURITY opère en stricte conformité avec les réglementations de l'ANTIC et du MINPOSTEL au Cameroun, garantissant des audits légaux et certifiés."
     },
     {
       icon: Copyright,
@@ -95,7 +95,7 @@ const Legal = () => {
             Si vous avez des questions spécifiques concernant nos conditions d'utilisation, nos politiques ou nos obligations réglementaires, notre équipe juridique est à votre disposition.
           </p>
           <a href="mailto:legal@sentinel-security.com" className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8">
-            Contacter le service juridique
+            legal@sentinel-security.com
           </a>
         </section>
       </div>

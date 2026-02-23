@@ -10,7 +10,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Téléphone",
-    content: "+273 697-912-941",
+    content: "+237 697-912-941",
     subContent: "Disponible 24/7",
   },
   {
@@ -21,9 +21,9 @@ const contactInfo = [
   },
   {
     icon: MapPin,
-    title: "Adresse",
-    content: "123 Security Avenue",
-    subContent: "Unknown, NY 10001",
+    title: "Siège Social",
+    content: "31 Avenue des Droits de l'Homme",
+    subContent: "Douala, Cameroun",
   },
   {
     icon: Clock,
@@ -154,7 +154,7 @@ const Contact = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     className="bg-security-dark border-border/20 text-secondary-foreground"
-                    placeholder="+273 697-912-941"
+                    placeholder="+237 697-912-941"
                   />
                 </div>
                 <div>

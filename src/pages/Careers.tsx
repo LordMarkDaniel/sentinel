@@ -8,66 +8,66 @@ const Careers = () => {
   const benefits = [
     {
       icon: GraduationCap,
-      title: "Formation Continue",
-      summary: "Développez vos compétences.",
-      details: "Accès à des programmes de formation certifiants et un apprentissage continu pour rester à la pointe de la sécurité."
+      title: "Certifications Offertes",
+      summary: "Monter en expertise.",
+      details: "Accès financé aux certifications reconnues mondialement : OSCP, CISSP, CEH, CISM pour rester à la pointe de la menace."
     },
     {
       icon: TrendingUp,
-      title: "Évolution de Carrière",
+      title: "Parcours d'Expertise",
       summary: "Grandissez avec nous.",
-      details: "Des parcours de carrière clairs avec des opportunités de promotion interne vers des postes de supervision et de gestion."
+      details: "Des évolutions claires de Junior vers des postes de Lead Architect, Expert Forensique ou Responsable SOC."
     },
     {
       icon: Users,
-      title: "Esprit d'Équipe",
-      summary: "Une culture solidaire.",
-      details: "Rejoignez une équipe soudée où l'entraide et le respect mutuel sont les piliers de notre environnement de travail."
+      title: "Labs & Recherche",
+      summary: "Une culture d'innovation.",
+      details: "Rejoignez une communauté de chercheurs et de hackers éthiques. Participez à des CTF et à nos projets R&D internes."
     },
     {
       icon: Wallet,
-      title: "Rémunération",
-      summary: "Salaire compétitif.",
-      details: "Nous offrons des salaires attractifs, des primes de performance et des avantages sociaux complets."
+      title: "Rémunération Premium",
+      summary: "Valoriser le talent.",
+      details: "Nous offrons des salaires attractifs basés sur l'expertise technique, des primes de certification et des avantages sociaux."
     },
     {
       icon: Shield,
-      title: "Stabilité",
-      summary: "Un secteur pérenne.",
-      details: "Travailler dans une entreprise établie depuis 2002, offrant sécurité de l'emploi et missions longue durée."
+      title: "Secteur d'Avenir",
+      summary: "Stabilité et impact.",
+      details: "Travaillez sur des missions critiques pour la défense numérique du pays, au sein d'un marché en pleine explosion."
     },
     {
       icon: Heart,
-      title: "Bien-être",
-      summary: "Santé et sécurité avant tout.",
-      details: "Nous prenons soin de nos agents avec des équipements de qualité et un soutien constant sur le terrain."
+      title: "Flexibilité & Équilibre",
+      summary: "Qualité de vie.",
+      details: "Environnement de travail moderne, options de télétravail hybride et équipements de test de haute performance."
     }
   ];
 
   const openPositions = [
     {
-      title: "Agent de Sécurité Confirmé",
-      location: "Paris, France",
+      title: "Pentester Junior / Confirmé",
+      location: "Douala, Cameroun",
       type: "CDI - Temps plein",
-      description: "Surveillance de sites industriels et contrôle d'accès."
+      description: "Réalisation de tests d'intrusion web, réseau et mobile pour nos clients bancaires et industriels."
     },
     {
-      title: "Opérateur de Télésurveillance",
-      location: "Lyon, France",
+      title: "Analyste SOC (N1/N2)",
+      location: "Yaoundé, Cameroun",
       type: "CDI - Rotation 3x8",
-      description: "Gestion des alarmes et coordination des interventions depuis notre centre."
+      description: "Surveillance des alertes de sécurité, analyse des logs et détection d'incidents en temps réel."
     },
     {
-      title: "Maître-Chien",
-      location: "Marseille, France",
-      type: "CDD - 6 mois",
-      description: "Patrouilles de sécurité avec chien pour événements et sites sensibles."
-    },
-    {
-      title: "Superviseur de Terrain",
-      location: "Île-de-France",
+      title: "Consultant GRC / ISO 27001",
+      location: "Douala, Cameroun",
       type: "CDI - Temps plein",
-      description: "Encadrement des équipes et gestion de la relation client sur site."
+      description: "Accompagnement des entreprises dans leur démarche de certification et de conformité réglementaire."
+    },
+    {
+      title: "Lead Incident Responder",
+      location: "Hybride (Cameroun)",
+      type: "CDI - Temps plein",
+      description: "Gestion des crises cyber, analyse forensique et coordination de la remédiation après attaque."
     }
   ];
 
@@ -77,9 +77,9 @@ const Careers = () => {
         <button onClick={() => navigate(-1)} className="text-primary font-semibold mb-6">← Retour</button>
 
         <header className="mb-12 text-center">
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">Carrières chez <span className="text-primary">Sentinel</span></h1>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">Carrières Cyber chez <span className="text-primary">SENTINEL SECURITY</span></h1>
           <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
-            Rejoignez une équipe d'élite. Nous recrutons des professionnels engagés envers la sécurité, l'intégrité et l'excellence du service.
+            Rejoignez l'élite de la cybersécurité au Cameroun. Nous recherchons des passionnés engagés pour la défense de l'espace numérique.
           </p>
         </header>
 
@@ -140,14 +140,14 @@ const Careers = () => {
 
         {/* CTA Section */}
         <div className="bg-security-dark rounded-xl p-8 md:p-12 border border-border/20 text-center relative overflow-hidden">
-           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50" />
-           <h2 className="text-3xl font-display font-bold text-white mb-4">Candidature Spontanée</h2>
-           <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-             Vous ne trouvez pas le poste idéal ? Nous sommes toujours à la recherche de talents. Envoyez-nous votre CV et nous vous contacterons si une opportunité correspond à votre profil.
-           </p>
-           <Button size="lg" className="bg-primary text-primary-foreground hover:bg-accent font-semibold">
-             Envoyer mon CV <ArrowRight className="ml-2 h-5 w-5" />
-           </Button>
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50" />
+          <h2 className="text-3xl font-display font-bold text-white mb-4">Candidature Spontanée</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
+            Vous ne trouvez pas le poste idéal ? Nous sommes toujours à la recherche de talents. Envoyez-nous votre CV et nous vous contacterons si une opportunité correspond à votre profil.
+          </p>
+          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-accent font-semibold">
+            Envoyer mon CV <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
         </div>
       </div>
     </div>

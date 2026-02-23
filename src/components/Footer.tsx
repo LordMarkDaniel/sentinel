@@ -39,10 +39,10 @@ const Footer = () => {
               <img src="/mainlogo.png" alt="Sentinel Security Logo" className="h-10 w-10" />
               <div>
                 <h2 className="text-xl font-display font-bold text-primary">
-                  SENTINEL
+                  SENTINEL SECURITY
                 </h2>
-                <p className="text-xs text-secondary-foreground tracking-widest">
-                  SECURITY & SERVICES
+                <p className="text-xs text-secondary-foreground tracking-widest uppercase">
+                  Protecting Excellence
                 </p>
               </div>
             </Link>
@@ -52,7 +52,7 @@ const Footer = () => {
             <div className="space-y-3">
               <a href="tel:+1234567890" className="flex items-center gap-3 text-secondary-foreground hover:text-primary transition-colors">
                 <Phone className="h-5 w-5 text-primary" />
-                <span>+273 697-912-941</span>
+                <span>+237 697-912-941</span>
               </a>
               <a href="mailto:contact@sentinel-cyber.com" className="flex items-center gap-3 text-secondary-foreground hover:text-primary transition-colors">
                 <Mail className="h-5 w-5 text-primary" />
@@ -60,7 +60,7 @@ const Footer = () => {
               </a>
               <div className="flex items-start gap-3 text-secondary-foreground">
                 <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                <span>123 Security Avenue, New York, NY 10001</span>
+                <span>31 Avenue des Droits de l'Homme, Douala, Cameroun</span>
               </div>
             </div>
           </div>
@@ -129,7 +129,7 @@ const Footer = () => {
         <div className="border-t border-border/20 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-muted-foreground text-sm">
-              © {currentYear} Sentinel Security & Services. Tous droits réservés. CYBERIX Arts.
+              © {currentYear} SENTINEL SECURITY. Tous droits réservés. CYBERIX Arts.
             </p>
             <div className="flex items-center gap-4">
               <span className="text-muted-foreground text-sm">

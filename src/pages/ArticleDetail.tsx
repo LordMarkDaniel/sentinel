@@ -5,46 +5,46 @@ import { useNavigate, useParams } from "react-router-dom";
 const newsArticles = [
   {
     id: 1,
-    title: "Comment sécuriser correctement votre maison : alarmes, télésurveillance et conseils locaux",
+    title: "Comment sécuriser votre infrastructure cloud : Pentests et meilleures pratiques au Cameroun",
     date: "12 janvier 2026",
-    category: "Sécurité domestique",
+    category: "Tests d'intrusion",
     image: "/1i.jpg",
-    excerpt: "Vous vous demandez quelle est la meilleure façon de protéger votre domicile contre les intrusions ? Face à l'augmentation des risques (cambriolages, dégradations, vols), sécuriser votre maison est devenu une priorité.",
-    content: "Vous vous demandez quelle est la meilleure façon de protéger votre domicile contre les intrusions ? Face à l'augmentation des risques (cambriolages, dégradations, vols), sécuriser votre maison est devenu une priorité.\n\nSentinel Security propose des solutions complètes de sécurité domestique, notamment :\n\n• Installation et surveillance de systèmes d'alarme professionnels\n• Systèmes de télésurveillance 24/7\n• Recommandations de sécurité locales adaptées à votre propriété\n• Protocoles d'intervention d'urgence rapide\n\nNotre équipe expérimentée peut évaluer les vulnérabilités de votre domicile et recommander les mesures de sécurité les plus efficaces. Que vous ayez besoin d'un simple système d'alarme ou d'une surveillance complète 24/7, nous avons des solutions adaptées à vos besoins et à votre budget."
+    excerpt: "L'adoption du cloud s'accélère, mais la sécurité reste un défi. Découvrez comment nos tests d'intrusion cloud identifient les failles de configuration avant qu'elles ne soient exploitées.",
+    content: "L'adoption du cloud s'accélère en Afrique Centrale, mais la sécurité reste un défi majeur. Découvrez comment nos tests d'intrusion cloud identifient les failles de configuration avant qu'elles ne soient exploitées.\n\nSENTINEL SECURITY propose des audits profonds de vos environnements AWS, Azure ou GCP, incluant :\n\n• Analyse des politiques IAM et des privilèges excessifs\n• Détection de buckets S3 ou de bases de données exposés par erreur\n• Test de résistance des API et des micro-services\n• Audit de la segmentation réseau et des groupes de sécurité\n\nNotre équipe d'experts évalue la réalité de votre modèle de responsabilité partagée. Que vous soyez en phase de migration ou déjà en production, un pentest cloud est la seule garantie d'une infrastructure résiliente."
   },
   {
     id: 2,
-    title: "Télésurveillance pour entreprises : 5 conseils pour protéger efficacement vos locaux 24/7",
+    title: "Souveraineté numérique : Pourquoi un SOC local est indispensable pour les banques camerounaises",
     date: "11 janvier 2026",
-    category: "Sécurité des entreprises",
+    category: "SOC & Surveillance",
     image: "/2i.jpg",
-    excerpt: "La sécurité des locaux professionnels est un enjeu stratégique pour toutes les entreprises. Cambriolages, intrusions, dégradations, actes malveillants ou risques techniques : les menaces sont nombreuses et imprévisibles.",
-    content: "La sécurité des locaux professionnels est un enjeu stratégique pour toutes les entreprises. Cambriolages, intrusions, dégradations, actes malveillants ou risques techniques : les menaces sont nombreuses et imprévisibles.\n\nVoici 5 conseils essentiels pour une sécurité d'entreprise efficace :\n\n1. Mettre en œuvre des systèmes de surveillance multi-caméras\n2. Utiliser des systèmes d'alarme intelligents avec alertes en temps réel\n3. Établir des protocoles de contrôle d'accès\n4. Maintenir des évaluations de sécurité régulières\n5. Travailler avec des centres de surveillance professionnels\n\nLes solutions de surveillance d'entreprise de Sentinel Security offrent une protection 24/7 avec des temps de réponse rapides, garantissant que vos actifs commerciaux et vos employés sont toujours protégés."
+    excerpt: "Face à la montée des cyberattaques sophistiquées, la gestion déléguée de la surveillance devient stratégique. Analyse d'un enjeu majeur pour le secteur financier en Afrique Centrale.",
+    content: "La sécurité des données financières est un enjeu de souveraineté nationale. Face à la montée des cyberattaques sophistiquées, la gestion déléguée de la surveillance via un SOC (Security Operations Center) local devient stratégique.\n\nPourquoi choisir un SOC au Cameroun ?\n\n1. Conformité réglementaire intensive aux directives de la BEAC et de l'ANTIC\n2. Réduction drastique de la latence pour la détection en temps réel\n3. Connaissance approfondie du paysage des menaces régionales\n4. Maîtrise totale du stockage et de la localisation des logs de sécurité\n5. Support technique de proximité en Français et Anglais\n\nSentinel Security opère un SOC de nouvelle génération, alliant intelligence artificielle et expertise humaine pour protéger vos actifs 24/7."
   },
   {
     id: 3,
-    title: "Sentinel Security inaugure son centre de surveillance : service de protection 24/7",
+    title: "SENTINEL SECURITY renforce ses capacités offensives avec une équipe Red Team dédiée",
     date: "10 janvier 2026",
-    category: "Actualités de l'entreprise",
+    category: "Actualités",
     image: "/3i.jpg",
-    excerpt: "C'est officiel : le centre de surveillance SENTINEL SECURITY est désormais pleinement opérationnel. Une avancée dans la protection de pointe pour nos clients.",
-    content: "C'est officiel : le centre de surveillance SENTINEL SECURITY est désormais pleinement opérationnel. Une avancée dans la protection de pointe pour nos clients.\n\nNotre nouveau centre de surveillance ultramoderne comprend :\n\n• Une salle de contrôle avancée avec flux vidéo en temps réel\n• Des professionnels de la sécurité formés disponibles 24/7\n• Des systèmes de coordination d'intervention rapide\n• Une intégration avec les services d'urgence\n• Des capacités de gestion multi-sites\n\nCet investissement important dans l'infrastructure démontre notre engagement à fournir le plus haut niveau de services de sécurité à nos clients dans toutes les régions."
+    excerpt: "Nous annonçons le lancement de nos opérations Red Team, simulations d'attaques réelles visant à tester la résilience globale des organisations face aux menaces avancées.",
+    content: "C'est officiel : le pôle offensif de SENTINEL SECURITY franchit une nouvelle étape avec le lancement d'exercices Red Team complets. Contrairement à un pentest classique, la Red Team simule un attaquant réel déterminé.\n\nNos scénarios d'intrusion avancés incluent :\n\n• Infiltration multi-vectorielle (Web, Réseau, Cloud)\n• Social Engineering physique et numérique\n• Test de vos procédures de détection et de réponse (Blue Team)\n• Persistance et exfiltration de données de test\n• Rapport de remédiation stratégique pour le Comex\n\nCet investissement majeur dans nos capacités offensives démontre notre volonté de fournir une sécurité pragmatique et testée sur le terrain."
   },
   {
     id: 4,
-    title: "Sentinel Security soutient la diversité : pour une industrie de la sécurité privée plus inclusive",
+    title: "Certification ISO 27001 : Un investissement stratégique pour la pérennité de votre entreprise",
     date: "9 janvier 2026",
-    category: "RSE",
+    category: "Conformité",
     image: "/4i.jpg",
-    excerpt: "Chez Sentinel Security, nous sommes convaincus que les métiers de la sécurité privée doivent refléter la diversité de notre société et offrir des chances égales.",
-    content: "Chez Sentinel Security, nous sommes convaincus que les métiers de la sécurité privée doivent refléter la diversité de notre société et offrir des chances égales.\n\nNotre engagement en faveur de la diversité comprend :\n\n• Des programmes de recrutement ciblant les communautés sous-représentées\n• L'égalité salariale et des opportunités d'avancement pour tous les employés\n• Une culture d'entreprise inclusive et des formations\n• Des partenariats communautaires avec des organisations axées sur la diversité\n• Des programmes de mentorat pour les jeunes professionnels\n\nNous croyons qu'une équipe diversifiée fournit de meilleures solutions de sécurité et représente les communautés que nous servons. Rejoignez-nous pour construire une industrie de la sécurité plus inclusive."
+    excerpt: "Plus qu'une contrainte réglementaire, la conformité est un levier de confiance client. On vous explique comment structurer votre SMSI pour obtenir la certification.",
+    content: "Dans un monde ultra-connecté, la conformité ISO 27001 n'est plus une option mais un avantage concurrentiel majeur. Elle prouve à vos partenaires que vous traitez la sécurité de l'information avec la plus grande rigueur.\n\nNotre méthodologie d'accompagnement comprend :\n\n• Audit de maturité et Gap Analysis initial\n• Définition du périmètre du SMSI\n• Inventaire des actifs et analyse des risques (EBIOS RM / MEHARI)\n• Rédaction de la PSSI et déploiement des contrôles\n• Audit à blanc avant la certification finale\n\nNous croyons qu'une gouvernance solide est la fondation de toute défense technique efficace. Sentinel Security vous guide vers l'excellence opérationnelle."
   },
 ];
 
 const ArticleDetail = () => {
   const navigate = useNavigate();
   const { id } = useParams();
-  
+
   const article = newsArticles.find(a => a.id === parseInt(id || "1"));
 
   if (!article) {
@@ -74,8 +74,8 @@ const ArticleDetail = () => {
         <article>
           {/* Featured Image */}
           <div className="mb-8 rounded-lg overflow-hidden h-96">
-            <img 
-              src={article.image} 
+            <img
+              src={article.image}
               alt={article.title}
               className="w-full h-full object-cover"
             />
@@ -110,17 +110,17 @@ const ArticleDetail = () => {
           <div className="bg-secondary p-8 rounded-lg border border-border/20 flex flex-col md:flex-row items-center justify-between gap-6 group hover:border-primary/50 hover:bg-primary transition-colors duration-300 hover:shadow-lg">
             <div>
               <h3 className="text-xl font-display font-bold text-foreground mb-2">
-                Intéressé par nos services de sécurité ?
+                Besoin d'une expertise cyber pour votre projet ?
               </h3>
-              <p className="text-muted-foreground">
-                Contactez notre équipe pour discuter de la protection de vos biens.
+              <p className="text-muted-foreground group-hover:text-white transition-colors">
+                Contactez nos consultants pour une analyse personnalisée de vos risques.
               </p>
             </div>
             <button
               onClick={() => navigate("/request-quote")}
               className="bg-primary text-primary-foreground hover:bg-accent px-6 py-3 rounded-lg font-semibold whitespace-nowrap"
             >
-              Demander un devis
+              Demander une consultation expert
             </button>
           </div>
 
@@ -129,13 +129,13 @@ const ArticleDetail = () => {
             <h3 className="text-2xl font-display font-bold text-foreground mb-8">Articles connexes</h3>
             <div className="grid md:grid-cols-3 gap-6">
               {newsArticles.filter(a => a.id !== article.id).slice(0, 3).map((relatedArticle) => (
-                <div 
+                <div
                   key={relatedArticle.id}
                   onClick={() => navigate(`/article/${relatedArticle.id}`)}
                   className="bg-secondary rounded-lg overflow-hidden border border-border/20 hover:border-primary/50 cursor-pointer transition-colors group"
                 >
                   <div className="h-40 overflow-hidden">
-                    <img 
+                    <img
                       src={relatedArticle.image}
                       alt={relatedArticle.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform"

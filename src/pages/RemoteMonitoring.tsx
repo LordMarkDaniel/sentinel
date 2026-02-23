@@ -6,20 +6,20 @@ import { useRef } from "react";
 
 const testimonials = [
   {
-    quote: "Depuis l'installation de leur système d'alarme connecté et la mise en place de la télésurveillance, je dors beaucoup plus tranquille. Le centre réagit très vite, et l'intervention est systématiquement suivie d'un compte-rendu. Un vrai service pro.",
-    author: "Gérante d'une boutique à Douala"
+    quote: "Depuis la mise en place de leur service SOC et de la surveillance continue de nos terminaux, notre équipe IT respire. Le centre réagit à la moindre anomalie, et l'analyse des alertes est systématiquement suivie d'un rapport précis. Un vrai service d'élite.",
+    author: "CISO d'une Banque à Douala"
   },
   {
-    quote: "Sentinel Sécurité a su adapter ses dispositifs à la configuration de notre site. Leur levée de doute est rapide et efficace, et nous avons un interlocuteur dédié. Nous sommes très satisfaits du suivi.",
-    author: "Responsable maintenance, PME logistique (Littoral)"
+    quote: "Sentinel Security a su intégrer nos outils existants dans leur SIEM. Leur capacité de détection des mouvements latéraux est impressionnante, et nous avons un analyste dédié. Nous sommes très satisfaits du niveau de vigilance.",
+    author: "Directeur des Opérations, Acteur Logistique"
   },
   {
-    quote: "Ils ont installé une alarme sur mesure pour notre maison, reliée directement à leur centre de télésurveillance. L'équipe a été claire, rapide et très rassurante. Et le système est simple à utiliser au quotidien.",
-    author: "Propriétaire d'une résidence à Bonapriso"
+    quote: "Ils ont déployé des sondes sur mesure pour notre infrastructure cloud. L'équipe a été proactive, identifiant une tentative d'exfiltration de données en moins de 10 minutes. C'est le partenaire idéal pour notre transformation numérique.",
+    author: "CEO d'une Scale-up Tech"
   },
   {
-    quote: "Nous habitons parfois loin de notre site industriel, mais grâce à la télésurveillance Sentinel, on sait qu'il est bien protégé. Ils nous appellent immédiatement en cas d'alerte, et interviennent si besoin. On recommande sans hésiter.",
-    author: "Directeur de site agro-industriel, Edéa"
+    quote: "Nous gérons des données de santé sensibles et le SOC Sentinel nous garantit une visibilité totale. Ils nous alertent immédiatement en cas de comportement suspect et bloquent les menaces avant l'impact. On recommande sans hésiter.",
+    author: "Responsable Sécurité SI, Clinique Privée"
   }
 ];
 
@@ -61,10 +61,10 @@ const RemoteMonitoring = () => {
           >
             <div className="space-y-1">
               <span className="inline-block bg-white text-black text-lg md:text-2xl lg:text-3xl font-display font-bold px-6 py-1 uppercase tracking-tight">
-                Télésurveillance et alarmes :
+                SOC et surveillance des menaces :
               </span><br />
               <span className="inline-block bg-white text-black text-lg md:text-2xl lg:text-3xl font-display font-bold px-6 py-1 uppercase tracking-tight">
-                Une sécurité connectée, réactive et continue
+                Une vigilance numérique continue, réactive et intelligente
               </span>
             </div>
           </motion.div>
@@ -96,14 +96,14 @@ const RemoteMonitoring = () => {
             className="max-w-4xl"
           >
             <p className="text-gray-300 text-base md:text-lg leading-relaxed mb-8">
-              Parce que chaque seconde compte en cas d'intrusion ou de risque, <strong>SENTINEL SECURITY</strong> vous propose
-              une solution de télésurveillance 24h/24 – 7j/7, renforcée par des systèmes d'alarme performants et
-              connectés.
+              Parce que chaque milliseconde compte lors d'une cyberattaque ou d'une intrusion réseau, <strong>SENTINEL SECURITY</strong> vous propose
+              une solution de SOC (Security Operations Center) 24h/24 – 7j/7, renforcée par des outils de détection (EDR/XDR)
+              de dernière génération.
             </p>
             <p className="text-white text-base md:text-lg font-bold leading-relaxed">
-              Grâce à notre centre de télésurveillance nouvelle génération basé à Douala, nous assurons une
-              protection active et immédiate des biens et des personnes, avec des opérateurs expérimentés et
-              des équipes d'intervention mobilisables à tout moment.
+              Grâce à notre centre opérationnel basé au Cameroun, nous assurons une
+              protection active et immédiate de vos systèmes et de vos données, avec des analystes experts et
+              des capacités de réponse aux incidents mobilisables à tout moment.
             </p>
           </motion.div>
 
@@ -114,13 +114,10 @@ const RemoteMonitoring = () => {
             className="mt-12"
           >
             <span className="inline-block bg-primary text-black text-lg md:text-xl font-display font-bold px-4 py-1 uppercase">
-              Des solutions de télésurveillance et d'alarme adaptées à chaque environnement
+              Une surveillance des menaces adaptée à vos enjeux de cybersécurité
             </span>
             <p className="text-gray-400 mt-6 text-sm md:text-base leading-relaxed max-w-4xl">
-              Pour sécuriser un commerce, un site industriel, un entrepôt ou une résidence, nos équipes interviennent sur
-              Douala et dans toute la région du Littoral, avec des dispositifs adaptés à chaque type de site. Télésurveillance 24/7,
-              alarmes anti-intrusion, levée de doute vidéo ou intervention sur alarme, chaque service répond à une exigence : vous
-              protéger en temps réel, sans interruption.
+              Pour sécuriser vos infrastructures cloud, vos serveurs on-premise, vos terminaux mobiles ou vos postes de travail, nos équipes déploient des sondes intelligentes pour une visibilité complète. Surveillance des logs, analyse comportementale, Threat Hunting et réponse aux incidents, chaque service répond à une exigence : vous protéger contre les ransomwares, les fuites de données et les accès non autorisés, sans interruption.
             </p>
           </motion.div>
         </div>
@@ -142,7 +139,7 @@ const RemoteMonitoring = () => {
                   onClick={() => navigate("/request-quote")}
                   className="bg-primary text-black hover:bg-black hover:text-white font-bold rounded-full px-8 py-5 text-base flex items-center gap-3 transition-all duration-300 shadow-xl"
                 >
-                  Protéger mon domicile
+                  Protéger mon infrastructure Cloud
                   <ArrowRight className="h-5 w-5" />
                 </Button>
               </div>
@@ -161,7 +158,7 @@ const RemoteMonitoring = () => {
                   onClick={() => navigate("/request-quote")}
                   className="bg-primary text-black hover:bg-black hover:text-white font-bold rounded-full px-8 py-5 text-base flex items-center gap-3 transition-all duration-300 shadow-xl"
                 >
-                  Protéger mon entreprise
+                  Sécuriser mes postes de travail
                   <ArrowRight className="h-5 w-5" />
                 </Button>
               </div>
@@ -181,10 +178,10 @@ const RemoteMonitoring = () => {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl md:text-5xl font-display font-bold leading-tight mb-8">
-                Nos solutions de<br /> télésurveillance<br /> et d'alarmes : <span className="bg-primary text-black px-2">un</span><br />
-                <span className="bg-primary text-black px-2 mt-2 inline-block">service connecté,</span><br />
-                <span className="bg-primary text-black px-2 mt-2 inline-block">complet et</span><br />
-                <span className="bg-primary text-black px-2 mt-2 inline-block">réactif</span>
+                Nos solutions de<br /> SOC et surveillance<br /> des menaces : <span className="bg-primary text-black px-2">un</span><br />
+                <span className="bg-primary text-black px-2 mt-2 inline-block">centre d'expertise,</span><br />
+                <span className="bg-primary text-black px-2 mt-2 inline-block">prévention et</span><br />
+                <span className="bg-primary text-black px-2 mt-2 inline-block">réponse active</span>
               </h2>
               <div className="w-16 h-0.5 bg-gray-600 mt-8"></div>
             </motion.div>
@@ -199,23 +196,23 @@ const RemoteMonitoring = () => {
               className="space-y-10"
             >
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                Pour garantir une protection efficace 24h/24, SENTINEL SECURITY propose une offre intégrée de télésurveillance et de dispositifs d'alarme connectés, pilotée depuis notre centre basé à Douala. Chaque alerte est traitée en temps réel par nos opérateurs, qui procèdent à une levée de doute vidéo ou audio immédiate, afin d'écarter les fausses alertes et d'engager, si nécessaire, une intervention rapide sur site.
+                Pour garantir une protection efficace 24h/24, SENTINEL SECURITY propose une offre intégrée de SOC managé et de détection des menaces (EDR/MDR), pilotée depuis notre centre d'expertise cybersécurité. Chaque événement est corrélé en temps réel par notre SIEM, permettant à nos analystes de détecter les signaux faibles, d'isoler les machines compromises et d'engager une remédiation immédiate.
               </p>
 
               <div className="space-y-6">
                 <h4 className="font-bold uppercase tracking-widest text-xs text-gray-400">Nos services couvrent :</h4>
                 <ul className="space-y-4">
                   {[
-                    "la télésurveillance continue, 7 jours sur 7, avec traitement des alertes en temps réel ;",
-                    "l'installation, la maintenance et le paramétrage de systèmes d'alarme adaptés à chaque type de site (professionnels et particuliers) ;",
-                    "une levée de doute précise et sécurisée, par vidéo ou écoute, pour une réaction adaptée ;",
-                    "l'intervention de nos équipes mobiles, en lien direct avec les forces de l'ordre si la situation l'exige."
+                    "la surveillance continue des logs, 7 jours sur 7, pour une visibilité totale sur vos flux;",
+                    "le déploiement et la gestion d'outils de détection avancée (EDR/XDR) sur tous vos terminaux;",
+                    "une analyse experte des incidents pour comprendre l'origine et l'étendue d'une attaque;",
+                    "la réponse aux incidents et le confinement des menaces par nos analystes certifiés."
                   ].map((item, i) => (
                     <li key={i} className="flex gap-4">
                       <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
                       <p className="text-gray-800 text-sm md:text-base leading-snug">
                         {item.split(',').map((part, index) => (
-                          <span key={index} className={index === 0 && part.startsWith('la') || part.includes('installation') || part.includes('levée') || part.includes('intervention') ? 'bg-primary/30 px-1' : ''}>
+                          <span key={index} className={index === 0 && part.startsWith('la') || part.includes('déploiement') || part.includes('analyse') || part.includes('réponse') ? 'bg-primary/30 px-1' : ''}>
                             {part}{index < item.split(',').length - 1 ? ',' : ''}
                           </span>
                         ))}
@@ -226,7 +223,7 @@ const RemoteMonitoring = () => {
               </div>
 
               <p className="text-gray-500 text-sm italic">
-                Grâce à un paramétrage sur mesure et une coordination fluide entre technologies et humains, nous assurons la sécurité de vos biens, de vos sites et de vos collaborateurs, à Douala et dans toute la région Littorale.
+                Grâce à un monitoring proactif et une coordination fluide entre technologies SIEM/SOAR et expertise humaine, nous assurons l'intégrité de vos données et la continuité de vos activités numériques.
               </p>
             </motion.div>
           </div>
@@ -273,18 +270,18 @@ const RemoteMonitoring = () => {
             viewport={{ once: true }}
             className="bg-white text-black p-8 md:p-12 lg:p-16 max-w-3xl mx-auto text-center shadow-2xl rounded-sm"
           >
-            <h2 className="text-xl md:text-3xl font-display font-bold mb-4">
-              Besoin d'un devis ou d'un conseil en sécurité ?
+            <h2 className="text-2xl md:text-4xl font-display font-bold mb-4 tracking-tight leading-tight">
+              Besoin d'un audit ou d'un conseil en cybersécurité ?
             </h2>
-            <p className="text-lg md:text-xl font-light mb-10 text-gray-600">
+            <p className="text-lg md:text-2xl font-light mb-10 text-gray-800">
               Parlons-en
             </p>
             <Button
               onClick={() => navigate("/request-quote")}
-              className="bg-primary text-black hover:bg-black hover:text-white font-bold rounded-full px-8 py-4 md:py-5 text-base flex items-center gap-3 transition-all duration-300 group mx-auto shadow-lg"
+              className="bg-primary text-black hover:bg-black hover:text-white font-bold rounded-full px-10 py-6 text-lg flex items-center gap-4 transition-all duration-300 group mx-auto shadow-xl"
             >
-              Contacter un expert sécurité
-              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+              Contacter un expert cyber
+              <ArrowRight className="h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
             </Button>
           </motion.div>
         </div>

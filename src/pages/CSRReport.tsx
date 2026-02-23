@@ -8,39 +8,39 @@ const CSRReport = () => {
   const initiatives = [
     {
       icon: Users,
-      title: "Engagement Social",
-      summary: "Soutien aux communautés et diversité.",
-      details: "Nous nous engageons activement dans les communautés locales que nous servons et promouvons une culture inclusive valorisant la diversité sous toutes ses formes."
+      title: "Souveraineté & Éthique",
+      summary: "Expertise locale et hacking éthique.",
+      details: "Nous promouvons une cybersécurité souveraine au Cameroun, basée sur une éthique de hacking rigoureuse et le respect strict du secret professionnel."
     },
     {
       icon: Leaf,
-      title: "Environnement",
-      summary: "Réduction de l'empreinte écologique.",
-      details: "Notre flotte de véhicules migre vers l'électrique et nous avons mis en place une politique zéro papier pour minimiser notre impact environnemental."
+      title: "Sobriété Numérique",
+      summary: "Optimisation et éco-conception.",
+      details: "Nous adoptons des pratiques de développement durable et optimisons l'infrastructure de nos clients pour réduire leur empreinte carbone numérique."
     },
     {
       icon: Scale,
-      title: "Gouvernance",
-      summary: "Éthique et transparence totale.",
-      details: "Nous opérons avec les plus hauts standards d'intégrité, assurant une conformité rigoureuse et une transparence financière et opérationnelle."
+      title: "Transparence Totale",
+      summary: "Conformité et audits indépendants.",
+      details: "Nous opérons avec une transparence totale sur nos méthodologies, soumettant régulièrement nos propres processus à des audits tiers indépendants."
     },
     {
       icon: GraduationCap,
-      title: "Formation",
-      summary: "Développement des compétences.",
-      details: "Chaque employé bénéficie de programmes de formation continue pour garantir l'excellence opérationnelle et l'évolution de carrière."
+      title: "Académie Cyber",
+      summary: "Formation des talents de demain.",
+      details: "Nous investissons dans la formation continue de nos experts et soutenons les universités locales pour bâtir un écosystème cyber fort en Afrique Centrale."
     },
     {
       icon: Heart,
-      title: "Santé & Sécurité",
-      summary: "Bien-être de nos collaborateurs.",
-      details: "La sécurité de nos agents est prioritaire. Nous fournissons des équipements de pointe et un soutien psychologique constant."
+      title: "Engagement Privacy",
+      summary: "Protection absolue des données.",
+      details: "La protection de la vie privée est au cœur de notre mission. Nous appliquons les standards RGPD et locaux les plus stricts pour toutes nos opérations."
     },
     {
       icon: Lightbulb,
-      title: "Innovation",
-      summary: "Technologies responsables.",
-      details: "Nous investissons dans des technologies de sécurité qui respectent la vie privée tout en améliorant l'efficacité de nos services."
+      title: "R&D Cyber",
+      summary: "Innovation en sécurité offensive.",
+      details: "Notre laboratoire R&D travaille sur de nouveaux vecteurs de détection et contribue activement à la communauté cyber via la recherche de vulnérabilités."
     }
   ];
 
@@ -50,9 +50,9 @@ const CSRReport = () => {
         <button onClick={() => navigate(-1)} className="text-primary font-semibold mb-6">← Retour</button>
 
         <header className="mb-12 text-center">
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">Rapport <span className="text-primary">RSE</span></h1>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">Rapport de <span className="text-primary">Transparence</span></h1>
           <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
-            Notre engagement envers la responsabilité sociétale des entreprises guide chacune de nos actions. Découvrez nos piliers fondamentaux.
+            Notre engagement envers une cybersécurité éthique et souveraine. Découvrez comment nous agissons pour protéger vos actifs numériques avec intégrité.
           </p>
         </header>
 
@@ -86,19 +86,19 @@ const CSRReport = () => {
               <div className="p-3 bg-primary/10 rounded-lg">
                 <FileText className="h-8 w-8 text-primary" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-display font-bold text-white">Télécharger le Rapport Complet</h2>
+              <h2 className="text-2xl md:text-3xl font-display font-bold text-white">Télécharger notre Rapport Annuel de Sécurité</h2>
             </div>
             <p className="text-muted-foreground text-lg mb-6">
-              Accédez à l'intégralité de nos données, nos objectifs pour l'année à venir et le détail de nos certifications ISO 26000.
+              Consultez nos statistiques de détection, nos indicateurs de performance SOC et le détail de nos méthodologies d'audit certifiées.
             </p>
             <div className="flex flex-wrap gap-4">
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <span className="w-2 h-2 rounded-full bg-primary"></span>
-                Version 2025
+                Rapport Transparence 2025
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <span className="w-2 h-2 rounded-full bg-primary"></span>
-                PDF (4.2 MB)
+                Standard SOC2 / ISO 27001
               </div>
             </div>
           </div>

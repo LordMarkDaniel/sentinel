@@ -1,4 +1,4 @@
-import { Dog, Shield, Search, Bomb, Activity, Heart, Award, Footprints } from "lucide-react";
+import { Bug, Shield, Search, Activity, Zap, ClipboardCheck, BarChart2, ShieldAlert, Award, Headphones } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -7,40 +7,40 @@ const K9Security = () => {
 
   const capabilities = [
     {
-      icon: Bomb,
-      title: "Détection d'Explosifs",
-      summary: "Sécurisation de sites sensibles.",
-      details: "Nos chiens sont certifiés pour détecter une large gamme de substances explosives, assurant la sûreté des aéroports, gares et événements."
-    },
-    {
       icon: Search,
-      title: "Détection de Stupéfiants",
-      summary: "Lutte contre le trafic.",
-      details: "Recherche efficace et rapide de substances illicites dans les entrepôts, les véhicules et les lieux publics."
+      title: "Scanning Automatisé",
+      summary: "Détection continue.",
+      details: "Utilisation d'outils de scan de pointe pour identifier en temps réel les vulnérabilités logicielles et les défauts de configuration sur votre parc informatique."
     },
     {
-      icon: Dog,
-      title: "Patrouille & Dissuasion",
-      summary: "Une présence imposante.",
-      details: "Le binôme maître-chien constitue l'un des moyens de dissuasion les plus efficaces contre l'intrusion et le vandalisme."
+      icon: Bug,
+      title: "Analyse Manuelle",
+      summary: "Éliminer le bruit.",
+      details: "Validation experte par nos analystes pour écarter les faux positifs et confirmer l'exploitabilité réelle des failles détectées."
     },
     {
-      icon: Footprints,
-      title: "Pistage & Recherche",
-      summary: "Retrouver la trace.",
-      details: "Capacité à suivre une piste olfactive pour localiser des personnes disparues ou des intrus en fuite."
+      icon: ShieldAlert,
+      title: "Priorisation des Risques",
+      summary: "Agir sur l'essentiel.",
+      details: "Classement des vulnérabilités selon leur criticité métier et leur facilité d'exploitation pour optimiser vos efforts de correction."
     },
     {
-      icon: Shield,
-      title: "Sécurité Événementielle",
-      summary: "Gestion de foule.",
-      details: "Sécurisation de périmètres et filtrage lors de concerts, festivals et manifestations sportives."
+      icon: ClipboardCheck,
+      title: "Suivi de Remédiation",
+      summary: "Mesurer l'effort.",
+      details: "Accompagnement de vos équipes techniques dans l'application des correctifs et vérification post-remédiation pour confirmer la clôture des failles."
     },
     {
       icon: Activity,
-      title: "Intervention Rapide",
-      summary: "Réactivité maximale.",
-      details: "En cas d'alerte, nos unités cynophiles peuvent intervenir et neutraliser une menace bien plus rapidement qu'un agent seul."
+      title: "Scanning de Surface",
+      summary: "Protection externe.",
+      details: "Surveillance de vos actifs exposés sur internet (EASM) pour détecter les oublis de configuration et les services non sécurisés."
+    },
+    {
+      icon: Zap,
+      title: "Veille Cyber (CTI)",
+      summary: "Anticiper les exploits.",
+      details: "Analyse constante des nouvelles menaces et des 0-days pour vous alerter dès qu'une faille critique concerne votre infrastructure."
     }
   ];
 
@@ -50,9 +50,9 @@ const K9Security = () => {
         <button onClick={() => navigate(-1)} className="text-primary font-semibold mb-6">← Retour</button>
 
         <header className="mb-12 text-center">
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">Sécurité <span className="text-primary">Cynophile</span></h1>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">Gestion des <span className="text-primary">Vulnérabilités</span></h1>
           <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
-            L'alliance de l'intelligence animale et de l'expertise humaine. Nos unités K-9 offrent des capacités de détection et de protection inégalées.
+            Identifier, Évaluer, Remédier. Un processus continu pour réduire votre surface d'attaque et garder une longueur d'avance sur les menaces numériques.
           </p>
         </header>
 
@@ -83,65 +83,65 @@ const K9Security = () => {
 
         {/* Training & Welfare Section */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
-           <div className="relative h-full min-h-[400px] bg-secondary rounded-xl overflow-hidden border border-border/20 group">
-                <img 
-                    src="/1lock.jpg" 
-                    alt="K9 Security Training" 
-                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
-                />
-                <div className="absolute inset-0 bg-black/20" />
-                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                    <div className="flex items-center gap-2 mb-2">
-                        <Award className="h-5 w-5 text-primary" />
-                        <span className="text-white font-bold">Certifiés & Entraînés</span>
-                    </div>
-                    <p className="text-gray-300 text-sm">Nos chiens suivent un entraînement quotidien rigoureux.</p>
+          <div className="relative h-full min-h-[400px] bg-secondary rounded-xl overflow-hidden border border-border/20 group">
+            <img
+              src="/1lock.jpg"
+              alt="Vulnerability Management Process"
+              className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-black/20" />
+            <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+              <div className="flex items-center gap-2 mb-2">
+                <BarChart2 className="h-5 w-5 text-primary" />
+                <span className="text-white font-bold">Rapports & Reporting</span>
+              </div>
+              <p className="text-gray-300 text-sm">Visualisez votre posture de sécurité en temps réel grâce à nos dashboards.</p>
+            </div>
+          </div>
+          <div>
+            <h2 className="text-3xl font-display font-bold text-foreground mb-6">Processus & Accompagnement</h2>
+            <div className="space-y-6 text-muted-foreground text-lg">
+              <p>
+                Chez Sentinel Security, nous considérons la gestion des vulnérabilités comme un cycle de vie continu, et non comme un audit ponctuel. Nous vous accompagnons à chaque étape pour garantir une sécurité durable.
+              </p>
+              <div className="space-y-4">
+                <div className="flex gap-4">
+                  <div className="p-2 bg-primary/10 rounded-lg h-fit">
+                    <Award className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="text-white font-bold mb-1">Méthodologie Agile</h4>
+                    <p className="text-sm">Nous intégrons nos scans dans vos environnements de production et de développement avec un impact minimal sur les performances.</p>
+                  </div>
                 </div>
-           </div>
-           <div>
-              <h2 className="text-3xl font-display font-bold text-foreground mb-6">Excellence & Bien-être Animal</h2>
-              <div className="space-y-6 text-muted-foreground text-lg">
-                <p>
-                  Chez Sentinel Security, nous considérons nos chiens comme des partenaires à part entière, et non comme de simples outils. Leur bien-être est au cœur de notre démarche opérationnelle.
-                </p>
-                <div className="space-y-4">
-                    <div className="flex gap-4">
-                        <div className="p-2 bg-primary/10 rounded-lg h-fit">
-                            <Award className="h-6 w-6 text-primary" />
-                        </div>
-                        <div>
-                            <h4 className="text-white font-bold mb-1">Formation Continue</h4>
-                            <p className="text-sm">Nos équipes cynophiles s'entraînent chaque semaine pour maintenir leurs compétences au plus haut niveau opérationnel.</p>
-                        </div>
-                    </div>
-                    <div className="flex gap-4">
-                        <div className="p-2 bg-primary/10 rounded-lg h-fit">
-                            <Heart className="h-6 w-6 text-primary" />
-                        </div>
-                        <div>
-                            <h4 className="text-white font-bold mb-1">Soins Vétérinaires</h4>
-                            <p className="text-sm">Suivi médical complet, alimentation premium et conditions de vie optimales pour nos athlètes à quatre pattes.</p>
-                        </div>
-                    </div>
+                <div className="flex gap-4">
+                  <div className="p-2 bg-primary/10 rounded-lg h-fit">
+                    <Headphones className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="text-white font-bold mb-1">Support Expert Dédié</h4>
+                    <p className="text-sm">Accès direct à nos analystes sécurité pour vous aider à comprendre les vulnérabilités complexes et leur contexte d'exploitation.</p>
+                  </div>
                 </div>
               </div>
-           </div>
+            </div>
+          </div>
         </div>
 
         {/* CTA Section */}
         <div className="bg-secondary rounded-xl p-8 md:p-12 border border-border/20 text-center">
           <h2 className="text-3xl font-display font-bold text-white mb-4">
-            Besoin d'une unité cynophile ?
+            Besoin d'un diagnostic de vulnérabilité ?
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-            Pour la sécurisation de vos événements ou la protection de vos sites sensibles, faites appel à l'efficacité de nos équipes K-9.
+            Ne laissez aucune porte ouverte aux cyber-attaquants. Identifiez vos maillons faibles avant qu'ils ne soient exploités.
           </p>
-          <Button 
+          <Button
             onClick={() => navigate("/request-quote")}
             size="lg"
             className="bg-primary text-primary-foreground hover:bg-accent font-semibold px-8"
           >
-            Demander un devis
+            Demander un audit de vulnérabilité
           </Button>
         </div>
       </div>

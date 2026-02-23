@@ -21,8 +21,8 @@ const ContactExpert = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Demande de consultation envoyée !",
-      description: "Nos experts en sécurité vous contacteront sous 24 heures pour planifier votre consultation.",
+      title: "Demande de consultation cyber envoyée !",
+      description: "Nos experts en cybersécurité vous contacteront sous 24 heures pour analyser vos besoins prioritaires.",
     });
     setFormData({
       name: "",
@@ -42,7 +42,7 @@ const ContactExpert = () => {
     {
       icon: Phone,
       title: "Téléphone",
-      content: "+273 697-912-941",
+      content: "+237 697-912-941",
       subContent: "Disponible 24/7",
     },
     {
@@ -53,9 +53,9 @@ const ContactExpert = () => {
     },
     {
       icon: MapPin,
-      title: "Adresse",
-      content: "123 Security Avenue",
-      subContent: "Unknown, NY 10001",
+      title: "Siège Social",
+      content: "31 Avenue des Droits de l'Homme",
+      subContent: "Douala, Cameroun",
     },
     {
       icon: Clock,
@@ -66,12 +66,12 @@ const ContactExpert = () => {
   ];
 
   const consultationTypes = [
-    { value: "general", label: "Consultation générale de sécurité" },
-    { value: "home", label: "Évaluation de la sécurité résidentielle" },
-    { value: "business", label: "Audit de sécurité d'entreprise" },
-    { value: "event", label: "Planification de la sécurité événementielle" },
-    { value: "monitoring", label: "Installation de télésurveillance" },
-    { value: "other", label: "Autre" },
+    { value: "audit", label: "Audit de conformité (ISO 27001, RGPD)" },
+    { value: "pentest", label: "Tests d'intrusion (Web, Réseau, Mobile)" },
+    { value: "soc", label: "Surveillance SOC & Détection de menaces" },
+    { value: "ir", label: "Réponse aux incidents (Cyber-crise)" },
+    { value: "cloud", label: "Sécurisation Cloud & DevSecOps" },
+    { value: "other", label: "Conseil stratégique & Formation" },
   ];
 
   return (
@@ -128,10 +128,10 @@ const ContactExpert = () => {
               </h3>
               <ul className="space-y-3">
                 {[
-                  "Évaluation de sécurité personnalisée",
-                  "Recommandations de solutions sur mesure",
-                  "Devis sans engagement",
-                  "Conseils d'experts par des professionnels certifiés",
+                  "Évaluation de maturité cyber initiale",
+                  "Scénarios de menaces personnalisés",
+                  "Audit flash de vos actifs critiques",
+                  "Conseils par des experts certifiés (CISSP, OSCP)",
                 ].map((benefit, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
@@ -198,7 +198,7 @@ const ContactExpert = () => {
                       onChange={handleChange}
                       required
                       className="bg-security-dark border-border/20 text-secondary-foreground"
-                      placeholder="+273 697-912-941"
+                      placeholder="+237 697-912-941"
                     />
                   </div>
                   <div>
@@ -245,11 +245,11 @@ const ContactExpert = () => {
                     onChange={handleChange}
                     required
                     className="bg-security-dark border-border/20 text-secondary-foreground min-h-[150px]"
-                    placeholder="Parlez-nous de vos préoccupations spécifiques en matière de sécurité, de la taille de la propriété, du nombre de sites, des mesures de sécurité actuelles, etc."
+                    placeholder="Décrivez votre infrastructure (Nb de serveurs, utilisateurs), vos contraintes réglementaires et vos objectifs de sécurisation prioritaires."
                   />
                 </div>
 
-                <Button 
+                <Button
                   type="submit"
                   size="lg"
                   className="w-full bg-primary text-primary-foreground hover:bg-accent font-semibold py-6 text-lg"

@@ -7,47 +7,48 @@ const OurTeam = () => {
   const members = [
     {
       name: "CYBERIX",
-      role: "Fondateur & PDG",
-      bio: "Expert en cybersécurité avec plus de 15 ans d'expérience dans la protection des infrastructures critiques.",
+      role: "Fondateur & CEO",
+      bio: "Expert en cybersécurité certifié CISSP, avec plus de 15 ans d'expérience dans la protection des infrastructures étatiques et bancaires.",
       icon: Shield
     },
     {
       name: "Amina Clarke",
-      role: "Responsable des Opérations",
-      bio: "Supervise le déploiement quotidien de nos agents et assure la qualité de service sur le terrain.",
+      role: "CISO (RSSI)",
+      bio: "Ancienne consultante Big Four, elle supervise la stratégie de sécurité globale et la gouvernance pour nos clients grands comptes.",
       icon: Briefcase
     },
     {
       name: "Jon Reyes",
-      role: "Responsable de la Formation",
-      bio: "Ancien militaire, il conçoit nos programmes de formation rigoureux pour tous les niveaux d'agents.",
+      role: "Lead Pentester",
+      bio: "Spécialiste de l'offensive (OSCP), il dirige les exercices Red Team et les audits de code source critique.",
       icon: Award
     },
     {
       name: "Sarah Connor",
-      role: "Analyste Sécurité",
-      bio: "Spécialiste en évaluation des risques et en planification stratégique de sécurité.",
+      role: "SOC Manager",
+      bio: "Experte en détection de menaces, elle pilote notre centre opérationnel de sécurité 24/7 au Cameroun.",
       icon: User
     },
     {
       name: "Mike Ross",
-      role: "Superviseur Terrain",
-      bio: "Assure la liaison entre les clients et nos équipes pour une réactivité optimale.",
+      role: "Lead Incident Response",
+      bio: "Expert en analyse forensique (SANS), il intervient en urgence lors de cyber-attaques pour limiter les impacts.",
       icon: User
     },
     {
       name: "Emily Blunt",
-      role: "RH & Conformité",
-      bio: "Garantit que nos pratiques respectent les normes éthiques et légales les plus strictes.",
+      role: "Lead Compliance & DPO",
+      bio: "Juriste spécialisée IT et Lead Auditor ISO 27001, elle assure la conformité RGPD et réglementaire de nos partenaires.",
       icon: Users
     }
   ];
 
   const partners = [
-    "SecurTech Solutions",
-    "Global Monitoring Systems",
-    "CyberDefense Alliance",
-    "SafeGuard Logistics"
+    "Check Point Software",
+    "CrowdStrike",
+    "Splunk",
+    "Fortinet",
+    "Palo Alto Networks"
   ];
 
   return (
@@ -56,9 +57,9 @@ const OurTeam = () => {
         <button onClick={() => navigate(-1)} className="text-primary font-semibold mb-6">← Retour</button>
 
         <header className="mb-12 text-center">
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">Notre <span className="text-primary">Équipe</span></h1>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">Notre <span className="text-primary">Équipe d'Experts</span></h1>
           <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
-            Des dirigeants et praticiens expérimentés engagés dans la prestation de services de sécurité professionnels et l'amélioration continue.
+            Un collectif de hackers éthiques, d'analystes et de consultants certifiés, unis pour défendre votre souveraineté numérique au Cameroun.
           </p>
         </header>
 
@@ -95,14 +96,14 @@ const OurTeam = () => {
         </section>
 
         <section className="text-center">
-            <h2 className="text-3xl font-display font-bold text-foreground mb-8">Nos Partenaires Stratégiques</h2>
-            <div className="flex flex-wrap justify-center gap-6">
-                {partners.map((partner, idx) => (
-                    <div key={idx} className="bg-secondary px-8 py-4 rounded-full border border-border/20 text-muted-foreground font-semibold hover:border-primary hover:text-primary transition-colors cursor-default">
-                        {partner}
-                    </div>
-                ))}
-            </div>
+          <h2 className="text-3xl font-display font-bold text-foreground mb-8">Nos Partenaires Stratégiques</h2>
+          <div className="flex flex-wrap justify-center gap-6">
+            {partners.map((partner, idx) => (
+              <div key={idx} className="bg-secondary px-8 py-4 rounded-full border border-border/20 text-muted-foreground font-semibold hover:border-primary hover:text-primary transition-colors cursor-default">
+                {partner}
+              </div>
+            ))}
+          </div>
         </section>
       </div>
     </div>
